@@ -3,16 +3,10 @@ using UnityEngine;
 
 namespace TarodevController
 {
-    /// <summary>
-    /// Hey!
-    /// Tarodev here. I built this controller as there was a severe lack of quality & free 2D controllers out there.
-    /// I have a premium version on Patreon, which has every feature you'd expect from a polished controller. Link: https://www.patreon.com/tarodev
-    /// You can play and compete for best times here: https://tarodev.itch.io/extended-ultimate-2d-controller
-    /// If you hve any questions or would like to brag about your score, come to discord: https://discord.gg/tarodev
-    /// </summary>
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
-    public class PlayerController : MonoBehaviour, IPlayerController
+    public class PlayerController : MonoBehaviour
     {
+        #region Variables
         [System.Serializable]
         public class PlayerControllerStatistics
         {
@@ -76,6 +70,7 @@ namespace TarodevController
         public class Functionnal
         {
             public GameObject visual;
+            public GameObject interactInfo;
         }
 
 
@@ -111,7 +106,17 @@ namespace TarodevController
         private bool _asPressedJump;
         private float _timeWhenJumpPressed;
 
+        //Traversing plateform
+        private bool _asPressedTraversingPlateform;
+        private Collider2D _colliderInContact;
+        private bool _isTraversing;
 
+        //Interacting
+        private InteractObject _interactObject;
+
+        #endregion
+
+        #region Unity methods
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
@@ -129,7 +134,7 @@ namespace TarodevController
             GatherInput();
 
             UpdateVisuals();
-
+            HandleInteraction();
         }
 
         private void FixedUpdate()
@@ -137,12 +142,23 @@ namespace TarodevController
             CheckCollisions();
 
             HandleJump();
+            HandleTraversing();
             HandleDirection();
             HandleGravity();
 
             ApplyMovement();
         }
 
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.collider.tag == "Plateform")
+            {
+                collision.collider.isTrigger = true;
+            }
+        }
+        #endregion
+
+        #region Inputs
         private void GatherInput()
         {
             _frameInput = new FrameInput();
@@ -162,29 +178,85 @@ namespace TarodevController
                 _asPressedJump = true;
                 _timeWhenJumpPressed = _time;
             }
-        }
 
+            if (_frameInput.Move.y < 0)
+            {
+                _asPressedTraversingPlateform = true;
+            }
+        }
+        #endregion
+
+        #region Moving, Jumping, Traversing
         private void CheckCollisions()
         {
             Physics2D.queriesStartInColliders = false;
 
-            // Ground and Ceiling
-            bool ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0, Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
+            // Ground
+            bool groundHit = false;
 
-            bool groundHit;
-
-            RaycastHit2D hit = Physics2D.Raycast(_col.bounds.center, Vector2.down,_col.size.y/2 + _stats.GrounderDistance);
-            if (hit.collider != null)
+            RaycastHit2D hitDown = Physics2D.Raycast(_col.bounds.center, Vector2.down, _col.size.y / 2 + _stats.GrounderDistance);
+            if (hitDown.collider != null)
             {
-                groundHit = true;
+                if (hitDown.collider.tag != "Interactable")
+                {
+                    if (_isTraversing)
+                    {
+                        groundHit = false;
+
+                        if (_colliderInContact != hitDown.collider)
+                        {
+                            if (hitDown.collider.tag == "Plateform")
+                                hitDown.collider.isTrigger = false;
+
+                            _isTraversing = false;
+                            groundHit = true;
+                            _colliderInContact = hitDown.collider;
+                        }
+                    }
+                    else
+                    {
+                        if (hitDown.collider.tag == "Plateform")
+                            hitDown.collider.isTrigger = false;
+
+                        groundHit = true;
+                        _colliderInContact = hitDown.collider;
+                    }
+                }
+
+
             }
             else
             {
                 groundHit = false;
             }
 
+            //Ceiling
+            bool ceilingHit = false;
+
+            RaycastHit2D hitUp = Physics2D.Raycast(_col.bounds.center, Vector2.up, _col.size.y / 2 + _stats.GrounderDistance);
+            if (hitUp.collider != null)
+            {
+                if (hitUp.collider.tag != "Interactable")
+                {
+                    if (hitUp.collider.tag == "Plateform")
+                    {
+                        hitUp.collider.isTrigger = true;
+                        ceilingHit = false;
+                    }
+                    else
+                    {
+                        ceilingHit = true;
+                    }
+                }
+            }
+
+
             // Hit a Ceiling
-            if (ceilingHit) _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
+            if (ceilingHit)
+            {
+                _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
+                _isTraversing = false;
+            }
 
             // Landed on the Ground
             if (!_grounded && groundHit)
@@ -209,7 +281,7 @@ namespace TarodevController
         {
             if (!_grounded)
             {
-                if (_timeWhenJumpPressed+_stats.JumpBuffer < _time)
+                if (_timeWhenJumpPressed + _stats.JumpBuffer < _time)
                 {
                     _asPressedJump = false;
                 }
@@ -228,6 +300,22 @@ namespace TarodevController
         }
 
         #endregion
+
+        private void HandleTraversing()
+        {
+            if (_grounded)
+            {
+                if (_asPressedTraversingPlateform)
+                {
+                    _asPressedTraversingPlateform = false;
+                    if (_colliderInContact.tag == "Plateform")
+                    {
+                        _colliderInContact.isTrigger = true;
+                        _isTraversing = true;
+                    }
+                }
+            }
+        }
 
         private void HandleDirection()
         {
@@ -251,7 +339,7 @@ namespace TarodevController
             else
             {
                 var inAirGravity = _stats.FallAcceleration;
-                if (_frameVelocity.y > 0) 
+                if (_frameVelocity.y > 0)
                     inAirGravity *= _stats.JumpEndEarlyGravityModifier;
                 _frameVelocity.y = Mathf.MoveTowards(_frameVelocity.y, -_stats.MaxFallSpeed, inAirGravity * Time.fixedDeltaTime);
             }
@@ -261,9 +349,40 @@ namespace TarodevController
         {
             _rb.velocity = _frameVelocity;
             if (_stats.tilt)
+            {
                 transform.rotation = Quaternion.identity;
+            }
+        }
+        #endregion
+
+        #region Interacting
+
+        private void HandleInteraction()
+        {
+            if (_functionnal.interactInfo.activeSelf)
+            {
+                if (InputManager.instance.interactPerformed)
+                {
+                    _interactObject.Action();
+                }
+            }
         }
 
+        public void AllowInteract(InteractObject target)
+        {
+            _functionnal.interactInfo.SetActive(true);
+            _interactObject = target;
+        }
+
+        public void DisallowInteract(InteractObject target)
+        {
+            _functionnal.interactInfo.SetActive(false);
+            _interactObject = null;
+        }
+
+        #endregion
+
+        #region Visuals
         private void UpdateVisuals()
         {
             if (!_stats.tilt)
@@ -273,13 +392,14 @@ namespace TarodevController
 
             if (_frameInput.Move.x > 0)
             {
-                _functionnal.visual.transform.localScale = new Vector3(1,1,1);
+                _functionnal.visual.transform.localScale = new Vector3(1, 1, 1);
             }
             else if (_frameInput.Move.x < 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(-1, 1, 1);
             }
         }
+        #endregion
     }
 
     public struct FrameInput
@@ -287,13 +407,5 @@ namespace TarodevController
         public bool JumpDown;
         public bool JumpHeld;
         public Vector2 Move;
-    }
-
-    public interface IPlayerController
-    {
-        public event Action<bool, float> GroundedChanged;
-
-        public event Action Jumped;
-        public Vector2 FrameInput { get; }
     }
 }

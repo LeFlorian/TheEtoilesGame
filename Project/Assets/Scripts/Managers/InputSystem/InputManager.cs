@@ -18,6 +18,11 @@ public class InputManager : MonoBehaviour
     [HideInInspector]
     public bool jumpPerformed;
 
+    [HideInInspector]
+    public InputAction interact;
+    [HideInInspector]
+    public bool interactPerformed;
+
     private void Awake()
     {
         instance = this;
@@ -33,20 +38,31 @@ public class InputManager : MonoBehaviour
         jump = c.Game.Jump;
         jump.Enable();
 
-        jump.performed += delegate { StartCoroutine(PerformedJump(true)); };
-        
+        jump.performed += delegate { StartCoroutine(PerformedJump()); };
+
+        interact = c.Game.Interact;
+        interact.Enable();
+
+        interact.performed += delegate { StartCoroutine(PerformedInteract()); };
     }
 
     private void OnDisable()
     {
         move.Disable();
         jump.Disable();
+        interact.Disable();
     }
 
-    private IEnumerator PerformedJump(bool asJump)
+    private IEnumerator PerformedJump()
     {
         jumpPerformed = true;
         yield return new WaitForEndOfFrame();
         jumpPerformed = false;
+    }
+    private IEnumerator PerformedInteract()
+    {
+        interactPerformed = true;
+        yield return new WaitForEndOfFrame();
+        interactPerformed = false;
     }
 }

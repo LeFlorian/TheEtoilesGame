@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TwitchIntegrationDemo/Scenes/Authentication.unity
-    guid: 8f34a80860e32bc43b54f00b117579c5
+    path: Assets/Scenes/Game/SpashScreen.unity
+    guid: 08399396711038c4b9d4bc8812473d83
   - enabled: 1
-    path: Assets/TwitchIntegrationDemo/Scenes/TwitchChatSample.unity
-    guid: 4abbff4d856608543bf535f74835142a
+    path: Assets/Scenes/Game/Lobby.unity
+    guid: 1f588caf7a8b1f84388ea0593f7527a5
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/01 - Geographie.unity
+    guid: a719897da8459124fbc663ace08d7ea1
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/02 - Enigme.unity
+    guid: c360a988a6873204a9328f80d29139ed
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/03 - Musique.unity
+    guid: a5437f8cbc6b04347aa63113493931d0
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/04 - Versus.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Game/Levels/05 - Amour.unity
+    guid: c30d49ea82784f94c85d203bab81a2a9
   m_configObjects: {}

@@ -299,8 +299,8 @@ MonoBehaviour:
     y: 0
     width: 311
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -365,9 +365,9 @@ MonoBehaviour:
     m_SearchString: 
   m_ActionsTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 80a445b3
-    m_LastClickedID: -1287281536
-    m_ExpandedIDs: f1dc1085d49a67a28305c7a9d89d6ac44006d5d13d60afd56590c6ec9b39fbecbb9db4ef5be2530d5bedac2e30de8a7e
+    m_SelectedIDs: fc08b325
+    m_LastClickedID: 632490236
+    m_ExpandedIDs: f1dc1085d49a67a2d89d6ac40a8f63cd4006d5d13d60afd56590c6ec9b39fbec5be2530d5bedac2e30de8a7e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -389,12 +389,21 @@ MonoBehaviour:
     m_AdvancedDropdownState:
       states:
       - itemId: 371857150
-        selectedIndex: 4
+        selectedIndex: 0
         scroll: {x: 0, y: 0}
       - itemId: -376880915
         selectedIndex: -1
         scroll: {x: 0, y: 0}
       - itemId: 656259478
+        selectedIndex: 0
+        scroll: {x: 0, y: 0}
+      - itemId: 403810634
+        selectedIndex: 0
+        scroll: {x: 0, y: 0}
+      - itemId: 378383742
+        selectedIndex: -1
+        scroll: {x: 0, y: 0}
+      - itemId: -2031660377
         selectedIndex: 0
         scroll: {x: 0, y: 0}
     m_ManualPathEditMode: 0
@@ -412,8 +421,13 @@ MonoBehaviour:
       \"type\": \"Value\",\n                    \"id\": \"1ef11f23-6392-40b4-957c-e1c79f9d1076\",\n                   
       \"expectedControlType\": \"Vector2\",\n                    \"processors\":
       \"\",\n                    \"interactions\": \"\",\n                    \"initialStateCheck\":
-      true\n                }\n            ],\n            \"bindings\": [\n               
-      {\n                    \"name\": \"\",\n                    \"id\": \"337df5a3-aa5d-4203-8298-177e8acc9b3d\",\n                   
+      true\n                },\n                {\n                    \"name\":
+      \"Interact\",\n                    \"type\": \"Button\",\n                   
+      \"id\": \"5c24bc15-e057-4719-a505-1314edd64dc2\",\n                    \"expectedControlType\":
+      \"Button\",\n                    \"processors\": \"\",\n                   
+      \"interactions\": \"\",\n                    \"initialStateCheck\": false\n               
+      }\n            ],\n            \"bindings\": [\n                {\n                   
+      \"name\": \"\",\n                    \"id\": \"337df5a3-aa5d-4203-8298-177e8acc9b3d\",\n                   
       \"path\": \"<Keyboard>/space\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"Jump\",\n                    \"isComposite\": false,\n                   
@@ -423,13 +437,19 @@ MonoBehaviour:
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"Jump\",\n                    \"isComposite\": false,\n                   
       \"isPartOfComposite\": false\n                },\n                {\n                   
-      \"name\": \"Keyboard\",\n                    \"id\": \"e18b04b0-3fba-46a7-ab8e-c184752f8a81\",\n                   
-      \"path\": \"2DVector\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
-      \"action\": \"Move\",\n                    \"isComposite\": true,\n                   
-      \"isPartOfComposite\": false\n                },\n                {\n                   
-      \"name\": \"up\",\n                    \"id\": \"f68f6072-c389-49af-8202-551f5a796c8c\",\n                   
-      \"path\": \"<Keyboard>/w\",\n                    \"interactions\": \"\",\n                   
+      \"name\": \"\",\n                    \"id\": \"c2b8737c-c9ee-4e72-b040-45ac8fd883c5\",\n                   
+      \"path\": \"<Gamepad>/buttonSouth\",\n                    \"interactions\":
+      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
+      \"\",\n                    \"action\": \"Jump\",\n                    \"isComposite\":
+      false,\n                    \"isPartOfComposite\": false\n                },\n               
+      {\n                    \"name\": \"Keyboard\",\n                    \"id\":
+      \"e18b04b0-3fba-46a7-ab8e-c184752f8a81\",\n                    \"path\": \"2DVector\",\n                   
+      \"interactions\": \"\",\n                    \"processors\": \"\",\n                   
+      \"groups\": \"\",\n                    \"action\": \"Move\",\n                   
+      \"isComposite\": true,\n                    \"isPartOfComposite\": false\n               
+      },\n                {\n                    \"name\": \"up\",\n                   
+      \"id\": \"f68f6072-c389-49af-8202-551f5a796c8c\",\n                    \"path\":
+      \"<Keyboard>/w\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
       \"isPartOfComposite\": true\n                },\n                {\n                   
@@ -447,8 +467,23 @@ MonoBehaviour:
       \"path\": \"<Keyboard>/d\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                }\n            ]\n        }\n   
-      ],\n    \"controlSchemes\": []\n}"
+      \"isPartOfComposite\": true\n                },\n                {\n                   
+      \"name\": \"\",\n                    \"id\": \"da370076-f2b6-4bd4-a975-69dc062164fe\",\n                   
+      \"path\": \"<Gamepad>/leftStick\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": false\n                },\n                {\n                   
+      \"name\": \"\",\n                    \"id\": \"fbd8b905-ebe2-4c4b-b40f-d2796b0caae3\",\n                   
+      \"path\": \"<Keyboard>/e\",\n                    \"interactions\": \"\",\n                   
+      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
+      \"action\": \"Interact\",\n                    \"isComposite\": false,\n                   
+      \"isPartOfComposite\": false\n                },\n                {\n                   
+      \"name\": \"\",\n                    \"id\": \"b0cedf4f-93b1-47b1-b438-0bdbb67cc709\",\n                   
+      \"path\": \"<Gamepad>/buttonWest\",\n                    \"interactions\":
+      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
+      \"\",\n                    \"action\": \"Interact\",\n                    \"isComposite\":
+      false,\n                    \"isPartOfComposite\": false\n                }\n           
+      ]\n        }\n    ],\n    \"controlSchemes\": []\n}"
     m_IsDirty: 0
   m_Toolbar:
     m_IsDirty: 0
@@ -970,9 +1005,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.6812723, y: -1.0735165, z: 0.06947136}
+    m_Target: {x: 35.422306, y: 6.6685157, z: 1.0827572}
     speed: 2
-    m_Value: {x: -0.6812723, y: -1.0735165, z: 0.06947136}
+    m_Value: {x: 35.422306, y: 6.6685157, z: 1.0827572}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1022,9 +1057,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.938375
+    m_Target: 29.828535
     speed: 2
-    m_Value: 3.938375
+    m_Value: 29.828535
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1198,7 +1233,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 25944
+  m_LastSelectedObjectID: 35796
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1238,7 +1273,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f6faffff
+      m_ExpandedIDs: d01affffe21affff461cffff0a1dffffb28dffff08fbffff56650000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1307,7 +1342,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Player
+    - Assets/Scenes/Game/Levels
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1323,7 +1358,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 666c0000
     m_LastClickedID: 27750
-    m_ExpandedIDs: 00000000e2650000e4650000e6650000e8650000ea650000ec650000ee650000f0650000f2650000f4650000f6650000
+    m_ExpandedIDs: 00000000e0650000e2650000e4650000e6650000e8650000ea650000ec650000ee650000f0650000f2650000f4650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1351,7 +1386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000e2650000e4650000e6650000e8650000ea650000ec650000ee650000f0650000f2650000f4650000f6650000
+    m_ExpandedIDs: a889ffffffffffff00000000e0650000e2650000e4650000e8650000ea650000ec650000ee650000f46500004a660000fe660000026700009c6700004a7600005e770000c6770000c8770000ca770000cc770000ce7700001c7800002a8c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1482,7 +1517,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 444
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
