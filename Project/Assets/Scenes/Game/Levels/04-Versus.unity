@@ -250,6 +250,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  jumpPerformed: 0
 --- !u!1 &176087893
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,14 +600,15 @@ MonoBehaviour:
     Acceleration: 120
     GroundDeceleration: 60
     AirDeceleration: 30
-    GroundingForce: -1.5
-    GrounderDistance: 0.05
+    GroundingForce: -1
+    GrounderDistance: 0.1
     JumpPower: 36
     MaxFallSpeed: 40
     FallAcceleration: 110
-    JumpEndEarlyGravityModifier: 3
+    JumpEndEarlyGravityModifier: 1
     CoyoteTime: 0.15
-    JumpBuffer: 0.2
+    JumpBuffer: 0.1
+    tilt: 0
   _functionnal:
     visual: {fileID: 80486894}
 --- !u!50 &768145563

@@ -15,6 +15,8 @@ public class InputManager : MonoBehaviour
     public InputAction move;
     [HideInInspector]
     public InputAction jump;
+    [HideInInspector]
+    public bool jumpPerformed;
 
     private void Awake()
     {
@@ -30,11 +32,21 @@ public class InputManager : MonoBehaviour
 
         jump = c.Game.Jump;
         jump.Enable();
+
+        jump.performed += delegate { StartCoroutine(PerformedJump(true)); };
+        
     }
 
     private void OnDisable()
     {
         move.Disable();
         jump.Disable();
+    }
+
+    private IEnumerator PerformedJump(bool asJump)
+    {
+        jumpPerformed = true;
+        yield return new WaitForEndOfFrame();
+        jumpPerformed = false;
     }
 }
