@@ -321,7 +321,7 @@ namespace TarodevController
             }
         }
 
-        private void HandleDirection()
+        public virtual void HandleDirection()
         {
             if (_frameInput.Move.x == 0)
             {

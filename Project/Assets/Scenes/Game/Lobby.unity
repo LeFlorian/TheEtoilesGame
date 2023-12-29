@@ -693,6 +693,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 462347871498749441, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: _functionnal.activeCamera
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 991084870347912610, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -703,7 +707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1968726667285817916, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 210.4
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 1968726667285817916, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_LocalPosition.z
@@ -978,11 +982,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5475060030062158843, guid: 85ad8c941c0b18d4e901d8fb4c929e30, type: 3}
       propertyPath: m_LocalScale.x
-      value: 81.13335
+      value: 107.16904
       objectReference: {fileID: 0}
     - target: {fileID: 5475060030062158843, guid: 85ad8c941c0b18d4e901d8fb4c929e30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.5434
+      value: 13.5268
       objectReference: {fileID: 0}
     - target: {fileID: 5475060030062158843, guid: 85ad8c941c0b18d4e901d8fb4c929e30, type: 3}
       propertyPath: m_LocalPosition.y
