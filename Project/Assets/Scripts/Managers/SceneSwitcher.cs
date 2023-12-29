@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-    public string nextSceneName;
-
-    public void ChangeScene()
+    public static SceneSwitcher instance;
+    private void Awake()
     {
-        SceneManager.LoadScene(nextSceneName);
+        instance = this;
+    }
+
+    public void ChangeScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
     }
 }

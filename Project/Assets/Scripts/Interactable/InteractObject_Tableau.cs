@@ -11,6 +11,6 @@ public class InteractObject_Tableau : InteractObject
 
     public override void Action()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneSwitcher.instance.ChangeScene(sceneName);
     }
 }

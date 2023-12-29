@@ -396,6 +396,7 @@
 "Assets/Scripts/Managers/InputSystem/InputManager.cs"
 "Assets/Scripts/Managers/SceneSwitcher.cs"
 "Assets/Scripts/Managers/TwitchManager.cs"
+"Assets/Scripts/Player/CameraController.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/TwitchIntegrationDemo/Scripts/CommandsOnCooldownDisplay.cs"
 "Assets/TwitchIntegrationDemo/Scripts/Menu.cs"

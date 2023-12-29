@@ -71,11 +71,13 @@ namespace TarodevController
         {
             public GameObject visual;
             public GameObject interactInfo;
+
+            public bool activeCamera;
+            public GameObject playerCamera;
         }
 
 
-        [SerializeField]
-        private PlayerControllerStatistics _stats;
+        public PlayerControllerStatistics _stats;
 
         [SerializeField]
         private Functionnal _functionnal;
@@ -125,6 +127,8 @@ namespace TarodevController
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
 
             _baseRot = transform.rotation;
+
+            _functionnal.playerCamera.SetActive(_functionnal.activeCamera);
         }
 
         private void Update()
