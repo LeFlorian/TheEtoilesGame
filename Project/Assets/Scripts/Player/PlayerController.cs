@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 namespace TarodevController
@@ -82,10 +83,12 @@ namespace TarodevController
         [SerializeField]
         private Functionnal _functionnal;
 
-        private Rigidbody2D _rb;
+        [HideInInspector]
+        public Rigidbody2D _rb;
         private CapsuleCollider2D _col;
         private FrameInput _frameInput;
-        private Vector2 _frameVelocity;
+        [HideInInspector]
+        public Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
 
         #region Interface
@@ -356,6 +359,14 @@ namespace TarodevController
             {
                 transform.rotation = Quaternion.identity;
             }
+        }
+
+        public IEnumerator ExplosionHit(Vector2 dir, float force, float deacreseForce)
+        {
+            _frameVelocity += dir * force;
+            yield return new WaitForFixedUpdate();
+
+
         }
         #endregion
 

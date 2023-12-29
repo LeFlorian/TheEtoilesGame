@@ -62,8 +62,6 @@ public class CameraController : MonoBehaviour
             calculateSpeed += addingSpeedWithVelocityY * Mathf.Abs(velocity.y);
         }
 
-
-        Debug.Log(calculateSpeed);
         Vector2 movingDestination = Vector2.Lerp(transform.position, targetPosition, calculateSpeed*fdt);
 
         transform.position = new Vector3(movingDestination.x,movingDestination.y,offsetZ);
