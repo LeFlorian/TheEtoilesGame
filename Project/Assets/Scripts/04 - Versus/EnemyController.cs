@@ -13,12 +13,35 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField]
     private float attackPlayerDistance;
+    [SerializeField]
+    private float attackForce;
+    [SerializeField]
+    private float attackDeacrease;
+
+    [SerializeField]
+    private float delayBetweenTwoAttacks;
+    private bool asAttack;
+    private float delay;
+
+    [SerializeField]
+    private float damageTaken;
+    [SerializeField]
+    private float damageTakenDecrease;
+    [SerializeField]
+    private float gravityWhenPunch;
+    [SerializeField]
+    private float timeToReturnToBaseGravity;
+
+    private float baseGravity;
+
+    private Vector2 hitVelocity;
 
     private PlayerController pc;
     private Rigidbody2D rb;
 
     private void Start()
     {
+        baseGravity = gravity;
         pc = FindObjectOfType<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -46,18 +69,85 @@ public class EnemyController : MonoBehaviour
         }
 
         velocity += Vector2.down * gravityAmount;
+        velocity += hitVelocity;
 
-        rb.velocity = velocity;
+        rb.AddForce(velocity);
+
+        transform.rotation = Quaternion.identity;
 
 
         if (Vector2.Distance(pc.transform.position, this.transform.position) <= attackPlayerDistance)
         {
-            pc.GetComponent<Rigidbody2D>().velocity = velocity + (Vector2)(pc.transform.position - this.transform.position).normalized * 100;
+            if (!asAttack)
+            {
+                asAttack = true;
+                Vector2 direction = (Vector2)(pc.transform.position - this.transform.position).normalized;
+
+                pc.HitingPlayer(direction, attackForce, attackDeacrease);
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (asAttack)
+        {
+            delay += Time.deltaTime;
+
+            if (delay >= delayBetweenTwoAttacks)
+            {
+                asAttack = false;
+                delay = 0;
+            }
         }
     }
 
     public void TakeDamage()
     {
+        Vector2 direction = (Vector2)(pc.transform.position - this.transform.position).normalized;
+        Hiting(-direction, damageTaken, damageTakenDecrease);
 
+        StartCoroutine(GravityScaling());
+    }
+
+    private void Hiting(Vector2 dir, float force, float deacreseForce)
+    {
+        force = force + GetComponent<DamageVersus>().AddingDamage() * force;
+
+        StartCoroutine(ExplosionHit(dir, force, deacreseForce));
+    }
+
+    private IEnumerator ExplosionHit(Vector2 dir, float force, float deacreseForce)
+    {
+        hitVelocity += dir * force;
+        yield return new WaitForFixedUpdate();
+        float newForce = force - deacreseForce * Time.fixedDeltaTime;
+
+        if (newForce > 0f)
+        {
+            StartCoroutine(ExplosionHit(dir, newForce, deacreseForce));
+        }
+        else
+        {
+            hitVelocity = Vector2.zero;
+        }
+    }
+
+    private IEnumerator GravityScaling()
+    {
+        float time = 0;
+
+        while (time < timeToReturnToBaseGravity)
+        {
+            yield return new WaitForFixedUpdate();
+            time += Time.fixedDeltaTime;
+
+            float timeUnlerp = Mathf.InverseLerp(0, timeToReturnToBaseGravity, time);
+            float lerpGravity = Mathf.Lerp(gravityWhenPunch, baseGravity, timeUnlerp);
+
+            gravity = lerpGravity;
+        }
+
+        gravity = baseGravity;
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace TarodevController
@@ -119,6 +120,7 @@ namespace TarodevController
         //Interacting
         private InteractObject _interactObject;
 
+        
         #endregion
 
         #region Unity methods
@@ -361,12 +363,23 @@ namespace TarodevController
             }
         }
 
+        public void HitingPlayer(Vector2 dir, float force, float deacreseForce)
+        {
+            force = force + GetComponent<DamageVersus>().AddingDamage()*force;
+
+            StartCoroutine(ExplosionHit(dir, force, deacreseForce));
+        }
+
         public IEnumerator ExplosionHit(Vector2 dir, float force, float deacreseForce)
         {
             _frameVelocity += dir * force;
             yield return new WaitForFixedUpdate();
+            float newForce = force - deacreseForce * Time.fixedDeltaTime;
 
-
+            if (newForce > 0f)
+            {
+                StartCoroutine(ExplosionHit(dir, newForce, deacreseForce));
+            }
         }
         #endregion
 
