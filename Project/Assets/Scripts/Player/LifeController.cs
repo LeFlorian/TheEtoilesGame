@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class LifeController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private int maxLife;
+    public int life;
+
+    public virtual int InflictDamage(int damage)
     {
-        
+        life -= damage;
+        life = Mathf.Clamp(life, 0, maxLife);
+
+        if (life <= 0)
+        {
+            KillPlayer();
+        }
+
+        return life;
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void KillPlayer()
     {
-        
+        Debug.Log("I die");
     }
 }
