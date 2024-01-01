@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Game/Levels/04 - Versus.unity
+- path: Assets/Scenes/Game/Levels/03 - Musique.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
