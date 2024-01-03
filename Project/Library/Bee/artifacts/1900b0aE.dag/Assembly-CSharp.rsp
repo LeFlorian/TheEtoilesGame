@@ -391,6 +391,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/04 - Versus/EnemyController.cs"
+"Assets/Scripts/04 - Versus/EnemyController_Clone.cs"
 "Assets/Scripts/04 - Versus/Versus_GameManager.cs"
 "Assets/Scripts/04 - Versus/Versus_LifeController.cs"
 "Assets/Scripts/Interactable/DeadZone.cs"

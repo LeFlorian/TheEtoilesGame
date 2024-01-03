@@ -12,6 +12,8 @@ public class Versus_LifeController : LifeController
         base.InflictDamage(damage);
 
         transform.position = respawnPoint.position;
+
+        GetComponent<DamageVersus>().damageAmount = 0;
         return life;
     }
 

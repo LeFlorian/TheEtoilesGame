@@ -57,7 +57,6 @@ public class EnemyController : MonoBehaviour
         velocity += directionToPlayer * forceToGoToThePlayer;
 
         RaycastHit2D floorHit = Physics2D.Raycast(transform.position, Vector2.down, transform.localScale.y/2 + 0.1f);
-        Debug.Log(floorHit.collider);
 
         if (floorHit.collider != null && floorHit.collider.tag != this.gameObject.tag)
         {
