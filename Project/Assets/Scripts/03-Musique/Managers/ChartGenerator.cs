@@ -5,10 +5,12 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;  
 using System.Linq;
+
 /// Generer les notes a partir d'un fichier de configuration
 public class ChartGenerator 
 {
-    public static void UpdateChart(Chart chart, DefaultAsset chartTxt){
+    public static Data.ChartData UpdateChart(DefaultAsset chartTxt){
+        Data.ChartData chart = new Data.ChartData();
         // Lire le .chart
         TextAsset textAsset = new TextAsset(File.ReadAllText(AssetDatabase.GetAssetPath(chartTxt)));
         List<string> strings = ChartParsor.splitChartBlocks(textAsset);
@@ -19,6 +21,8 @@ public class ChartGenerator
 		chart.sections = ChartParsor.GetSections(strings[2]);
 		chart.notes = ChartParsor.GetNotes(strings[3]);
 		chart.tick = ChartParsor.GetTick(chart.bpm, chart.subdivision);
+
+        return chart;
     }
 }
 
@@ -50,11 +54,11 @@ public class ChartParsor
         return value;
     } 
 
-	public static List<Note> GetNotes(string notesField)
+	public static List<Data.Note> GetNotes(string notesField)
 	{   
         var patternRegExp = new Regex("[^\\s].+"); // toutes les lignes
         char[] separator = new char[2] { ' ', '\t' };
-		List<Note> list = new List<Note>();
+		List<Data.Note> list = new List<Data.Note>();
         MatchCollection matchCollection = patternRegExp.Matches(notesField);
         foreach (Match line in matchCollection)
         {
@@ -67,17 +71,17 @@ public class ChartParsor
             int num2 = int.Parse(array2[4]);
             string noteTypeID = array2[2];
             int noteColorID = int.Parse(array2[3]);
-            Note item = new Note(noteID, num, noteCorridorID, num2, noteTypeID, noteColorID);
+            Data.Note item = new Data.Note(noteID, num, noteCorridorID, num2, noteTypeID, noteColorID);
             list.Add(item);
         }
 		return list;
 	}
 
-    public static List<Section> GetSections(string sectionField)
+    public static List<Data.Section> GetSections(string sectionField)
 	{
         var patternRegExp = new Regex("[^\\s].+"); // toutes les lignes
         char separator = '=';
-		List<Section> list = new List<Section>();
+		List<Data.Section> list = new List<Data.Section>();
         MatchCollection matchCollection = patternRegExp.Matches(sectionField);
         foreach (Match line in matchCollection)
         {
@@ -87,7 +91,7 @@ public class ChartParsor
             int num = int.Parse(cleanString(splits[0]));
             string text2 = cleanString(splits[1],"section");
             
-            Section item = new Section(text2, num);
+            Data.Section item = new Data.Section(text2, num);
             list.Add(item);
 		}
 		return list;

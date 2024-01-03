@@ -37,7 +37,11 @@ public class ProjectileHandler : MonoBehaviour
 	}
 
     
-    private IEnumerator ShootProjectile(GameObject projectile,ProjectilData data, Vector3 from, Vector3 to){
+    // Shoot projectile
+    private IEnumerator ShootProjectile(GameObject projectile,ProjectilData data,Path path){
+        Vector3 from = path.getStartPoint();
+        Vector3 to = path.getEndPoint();
+        
         Rigidbody projectileRigidbody = projectile.GetComponent<Rigidbody>();
 		projectile.transform.LookAt(to);
 		projectile.transform.position = from;
