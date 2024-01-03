@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace TarodevController
 {
@@ -72,10 +73,6 @@ namespace TarodevController
         public class Functionnal
         {
             public GameObject visual;
-            public GameObject interactInfo;
-
-            public bool activeCamera;
-            public GameObject playerCamera;
         }
 
 
@@ -120,7 +117,25 @@ namespace TarodevController
         //Interacting
         private InteractObject _interactObject;
 
-        
+        //Brain
+        private bool _jumpPerformed;
+        private bool _jumpPressed;
+        private Vector2 _inputsMovement;
+
+        [SerializeField]
+        private float _waitBeforeJump = 1;
+        private float _timingJump;
+
+        [SerializeField]
+        private float hitingDistance;
+        [SerializeField]
+        private float forceHiting;
+        [SerializeField]
+        private float decreaseForceHiting;
+
+        private float _hitingDelay = 0.5f;
+        private float _hitingTime;
+
         #endregion
 
         #region Unity methods
@@ -132,18 +147,16 @@ namespace TarodevController
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
 
             _baseRot = transform.rotation;
-
-            _functionnal.playerCamera.SetActive(_functionnal.activeCamera);
         }
 
         private void Update()
         {
 
             _time += Time.deltaTime;
+            Brain();
             GatherInput();
 
             UpdateVisuals();
-            HandleInteraction();
         }
 
         private void FixedUpdate()
@@ -172,9 +185,9 @@ namespace TarodevController
         {
             _frameInput = new FrameInput();
 
-            _frameInput.JumpDown = InputManager.instance.jumpPerformed;
-            _frameInput.JumpHeld = InputManager.instance.jump.IsPressed();
-            _frameInput.Move = InputManager.instance.move.ReadValue<Vector2>();
+            _frameInput.JumpDown = _jumpPerformed;
+            _frameInput.JumpHeld = _jumpPressed;
+            _frameInput.Move = _inputsMovement;
 
             if (_stats.SnapInput)
             {
@@ -191,6 +204,58 @@ namespace TarodevController
             if (_frameInput.Move.y < 0)
             {
                 _asPressedTraversingPlateform = true;
+            }
+
+        }
+
+        private void Brain()
+        {
+            _jumpPerformed = false;
+
+            PlayerController pc = FindAnyObjectByType<PlayerController>();
+
+            if (pc != null )
+            {
+
+                Vector2 diff = pc.transform.position - transform.position;
+
+
+                if (diff.x < 0)
+                {
+                    _inputsMovement.x = Mathf.Lerp(_inputsMovement.x, -1, 1 * Time.deltaTime);
+                }
+                else
+                {
+                    _inputsMovement.x = Mathf.Lerp(_inputsMovement.x, 1, 1 * Time.deltaTime);
+                }
+
+                if (diff.y > 1)
+                {
+                    if (_timingJump >= _waitBeforeJump)
+                    {
+                        float rand = UnityEngine.Random.Range(0, 100);
+
+                        _jumpPerformed = rand < 70f;
+
+                        _timingJump = 0;
+                    }
+                }
+
+                _timingJump += Time.deltaTime;
+                _timingJump = Mathf.Clamp(_timingJump, 0, _waitBeforeJump);
+
+                if (Vector2.Distance(pc.transform.position, transform.position) <= hitingDistance)
+                {
+                    if (_hitingTime >= _hitingDelay)
+                    {
+                        pc.HitingPlayer(diff, forceHiting, decreaseForceHiting);
+
+                        _hitingTime = 0;
+                    }
+                }
+
+                _hitingTime += Time.deltaTime;
+                _hitingTime = Mathf.Clamp(_hitingTime, 0, _hitingDelay);
             }
         }
         #endregion
@@ -381,33 +446,6 @@ namespace TarodevController
                 StartCoroutine(ExplosionHit(dir, newForce, deacreseForce));
             }
         }
-        #endregion
-
-        #region Interacting
-
-        private void HandleInteraction()
-        {
-            if (_functionnal.interactInfo.activeSelf)
-            {
-                if (InputManager.instance.interactPerformed)
-                {
-                    _interactObject.Action();
-                }
-            }
-        }
-
-        public void AllowInteract(InteractObject target)
-        {
-            _functionnal.interactInfo.SetActive(true);
-            _interactObject = target;
-        }
-
-        public void DisallowInteract(InteractObject target)
-        {
-            _functionnal.interactInfo.SetActive(false);
-            _interactObject = null;
-        }
-
         #endregion
 
         #region Visuals

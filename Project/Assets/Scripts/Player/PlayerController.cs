@@ -81,8 +81,7 @@ namespace TarodevController
 
         public PlayerControllerStatistics _stats;
 
-        [SerializeField]
-        private Functionnal _functionnal;
+        public Functionnal _functionnal;
 
         [HideInInspector]
         public Rigidbody2D _rb;
