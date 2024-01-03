@@ -23,6 +23,7 @@
 [Events]
 {
   0 = E "section test"
+  1000 = E "section test2"
 }
 [ExpertSingle]
 {
