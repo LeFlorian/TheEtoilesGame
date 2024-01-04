@@ -19,6 +19,7 @@ public class Versus_GameManager : MonoBehaviour
     [SerializeField]
     private GameObject enemyBoss;
     private bool doOnce;
+    private bool doOnce2;
 
     [SerializeField]
     private GameObject[] plateforms;
@@ -30,6 +31,11 @@ public class Versus_GameManager : MonoBehaviour
     private GameObject playerPrefab;
     [SerializeField]
     private GameObject player;
+
+    [SerializeField]
+    private GameObject canvas;
+    [SerializeField]
+    private GameObject level;
 
     private void Start()
     {
@@ -64,10 +70,18 @@ public class Versus_GameManager : MonoBehaviour
 
                     doOnce = true;
 
+                    canvas.GetComponent<Animator>().SetTrigger("ActiveBossLevel");
+
                     Instantiate(enemyBoss, spawnPoints[1]);
 
 
                 }
+            }
+
+            if (doOnce && FindObjectsOfType<EnemyController_Clone>().Length <= 0 && !doOnce2)
+            {
+                doOnce2 = true;
+                level.GetComponent<Animator>().SetTrigger("ActiveFinalScene");
             }
         }
     }
@@ -77,8 +91,7 @@ public class Versus_GameManager : MonoBehaviour
         int actualLife = 3;
         if (player != null)
         {
-
-             actualLife = player.GetComponent<Versus_LifeController>().life;
+            actualLife = player.GetComponent<Versus_LifeController>().life;
 
             Destroy(player.GetComponent<PlayerController>()._functionnal.playerCamera);
             Destroy(player);

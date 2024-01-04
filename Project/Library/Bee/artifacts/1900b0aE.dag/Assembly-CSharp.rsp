@@ -398,6 +398,7 @@
 "Assets/Scripts/Interactable/DeadZone.cs"
 "Assets/Scripts/Interactable/InteractObject.cs"
 "Assets/Scripts/Interactable/InteractObject_Enemy.cs"
+"Assets/Scripts/Interactable/InteractObject_StarFragment.cs"
 "Assets/Scripts/Interactable/InteractObject_Tableau.cs"
 "Assets/Scripts/Managers/InputSystem/Controls.cs"
 "Assets/Scripts/Managers/InputSystem/InputManager.cs"
