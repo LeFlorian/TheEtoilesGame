@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
-public abstract class ProjectilData : ScriptableObject
+[Serializable]
+public abstract class ProjectilData :  MonoBehaviour
 {
 	public enum CollideType
 	{
@@ -14,10 +16,18 @@ public abstract class ProjectilData : ScriptableObject
 		Invoke
 	}
 
+	[Space(10f)]
+	public GameObject projectilPrefab;
+
 	public int projectilID;
 
-	[Space(10f)]
-	public bool Jumpable;
+	[SerializeField] private GameObject target;
+
+	[Space(10f)] public bool Jumpable;
+
+	[SerializeField]
+	[Range(0f, 100f)]
+	public float speed = 20;
 
 	[Space(10f)]
 	public CollideType collideType;
@@ -26,10 +36,8 @@ public abstract class ProjectilData : ScriptableObject
 
 	public EventType eventType;
 
-	public UnityEvent onCollide;
-
-	[Space(10f)]
-	public GameObject projectilPrefab;
+	// public UnityEvent onCollide;
+	[SerializeField] private CollisionEvent collisionEvent;
 
 	public abstract void Collide();
 
@@ -38,4 +46,5 @@ public abstract class ProjectilData : ScriptableObject
 	public abstract float GetMovementY();
 
 	public abstract float GetMovementX();
+
 }

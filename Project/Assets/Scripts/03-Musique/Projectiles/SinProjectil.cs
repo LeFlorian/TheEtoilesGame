@@ -1,18 +1,23 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SinProjectil", menuName = "Audiowarrior/Projectils/SinProjectil")]
+[Serializable]
 public class SinProjectil : ProjectilData
 {
-	[SerializeField] [Range(0f, 100f)] private float speed;
+    [SerializeField] public CommonProjectil data;
+	
+	[SerializeField] [Range(0f, 100f)] private float waveHeightX = 0;
 
-	[SerializeField] [Range(0f, 100f)] private float waveHeightX;
+	[SerializeField] [Range(0f, 100f)] private float waveSpeedX = 0;
 
-	[SerializeField] [Range(0f, 100f)] private float waveSpeedX;
+	[SerializeField] [Range(0f, 100f)] private float waveHeightY = 0;
 
-	[SerializeField] [Range(0f, 100f)] private float waveHeightY;
+	[SerializeField] [Range(0f, 100f)] private float waveSpeedY = 0;
 
-	[SerializeField] [Range(0f, 100f)] private float waveSpeedY;
+    [Space(5)]
+    public bool customStartTimeSinWave = false;
+    public float startTimeSinWaveX = 0;
+    public float startTimeSinWaveY = 0;
 
 	public float WaveHeightX => waveHeightX;
 

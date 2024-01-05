@@ -45,7 +45,7 @@ public class Data
 	{
         // Les infos sur la musique
 		public string songName; // Nom de la musique
-		public int subdivision; // Type de note (noire, croche, double ...)
+		public int resolution; // Type de note (noire, croche, double ...)
 		public int bpm; // Nb noire par minutes
 		public float tick; // durée d'un tick
         // Notes

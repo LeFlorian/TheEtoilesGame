@@ -16,11 +16,11 @@ public class ChartGenerator
         List<string> strings = ChartParsor.splitChartBlocks(textAsset);
         // Get Values
         chart.songName = ChartParsor.GetValue(strings[0], "MusicStream");
-		chart.subdivision = int.Parse(ChartParsor.GetValue(strings[0], "Resolution"));
+		chart.resolution = int.Parse(ChartParsor.GetValue(strings[0], "Resolution"));
 		chart.bpm = (int)(float.Parse(ChartParsor.GetValue(strings[1], "B")) / 1000f);
 		chart.sections = ChartParsor.GetSections(strings[2]);
 		chart.notes = ChartParsor.GetNotes(strings[3]);
-		chart.tick = ChartParsor.GetTick(chart.bpm, chart.subdivision);
+		chart.tick = ChartParsor.GetTick(chart.bpm, chart.resolution);
 
         return chart;
     }

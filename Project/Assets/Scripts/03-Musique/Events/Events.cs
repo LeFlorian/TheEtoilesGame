@@ -1,14 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
-using System.Linq;
-using System.Reflection;
-using UnityEditor;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.Events;
+
 
 public class EventsCreator : MonoBehaviour{ }
 
@@ -31,13 +24,7 @@ public class EventCommandInfo : Attribute
     
 }
 
-public abstract class EventCommand : MonoBehaviour  
-{
-    public abstract void Execute();
-}
 
-
-[Serializable]
 public class NoteEvents
 {
 	[Serializable]
@@ -50,14 +37,10 @@ public class NoteEvents
 	public OnNote onNoteLeft;
 }
 
-[EventCommandInfo("Battle Events", "Shoot projectile")]
-[Serializable]
-public class SectionEvents
+public class SectionEvents 
 {
 	[Serializable]
-	public class OnSection : UnityEvent<Data.Section>
-	{
-	}
+	public class OnSection : UnityEvent<Data.Section>{}
 
 	public string sectionName;
 
@@ -70,7 +53,7 @@ public class SectionEvents
 	}
 }
 
-[Serializable]
+
 public class CustomEvents
 {
 	public string sectionName;

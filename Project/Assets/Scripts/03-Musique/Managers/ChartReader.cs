@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 // using UnityEngine.AsyncOperations;
 
+[Serializable]
 public class ChartReader : MonoBehaviour
 {
-    [SerializeField] private Chart chart;
+    [SerializeField] private ChartData chart;
     private AudioSource audioSource;
 	// private bool forceAddresableRelease;
 	private int _currentNoteIndex;
@@ -16,7 +17,6 @@ public class ChartReader : MonoBehaviour
 	private float _dspSongStartTime;
 	private bool _active;
 	private bool _started;
-	private float _startPauseTime;
 	private float _pauseOffset;
 	private Parents.SectionsParent _inUseSectionParent;
 
@@ -28,7 +28,6 @@ public class ChartReader : MonoBehaviour
 	[SerializeField] private float offset;
 	[SerializeField] private NoteEvents noteEvents;
 	[Space(10f)] [SerializeField] private float delayAnticipation;
-	[SerializeField] private NoteEvents noteAnticipationEvents;
 	[Space(10f)] [SerializeField] private List<SectionEvents> sectionEvents = new List<SectionEvents>();
 	[Space(10f)] [SerializeField] private List<CustomEvents> customEvents = new List<CustomEvents>();
 
@@ -39,7 +38,6 @@ public class ChartReader : MonoBehaviour
 	private Coroutine _musicRead;
     /// </summary>
 
-	public AudioSource AudioSource => audioSource;
 	public float _tick { get; private set; }
 	public List<Data.Note> _notes { get; private set; }
 	public List<Data.Section> _sections { get; private set; }
@@ -48,15 +46,36 @@ public class ChartReader : MonoBehaviour
 	public bool Playing => audioSource.isPlaying;
 	public bool Started => _started;
 
+	[Serializable]
+	public class Pool
+	{ 
+		public int noteSize = 1;
+		// public int noteInstanceSize;
+		public Data.Note[] noteInstance;
+
+
+	}
+
+
+	[ContextMenu("Update Chart Reader")]
+    public void UpdateReader()
+    {
+		audioSource = chart.song;
+		bpm = chart.chartData.bpm;
+		resolution = chart.chartData.resolution;
+		_tick = chart.chartData.tick;
+		_notes = chart.chartData.notes;
+		_sections = chart.chartData.sections;
+    }
 
     // Init Music
 	private void Awake()
 	{
-		_tick = chart.chartData.tick;
-		_notes = chart.chartData.notes;
-		_sections = chart.chartData.sections;
-        audioSource = chart.song;
-
+		UpdateReader();
+		// _tick = chart.chartData.tick;
+		// _notes = chart.chartData.notes;
+		// _sections = chart.chartData.sections;
+        // audioSource = chart.song;
 	}
 
     private void Start(){
@@ -84,7 +103,7 @@ public class ChartReader : MonoBehaviour
 			_songposition = num * audioSource.pitch - offset;
 			ReadNotes();
 			// ReadAnticipedNotes();
-			// ReadSections();
+			ReadSections();
 			// ReadCustomEvents();
 			yield return null;
 		}
@@ -118,6 +137,15 @@ public class ChartReader : MonoBehaviour
 			_currentNoteIndex += num;
 			_ = _currentNoteIndex;
 			_ = _notes.Count;
+		}
+	}
+
+	private void ReadSections()
+	{
+		if (_currentSectionIndex < _sections.Count && _songposition >= _sections[_currentSectionIndex].sectionTick * _tick)
+		{
+			sectionEvents[_currentSectionIndex].onSection.Invoke(_sections[_currentSectionIndex]);
+			_currentSectionIndex++;
 		}
 	}
 
