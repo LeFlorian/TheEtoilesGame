@@ -263,7 +263,7 @@ MonoBehaviour:
   noteEventHandler: {fileID: 159391647}
   projectilePoolSize: 20
   data:
-    projectilPrefab: {fileID: 1814689033624316244, guid: 2b255a2f62cef0140ab61704a9e0c45a, type: 3}
+    projectilPrefab: {fileID: 821363167750708517, guid: 507fd6ae86a30784d8fb6b405f3795fd, type: 3}
     target: {fileID: 1424753299}
     Jumpable: 1
     speed: 10
@@ -689,12 +689,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1968726667285817916, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968726667285817916, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968726667285817916, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968726667285817916, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1968726667285817916, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.585
+      value: 1.36
       objectReference: {fileID: 0}
     - target: {fileID: 1968726667285817916, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2118,7 +2130,7 @@ MonoBehaviour:
   noteEventHandler: {fileID: 1252798954}
   projectilePoolSize: 20
   data:
-    projectilPrefab: {fileID: 1814689033624316244, guid: 2b255a2f62cef0140ab61704a9e0c45a, type: 3}
+    projectilPrefab: {fileID: 821363167750708517, guid: 507fd6ae86a30784d8fb6b405f3795fd, type: 3}
     target: {fileID: 1424753299}
     Jumpable: 1
     speed: 5
@@ -2318,7 +2330,7 @@ MonoBehaviour:
   _rb: {fileID: 0}
   _frameVelocity: {x: 0, y: 0}
   corridors: {fileID: 1829281795}
-  _seuilTime: 0.2
+  _seuilTime: 0.08
 --- !u!1 &1437204317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,7 +2652,7 @@ MonoBehaviour:
   noteEventHandler: {fileID: 1734270338}
   projectilePoolSize: 20
   data:
-    projectilPrefab: {fileID: 1814689033624316244, guid: 2b255a2f62cef0140ab61704a9e0c45a, type: 3}
+    projectilPrefab: {fileID: 821363167750708517, guid: 507fd6ae86a30784d8fb6b405f3795fd, type: 3}
     target: {fileID: 1424753299}
     Jumpable: 1
     speed: 20
@@ -2800,7 +2812,7 @@ MonoBehaviour:
   noteEventHandler: {fileID: 1809053191}
   projectilePoolSize: 20
   data:
-    projectilPrefab: {fileID: 1814689033624316244, guid: 2b255a2f62cef0140ab61704a9e0c45a, type: 3}
+    projectilPrefab: {fileID: 821363167750708517, guid: 507fd6ae86a30784d8fb6b405f3795fd, type: 3}
     target: {fileID: 1424753299}
     Jumpable: 1
     speed: 20
@@ -3284,7 +3296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5475060030062158843, guid: 85ad8c941c0b18d4e901d8fb4c929e30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5475060030062158843, guid: 85ad8c941c0b18d4e901d8fb4c929e30, type: 3}
       propertyPath: m_LocalPosition.z

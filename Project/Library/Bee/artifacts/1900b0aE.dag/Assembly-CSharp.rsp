@@ -411,6 +411,7 @@
 "Assets/Scripts/03-Musique/Managers/UpdateShootProjectile.cs"
 "Assets/Scripts/03-Musique/PlayerController_Horizontal.cs"
 "Assets/Scripts/03-Musique/Projectiles/CommonProjectil.cs"
+"Assets/Scripts/03-Musique/Projectiles/NoteProjectileColorData.cs"
 "Assets/Scripts/03-Musique/Projectiles/ProjectilData.cs"
 "Assets/Scripts/03-Musique/Projectiles/SinProjectil.cs"
 "Assets/Scripts/04 - Versus/EnemyController.cs"
