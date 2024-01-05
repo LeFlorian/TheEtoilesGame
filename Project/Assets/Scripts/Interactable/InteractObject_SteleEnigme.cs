@@ -11,10 +11,17 @@ public class InteractObject_SteleEnigme : InteractObject
 
     private SpriteRenderer rend;
 
+    private Animator animator;
+
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
+
+        animator = GetComponentInChildren<Animator>();
+
         ChangeImage();
+
+        animator.SetTrigger("Flip");
     }
 
     public override void Action()
@@ -31,6 +38,7 @@ public class InteractObject_SteleEnigme : InteractObject
 
     private void ChangeImage()
     {
+        animator.SetTrigger("Flip");
         rend.sprite = visuels[position];
     }
 }

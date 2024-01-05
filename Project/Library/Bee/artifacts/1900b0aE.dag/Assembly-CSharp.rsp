@@ -415,6 +415,7 @@
 "Assets/Scripts/Player/DamageVersus.cs"
 "Assets/Scripts/Player/LifeController.cs"
 "Assets/Scripts/Player/PlayerController.cs"
+"Assets/Scripts/SplashScreen/SplashScreen_Manager.cs"
 "Assets/TwitchIntegrationDemo/Scripts/CommandsOnCooldownDisplay.cs"
 "Assets/TwitchIntegrationDemo/Scripts/Menu.cs"
 "Assets/TwitchIntegrationDemo/Scripts/TwitchChatBox.cs"
