@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638392962933240595
-    m_Hash: 3904016394
+      ticks: 638400453464380831
+    m_Hash: 2451108043
   m_LockFileStatus:
     m_FilePath: D:/Users/Utilisateur/Documents/Unity/TheEtoileGame/Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638392962933763890
-    m_Hash: 3365409533
+      ticks: 638400453464385888
+    m_Hash: 756026450
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -4743,6 +4743,7 @@ m_ResolvedPackages:
     - 9.0.0
     - 9.0.1
     - 9.0.2
+    - 9.0.3
     compatible:
     - 8.0.1
     - 8.0.2
