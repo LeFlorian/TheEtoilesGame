@@ -4,8 +4,7 @@ using UnityEngine;
 [Serializable]
 public class SinProjectil : ProjectilData
 {
-    [SerializeField] public CommonProjectil data;
-	
+
 	[SerializeField] [Range(0f, 100f)] private float waveHeightX = 0;
 
 	[SerializeField] [Range(0f, 100f)] private float waveSpeedX = 0;

@@ -6,9 +6,34 @@ public class NoteHolder : MonoBehaviour
 {
     public int noteID;
     public float offset;
+    public Vector2Int minMaxCorridorID = new Vector2Int(0, 4);
+    private EventCommandsGroupExecutor _eventCommandsGroupExecutor;
+    private string _name;
 
-    public int minCorridorID = 0;
-    public int maxCorridorID = 4;
+	public Data.Note _lastNote { get; private set; }
+
+	private void Awake()
+	{
+		_name = base.gameObject.name;
+		_eventCommandsGroupExecutor = GetComponent<EventCommandsGroupExecutor>();
+	}
+
+	public void OnNote(Data.Note note)
+	{
+		if (note.noteID != noteID)
+		{
+			base.gameObject.name = _name;
+			return;
+		}
+		if (note.noteCorridorID < minMaxCorridorID.x || note.noteCorridorID > minMaxCorridorID.y)
+		{
+			base.gameObject.name = _name;
+			return;
+		}
+		base.gameObject.name = "-> " + _name;
+		_lastNote = note;
+		_eventCommandsGroupExecutor.Execute();
+	}
 
     private void Reset()
     {

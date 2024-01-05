@@ -16,10 +16,9 @@ public class PlayerController_Horizontal : PlayerController
 
 	private float? _lastAxisValue;
     // Move
-	private bool _moving;
-	private bool _movingRight;
-
-	private bool _movingLeft;
+	// private bool _moving;
+	// private bool _movingRight;
+	// private bool _movingLeft;
 
     public override void HandleDirection()
     {
@@ -34,14 +33,14 @@ public class PlayerController_Horizontal : PlayerController
     }
 
     private void Move(float axis){
-        _moving = false;
-		_movingLeft = false;
-		_movingRight = false;
+        // _moving = false;
+		// _movingLeft = false;
+		// _movingRight = false;
 		if (axis == 0f) _lastAxisValue = null; // On ne bouge pas
         else if (axis != _lastAxisValue)
 		{
-            if (axis < 0f) _movingLeft = true;
-            if (axis > 0f) _movingRight = true;
+            // if (axis < 0f) _movingLeft = true;
+            // if (axis > 0f) _movingRight = true;
 
             _currentCorridor += (int)FrameInput.x;
             _currentCorridor = ValidCorridor(_currentCorridor); 

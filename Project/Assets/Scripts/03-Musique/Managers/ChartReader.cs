@@ -11,33 +11,31 @@ public class ChartReader : MonoBehaviour
     private AudioSource audioSource;
 	// private bool forceAddresableRelease;
 	private int _currentNoteIndex;
-	private int _currentSectionIndex;
-	private float _previousFrameDspTime;
-	private float _lastReportedPlayheadPosition;
-	private float _dspSongStartTime;
-	private bool _active;
+	// private int _currentSectionIndex;
+	// private float _previousFrameDspTime;
+	// private float _lastReportedPlayheadPosition;
+	// private float _dspSongStartTime;
+	private bool _active = true;
 	private bool _started;
-	private float _pauseOffset;
-	private Parents.SectionsParent _inUseSectionParent;
+	// private float _pauseOffset;
+	// private Parents.SectionsParent _inUseSectionParent;
 
     /// <summary>
     [SerializeField] private bool startItSelf;
 	[SerializeField] private float startItSelfDelay;
-	[SerializeField] private float bpm;
-	[SerializeField] private int resolution;
 	[SerializeField] private float offset;
-	[SerializeField] private NoteEvents noteEvents;
+	[SerializeField] private NoteHolder[] noteHolder;
 	[Space(10f)] [SerializeField] private float delayAnticipation;
-	[Space(10f)] [SerializeField] private List<SectionEvents> sectionEvents = new List<SectionEvents>();
-	[Space(10f)] [SerializeField] private List<CustomEvents> customEvents = new List<CustomEvents>();
+	// [Space(10f)] [SerializeField] private List<SectionEvents> sectionEvents = new List<SectionEvents>();
+	// [Space(10f)] [SerializeField] private List<CustomEvents> customEvents = new List<CustomEvents>();
 
-	private int _currentNoteAnticipationIndex;
-	private int _currentCustomIndex;
+	// private int _currentNoteAnticipationIndex;
+	// private int _currentCustomIndex;
 	private float _dsptimesong;
-	private float _secondToJump;
-	private Coroutine _musicRead;
+	// private Coroutine _musicRead;
     /// </summary>
 
+	private bool __init = false;
 	public float _tick { get; private set; }
 	public List<Data.Note> _notes { get; private set; }
 	public List<Data.Section> _sections { get; private set; }
@@ -46,32 +44,24 @@ public class ChartReader : MonoBehaviour
 	public bool Playing => audioSource.isPlaying;
 	public bool Started => _started;
 
-	[Serializable]
-	public class Pool
-	{ 
-		public int noteSize = 1;
-		// public int noteInstanceSize;
-		public Data.Note[] noteInstance;
-
-
-	}
-
 
 	[ContextMenu("Update Chart Reader")]
     public void UpdateReader()
     {
 		audioSource = chart.song;
-		bpm = chart.chartData.bpm;
-		resolution = chart.chartData.resolution;
 		_tick = chart.chartData.tick;
 		_notes = chart.chartData.notes;
 		_sections = chart.chartData.sections;
+		noteHolder = FindObjectsOfType<NoteHolder>();
+		__init = true;
     }
+
+
 
     // Init Music
 	private void Awake()
 	{
-		UpdateReader();
+		if (!__init) UpdateReader();
 		// _tick = chart.chartData.tick;
 		// _notes = chart.chartData.notes;
 		// _sections = chart.chartData.sections;
@@ -82,7 +72,7 @@ public class ChartReader : MonoBehaviour
         if (startItSelf) StartMusic(startItSelfDelay);
     }
 
-    public void StartMusic(float delay) { _musicRead = StartCoroutine(DoPlay(delay)); }
+    public void StartMusic(float delay) { StartCoroutine(DoPlay(delay)); }
     
 	public IEnumerator DoPlay(float startDelay, bool FromStart = true)
 	{
@@ -91,43 +81,48 @@ public class ChartReader : MonoBehaviour
 		{
 			audioSource.time = 0f;
 			_dsptimesong = (float)AudioSettings.dspTime;
-			_currentCustomIndex = 0;
-			_currentNoteAnticipationIndex = 0;
+			// _currentCustomIndex = 0;
+			// _currentNoteAnticipationIndex = 0;
 			_currentNoteIndex = 0;
-			_currentSectionIndex = 0;
+			// _currentSectionIndex = 0;
 			audioSource.Play();
 		}
-		while (base.gameObject.activeSelf)
+		Debug.Log("Loop : ");
+		while ( _active)
 		{
+
 			float num = (float)(AudioSettings.dspTime - (double)_dsptimesong);
 			_songposition = num * audioSource.pitch - offset;
 			ReadNotes();
 			// ReadAnticipedNotes();
-			ReadSections();
+			// ReadSections();
 			// ReadCustomEvents();
 			yield return null;
 		}
+		// Change scene // cinematique
 	}
     
     private void ReadNotes()
 	{
-		if (_currentNoteIndex < _notes.Count && _songposition >= _notes[_currentNoteIndex].noteTick * _tick)
+		if ( (_currentNoteIndex + 1 ) < _notes.Count && _songposition >= _notes[_currentNoteIndex].noteTick * _tick)
 		{
+			Data.Note note = _notes[_currentNoteIndex];
 			_ = _songposition;
 			_ = _notes[_currentNoteIndex].noteTick;
 			_ = _tick;
 			int num = 1;
 			if (_notes[_currentNoteIndex].noteTypeID != "S")
 			{
-				noteEvents.onNote.Invoke(_notes[_currentNoteIndex]);
-                Debug.Log("Note Events "+(_songposition/_tick).ToString());
+				noteHolder[note.noteID].OnNote(note);
+               
 				for (int i = 1; i < 5; i++)
 				{
-					if (_currentNoteIndex + i < _notes.Count && _notes[_currentNoteIndex].noteTick == _notes[_currentNoteIndex + i].noteTick)
+					if ((_currentNoteIndex + 1 + i) < _notes.Count && _notes[_currentNoteIndex].noteTick == _notes[_currentNoteIndex + i].noteTick)
 					{
 						num++;
-						noteEvents.onNote.Invoke(_notes[_currentNoteIndex + i]);
-                        Debug.Log("Note Events"+(_songposition/_tick).ToString());
+						note = _notes[_currentNoteIndex + i];
+						noteHolder[note.noteID].OnNote(note);
+
 					}
 				}
 				// if (_notes[_currentNoteIndex].noteCorridorID <= 2) noteEvents.onNoteRight.Invoke(_notes[_currentNoteIndex]);
@@ -138,16 +133,20 @@ public class ChartReader : MonoBehaviour
 			_ = _currentNoteIndex;
 			_ = _notes.Count;
 		}
-	}
 
-	private void ReadSections()
-	{
-		if (_currentSectionIndex < _sections.Count && _songposition >= _sections[_currentSectionIndex].sectionTick * _tick)
-		{
-			sectionEvents[_currentSectionIndex].onSection.Invoke(_sections[_currentSectionIndex]);
-			_currentSectionIndex++;
+		if (_currentNoteIndex > _notes.Count ){
+			_active = false;
 		}
 	}
+
+	// private void ReadSections()
+	// {
+	// 	if (_currentSectionIndex < _sections.Count && _songposition >= _sections[_currentSectionIndex].sectionTick * _tick)
+	// 	{
+	// 		sectionEvents[_currentSectionIndex].onSection.Invoke(_sections[_currentSectionIndex]);
+	// 		_currentSectionIndex++;
+	// 	}
+	// }
 
 	public void Restart() { StartMusic(0f); }
 

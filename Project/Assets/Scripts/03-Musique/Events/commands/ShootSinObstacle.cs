@@ -1,19 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
-using UnityEngine.Events;
 using System;
 
 [EventCommandInfo("Battle Events", "Shoot sinus projectile")]
-[Serializable]
-public class ShootSinusObstacle : EventCommand
+
+public class ShootSinusObstacle : ShootProjectile
 {
-
     [SerializeField] public SinProjectil data;
-
-    public override void Execute()
-    {
-
-    }
+    
+    public  override ProjectilData getData(){
+		return data;
+	}
+    
+  public override void initTarget(GameObject target){
+    data.target = target;
+  }
 }

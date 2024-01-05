@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+
+[Serializable]
 public class ProjectileHandler : MonoBehaviour
 {
     // Corridor
@@ -21,10 +23,9 @@ public class ProjectileHandler : MonoBehaviour
     [SerializeField] private Path pathCorridor2; // 
     [SerializeField] private Path pathCorridor3; // 
     [SerializeField] private Path pathCorridor4; // 
+    [NonSerialized] public Path[] paths; // tous les corridors
 
-    public Path[] paths; // tous les corridors
-
-    private float speed; // Note speed
+    // private float speed; // Note speed
 
     // Collission 
     [SerializeField] private GameObject target;
@@ -35,9 +36,6 @@ public class ProjectileHandler : MonoBehaviour
 	{
 		paths = new Path[5] { pathCorridor0, pathCorridor1, pathCorridor2, pathCorridor3, pathCorridor4 };
 	}
-
-    
-
 
 }
 

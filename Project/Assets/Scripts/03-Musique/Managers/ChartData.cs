@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using Events;
+using UnityEngine.UI;
+
 // using UnityEngine.AddressableAssets;
 
 // Chart : contient Notes et Sections
@@ -15,12 +16,25 @@ public class ChartData : MonoBehaviour
     public AudioSource song;
     public Data.ChartData chartData;
 
+    [SerializeField] public ProjectileHandler corridors;
+
+    public UpdateShootProjectile update;
+
     [ContextMenu("Generate Chart Data")]
     public void GenerateData()
     {
+        corridors = GetComponent<ProjectileHandler>();
         chartData = ChartGenerator.UpdateChart(chart);
         CreateNotesLayout();
         CreateSectionsLayout();
+        this.update = new UpdateShootProjectile();
+        this.update.corridors = corridors;
+        this.update.target = GameObject.Find("Player");
+    }
+
+    [ContextMenu("update Projectiles")]
+    public void updateProjectiles(){
+        this.update.updateProjectiles(corridors);
     }
 
     // Créer tous les objets notes
@@ -78,10 +92,9 @@ public class ChartData : MonoBehaviour
         GameObject noteEvent = new GameObject(noteName);
         noteEvent.transform.SetParent(noteParent.transform);
         NoteHolder noteHolder = noteEvent.AddComponent<NoteHolder>();
-        EventHolder.NoteEventHandler noteEventHandler = noteEvent.AddComponent<EventHolder.NoteEventHandler>();
-        noteEventHandler.noteID = noteID;
-        noteEventHandler.offset = noteHolder.offset;
-        noteEventHandler.minMaxCorridorID = new Vector2Int(noteHolder.minCorridorID, noteHolder.maxCorridorID);
+        noteHolder.noteID = noteID;
+        noteEvent.AddComponent<EventCommandsGroupExecutor>();
+
     }
 
 
@@ -155,12 +168,8 @@ public class ChartData : MonoBehaviour
         string sectionName = $"Section - {sectionID}";
         GameObject sectionSlot = new GameObject(sectionName);
         sectionSlot.transform.SetParent(sectionParent.transform);
-
         SectionHolder sectionEventHolder = sectionSlot.AddComponent<SectionHolder>();
         sectionEventHolder.sectionID = sectionID;
-
-        EventHolder.SectionEventHandler sectionEventHandler = sectionSlot.AddComponent<EventHolder.SectionEventHandler>();
-        sectionEventHandler.sectionID = sectionID;
     }
     
 }

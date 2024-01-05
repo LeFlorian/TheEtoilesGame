@@ -1,42 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
+using UnityEngine.Rendering;
 
-public class UpdateShootProjectile : MonoBehaviour
+[Serializable]
+public class UpdateShootProjectile
 {
-    [SerializeField] private ProjectileHandler corridors;
-    [SerializeField] private GameObject target;
+    public ProjectileHandler corridors;
+    public GameObject target;
 
-    [ContextMenu("update Projectiles")]
-    public void updateProjectiles(){
-        if (target == null) corridors = UnityEngine.Object.FindObjectOfType<ProjectileHandler>();
+    public void updateProjectiles(ProjectileHandler corridors){
+        if (corridors == null) this.corridors = UnityEngine.Object.FindObjectOfType<ProjectileHandler>();
         if (target == null) target = GameObject.Find("Player");
-        EventCommand[] obstacles = UnityEngine.Object.FindObjectsOfType<ShootObstacle>();
-        updateProjectile(target, obstacles);
-        EventCommand[] sinobstacles = UnityEngine.Object.FindObjectsOfType<ShootSinusObstacle>();
-        updateProjectile(target, sinobstacles);
+        ShootObstacle[] obstacles = UnityEngine.Object.FindObjectsOfType<ShootObstacle>();
+        updateProjectile(obstacles);
+        ShootSinusObstacle[] sinobstacles = UnityEngine.Object.FindObjectsOfType<ShootSinusObstacle>();
+        updateProjectile(sinobstacles);
     }
 
-
-    public void updateProjectile(GameObject target, EventCommand[] obstacles){
-
-        foreach (ShootObstacle obstacle in obstacles)
+    public void updateProjectile( ShootProjectile[] obstacles){
+        foreach (ShootProjectile obstacle in obstacles)
         {
-            GameObject gameObject = UnityEngine.Object.Instantiate(obstacle.data.projectilPrefab); 
-            gameObject.gameObject.SetActive(value: false);
-            // gameObject2.AddComponent<DontGoThroughThings>();
-            Events.ShootProjectile shootProjectileCommand = obstacle.gameObject.AddComponent<Events.ShootProjectile>();
-            DamagePlayerCollisionEvent damagePlayerCollisionEvent = obstacle.gameObject.AddComponent<DamagePlayerCollisionEvent>();
-            damagePlayerCollisionEvent.ResolveRefs(target, obstacle.data.Jumpable);
-            shootProjectileCommand.ResolveRefs(obstacle.data);
-            shootProjectileCommand.ResolveRefs( corridors, 100, obstacle.gameObject.GetComponent<EventHolder.NoteEventHandler>());
-            // shootProjectileEventCommand.INIT();
+            obstacle.initTarget(target);
+            obstacle.corridors = corridors;
+            obstacle.noteEventHandler = obstacle.gameObject.GetComponent<NoteHolder>();
+            // // gameObject2.AddComponent<DontGoThroughThings>();
+            // DamagePlayerCollisionEvent damagePlayerCollisionEvent = obstacle.gameObject.AddComponent<DamagePlayerCollisionEvent>();
+            // damagePlayerCollisionEvent.ResolveRefs(target, obstacle.data.Jumpable);
+            obstacle.INIT();
         }
-
-
-
-        }
+    }
 }
+
 
 

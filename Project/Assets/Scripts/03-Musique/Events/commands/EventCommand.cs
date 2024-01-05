@@ -5,8 +5,8 @@ using UnityEngine.Audio;
 using UnityEngine.Events;
 using System;
 
-[Serializable]
-public abstract class EventCommand : MonoBehaviour  
+
+public abstract class EventCommand : MonoBehaviour
 {
     public abstract void Execute();
 }

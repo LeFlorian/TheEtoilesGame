@@ -25,41 +25,33 @@ public class EventCommandInfo : Attribute
 }
 
 
-public class NoteEvents
-{
-	[Serializable]
-	public class OnNote : UnityEvent<Data.Note>{}
+// public class NoteEvents
+// {
+// 	[Serializable]
+// 	public class OnNote : UnityEvent<Data.Note>{}
+// 	public OnNote onNote;
+// 	public OnNote onNoteRight;
+// 	public OnNote onNoteLeft;
+// }
 
-	public OnNote onNote;
-
-	public OnNote onNoteRight;
-
-	public OnNote onNoteLeft;
-}
-
-public class SectionEvents 
-{
-	[Serializable]
-	public class OnSection : UnityEvent<Data.Section>{}
-
-	public string sectionName;
-
-	[Space(5f)]
-	public OnSection onSection;
-
-	public SectionEvents(string sectionName)
-	{
-		this.sectionName = sectionName;
-	}
-}
+// public class SectionEvents 
+// {
+// 	[Serializable]
+// 	public class OnSection : UnityEvent<Data.Section>{}
+// 	public string sectionName;
+// 	[Space(5f)]
+// 	public OnSection onSection;
+// 	public SectionEvents(string sectionName)
+// 	{
+// 		this.sectionName = sectionName;
+// 	}
+// }
 
 
-public class CustomEvents
-{
-	public string sectionName;
-
-	public int eventPosition;
-
-	[Space(5f)]
-	public UnityEvent onCustom;
-}
+// public class CustomEvents
+// {
+// 	public string sectionName;
+// 	public int eventPosition;
+// 	[Space(5f)]
+// 	public UnityEvent onCustom;
+// }
