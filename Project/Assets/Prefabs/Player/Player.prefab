@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.50284797, g: 0.9032609, b: 0.9433962, a: 1}
   m_FlipX: 0
@@ -352,8 +352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fbb015a5163f94a9cdc2da0fad103d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLife: 0
-  life: 0
 --- !u!1 &5681589750797615306
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +424,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.4575472, b: 0.4575472, a: 1}
   m_FlipX: 0
@@ -549,10 +547,6 @@ PrefabInstance:
     - target: {fileID: 1112926121251763225, guid: 734fcec66b28e4c47bb7555ad2bbe9ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5081926580929032693, guid: 734fcec66b28e4c47bb7555ad2bbe9ef, type: 3}
-      propertyPath: orthographic size
-      value: 13.13
       objectReference: {fileID: 0}
     - target: {fileID: 5389574508584263479, guid: 734fcec66b28e4c47bb7555ad2bbe9ef, type: 3}
       propertyPath: m_Name

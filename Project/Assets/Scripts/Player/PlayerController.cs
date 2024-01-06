@@ -81,7 +81,8 @@ namespace TarodevController
 
         public PlayerControllerStatistics _stats;
 
-        public Functionnal _functionnal;
+        [SerializeField]
+        private Functionnal _functionnal;
 
         [HideInInspector]
         public Rigidbody2D _rb;
@@ -137,12 +138,22 @@ namespace TarodevController
 
         private void Update()
         {
+            if (transform.position.y < -50)
+            {
+                // Déplacer le joueur à la nouvelle position
+                TeleportToOrigin();
+            }
 
             _time += Time.deltaTime;
             GatherInput();
 
             UpdateVisuals();
             HandleInteraction();
+        }
+
+        private void TeleportToOrigin()
+        {
+            transform.position = new Vector3(0, 6, 0);
         }
 
         private void FixedUpdate()
