@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TarodevController
 {
-public class PlayerController_Horizontal : PlayerController
+public class PlayerController_Horizontal : PlayerControllerMusic
 {
     public GameObject corridors;
     private int _currentCorridor = 2;

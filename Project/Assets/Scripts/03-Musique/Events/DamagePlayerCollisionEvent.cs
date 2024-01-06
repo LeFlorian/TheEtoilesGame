@@ -7,31 +7,25 @@ using System;
 [Serializable]
 public class DamagePlayerCollisionEvent : MonoBehaviour
 {
-	[SerializeField] public GameObject player;
+	// [SerializeField] public GameObject player;
 	[SerializeField] public int damage = 1;
-	[SerializeField] public bool jumpable;
+	// [SerializeField] public bool jumpable;
 	// [SerializeField] private bool overrideDeflectVisualAsJumpable;
 	// [SerializeField] private bool overrideDeflectVisualAsNotJumpable;
 
-	public bool IsJumpable => jumpable;
+	// public bool IsJumpable => jumpable;
 	// public bool OverrideDeflectVisualAsJumpable => overrideDeflectVisualAsJumpable;
 	// public bool OverrideDeflectVisualAsNotJumpable => overrideDeflectVisualAsNotJumpable;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Player")
+		Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.name == "Player")
         {
-			Debug.Log("colision");
-			// player = gameObject.GetComponent;
-			if (!jumpable){
-				Debug.Log("Hit ! ");
-				collision.gameObject.GetComponent<LifeController>().InflictDamage(damage);
-			}	
-        }
-
-        if (collision.tag == "Interactable")
-        {
-            Destroy(collision.gameObject);
+			LifeController hp = collision.gameObject.GetComponent<LifeController>();
+			hp.InflictDamage(damage);
+			Debug.Log("Hit Player "+damage+" "+hp.life+"Hp left");
+			Destroy(gameObject);
         }
     }
 

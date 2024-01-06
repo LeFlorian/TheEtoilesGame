@@ -17,12 +17,11 @@ public class ShootProjectile : EventCommand
 	[Space(5f)]
 	[SerializeField] public NoteHolder noteEventHandler;
 	[Space(5f)]
-	[SerializeField] private int projectilePoolSize = 20;
 
 	public static float localProjectilSpeedModifier = 1f;
-	public static readonly Dictionary<Tuple<GameObject, GameObject>, GameObject> projectilesWithTarget = new Dictionary<Tuple<GameObject, GameObject>, GameObject>();
-	public static readonly HashSet<GameObject> projectiles = new HashSet<GameObject>();
-	public static readonly HashSet<GameObject> unjumpablesProjectiles = new HashSet<GameObject>();
+	// public static readonly Dictionary<Tuple<GameObject, GameObject>, GameObject> projectilesWithTarget = new Dictionary<Tuple<GameObject, GameObject>, GameObject>();
+	// public static readonly HashSet<GameObject> projectiles = new HashSet<GameObject>();
+	// public static readonly HashSet<GameObject> unjumpablesProjectiles = new HashSet<GameObject>();
 	private DamagePlayerCollisionEvent collisionEvent;
 
 	public virtual ProjectilData getData(){
@@ -52,9 +51,9 @@ public class ShootProjectile : EventCommand
 	private void copyTo(GameObject projectile){
 		DamagePlayerCollisionEvent coll = projectile.AddComponent<DamagePlayerCollisionEvent>();
 		ProjectilData  data = getData();
-		coll.jumpable = data.IsJumpable;
+		// coll.jumpable = data.IsJumpable;
 		coll.damage = data.damage;
-		coll.player = data.target;
+		// coll.player = data.target;
 	}
 
 	private void Reset()
@@ -79,7 +78,7 @@ public class ShootProjectile : EventCommand
 		Vector3 direction = (to - projectile.transform.position).normalized;
 		bool positive = direction.z > 0f;
 		float time = Time.time;
-		while (NotReachedTarget(direction.z, positive) && projectile.activeInHierarchy)
+		while (NotReachedTarget(direction.z, positive) && projectile != null)
 		{
 			direction = (to - projectile.transform.position).normalized;
             float num = data.GetMovementX();
