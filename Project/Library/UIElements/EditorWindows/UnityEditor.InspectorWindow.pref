@@ -13,20 +13,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Keys:
-  - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-notes__UnityEngine.UIElements.ListView
-  - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-sections__UnityEngine.UIElements.ListView
   - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-chartData.notes__UnityEngine.UIElements.ListView
   - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-chartData.sections__UnityEngine.UIElements.ListView
-  - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-sectionEvents__UnityEngine.UIElements.ListView
-  - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-customEvents__UnityEngine.UIElements.ListView
-  - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-paths__UnityEngine.UIElements.ListView
   - __PanelContainer__rootVisualContainer__inspector-window-main-scroll-view__unity-list-noteHolder__UnityEngine.UIElements.ListView
   m_Values:
-  - '{}'
-  - '{}'
   - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0}}'
   - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0}}'
-  - '{}'
-  - '{}'
-  - '{}'
   - '{}'

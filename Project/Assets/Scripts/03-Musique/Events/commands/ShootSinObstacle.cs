@@ -5,9 +5,9 @@ using System;
 
 public class ShootSinusObstacle : ShootProjectile
 {
-    [SerializeField] public SinProjectil data;
+  [SerializeField] public SinProjectil data;
     
-    public  override ProjectilData getData(){
+  public  override ProjectilData getData(){
 		return data;
 	}
     

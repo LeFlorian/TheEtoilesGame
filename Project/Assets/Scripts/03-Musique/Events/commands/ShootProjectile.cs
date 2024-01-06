@@ -23,7 +23,7 @@ public class ShootProjectile : EventCommand
 	public static readonly Dictionary<Tuple<GameObject, GameObject>, GameObject> projectilesWithTarget = new Dictionary<Tuple<GameObject, GameObject>, GameObject>();
 	public static readonly HashSet<GameObject> projectiles = new HashSet<GameObject>();
 	public static readonly HashSet<GameObject> unjumpablesProjectiles = new HashSet<GameObject>();
-	private CollisionEvent collisionEvent;
+	private DamagePlayerCollisionEvent collisionEvent;
 
 	public virtual ProjectilData getData(){
 		return new ProjectilData();
@@ -40,15 +40,21 @@ public class ShootProjectile : EventCommand
 	public virtual void  _Execute(){
 		if (base.enabled)
 		{	ProjectilData data = getData();
-			if (data == null) {
-				Debug.Log("data null "+ transform.parent.name);
-			}
 			int corridorId = GetCorridor();
 			GameObject projectile = UnityEngine.Object.Instantiate(data.projectilPrefab, this.transform);
+			copyTo(projectile);
 			Vector3 projectileStartPosition = corridors.paths[corridorId].getStartPoint();
 			Vector3 to = corridors.paths[corridorId].getEndPoint();
 			StartCoroutine(MoveProjectil(projectile, projectileStartPosition, to, data));
 		}
+	}
+
+	private void copyTo(GameObject projectile){
+		DamagePlayerCollisionEvent coll = projectile.AddComponent<DamagePlayerCollisionEvent>();
+		ProjectilData  data = getData();
+		coll.jumpable = data.IsJumpable;
+		coll.damage = data.damage;
+		coll.player = data.target;
 	}
 
 	private void Reset()
@@ -67,7 +73,6 @@ public class ShootProjectile : EventCommand
 
     // Shoot projectile
     private IEnumerator MoveProjectil(GameObject projectile,Vector3 from, Vector3 to, ProjectilData data){
-        Debug.Log("Move Projectil "+projectile.name);
         Rigidbody projectileRigidbody = projectile.transform.GetComponent<Rigidbody>();
 		projectile.transform.LookAt(to);
 		projectile.transform.position = from;
@@ -97,6 +102,4 @@ public class ShootProjectile : EventCommand
 	{
 		localProjectilSpeedModifier = 1f;
 	}
-
-
-	}
+}

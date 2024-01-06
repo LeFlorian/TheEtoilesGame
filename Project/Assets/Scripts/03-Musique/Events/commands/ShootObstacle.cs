@@ -8,7 +8,7 @@ using System;
 [EventCommandInfo("Battle Events", "Shoot projectile")] 
 public class ShootObstacle : ShootProjectile
 {
-    [SerializeField] public CommonProjectil data;
+  [SerializeField] public CommonProjectil data;
 
   public  override ProjectilData getData(){
 		return data;

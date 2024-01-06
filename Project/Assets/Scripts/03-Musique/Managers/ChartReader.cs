@@ -87,7 +87,6 @@ public class ChartReader : MonoBehaviour
 			// _currentSectionIndex = 0;
 			audioSource.Play();
 		}
-		Debug.Log("Loop : ");
 		while ( _active)
 		{
 
@@ -113,7 +112,7 @@ public class ChartReader : MonoBehaviour
 			int num = 1;
 			if (_notes[_currentNoteIndex].noteTypeID != "S")
 			{
-				noteHolder[note.noteID].OnNote(note);
+				noteHolder[note.noteID-1].OnNote(note);
                
 				for (int i = 1; i < 5; i++)
 				{
@@ -121,7 +120,7 @@ public class ChartReader : MonoBehaviour
 					{
 						num++;
 						note = _notes[_currentNoteIndex + i];
-						noteHolder[note.noteID].OnNote(note);
+						noteHolder[note.noteID-1].OnNote(note);
 
 					}
 				}
@@ -134,7 +133,7 @@ public class ChartReader : MonoBehaviour
 			_ = _notes.Count;
 		}
 
-		if (_currentNoteIndex > _notes.Count ){
+		if (_currentNoteIndex >= _notes.Count ){
 			_active = false;
 		}
 	}

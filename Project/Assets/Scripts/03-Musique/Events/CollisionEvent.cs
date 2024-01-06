@@ -14,10 +14,10 @@ public abstract class CollisionEvent : MonoBehaviour
 			value.Execute();
 		}
 	}
-	public void AddToCache(GameObject collider, GameObject targetCollision)
-	{
-		targetedCollisionEventCache.Add(new Tuple<GameObject, GameObject>(collider, targetCollision), this);
-	}
+	// public void AddToCache(GameObject collider, GameObject targetCollision)
+	// {
+	// 	targetedCollisionEventCache.Add(new Tuple<GameObject, GameObject>(collider, targetCollision), this);
+	// }
 
 	public abstract void Execute();
 }

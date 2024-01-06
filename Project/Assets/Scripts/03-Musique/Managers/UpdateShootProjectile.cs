@@ -25,9 +25,7 @@ public class UpdateShootProjectile
             obstacle.initTarget(target);
             obstacle.corridors = corridors;
             obstacle.noteEventHandler = obstacle.gameObject.GetComponent<NoteHolder>();
-            // // gameObject2.AddComponent<DontGoThroughThings>();
-            // DamagePlayerCollisionEvent damagePlayerCollisionEvent = obstacle.gameObject.AddComponent<DamagePlayerCollisionEvent>();
-            // damagePlayerCollisionEvent.ResolveRefs(target, obstacle.data.Jumpable);
+            // gameObject2.AddComponent<DontGoThroughThings>();
             obstacle.INIT();
         }
     }
