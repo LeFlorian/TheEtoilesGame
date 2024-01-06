@@ -119,7 +119,8 @@ namespace TarodevController
         //Interacting
         private InteractObject _interactObject;
 
-        
+        //Animation
+        public Animator animator;
         #endregion
 
         #region Unity methods
@@ -140,7 +141,9 @@ namespace TarodevController
 
             _time += Time.deltaTime;
             GatherInput();
-
+            /// horizontal parameter for animation player
+            animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+            
             UpdateVisuals();
             HandleInteraction();
         }
@@ -297,6 +300,10 @@ namespace TarodevController
 
             if (_grounded && _asPressedJump)
                 ExecuteJump();
+            /// vertical parameter for animation player
+            ///
+            //animator.SetFloat("Vertical", math.abs(_frameVelocity.y));
+            animator.SetFloat("Vertical", Input.GetAxis("Jump"));
         }
 
         private void ExecuteJump()
@@ -391,6 +398,8 @@ namespace TarodevController
                 if (InputManager.instance.interactPerformed)
                 {
                     _interactObject.Action();
+                    /// animation punch parameter for smash level
+                    animator.SetBool("Punch", true);
                 }
             }
         }
@@ -405,6 +414,8 @@ namespace TarodevController
         {
             _functionnal.interactInfo.SetActive(false);
             _interactObject = null;
+            /// animation punch parameter for smash level
+            animator.SetBool("Punch", false);
         }
 
         #endregion
