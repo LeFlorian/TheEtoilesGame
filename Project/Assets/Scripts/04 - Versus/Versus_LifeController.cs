@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using TarodevController;
 using UnityEngine;
 
 public class Versus_LifeController : LifeController
 {
+    [SerializeField]
+    private Transform respawnPoint;
 
     public override int InflictDamage(int damage)
     {
         base.InflictDamage(damage);
 
-        FindObjectOfType<Versus_GameManager>().RespawnPlayer();
-
+        transform.position = respawnPoint.position;
         return life;
     }
 
