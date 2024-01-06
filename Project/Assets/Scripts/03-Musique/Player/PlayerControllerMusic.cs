@@ -441,19 +441,22 @@ namespace TarodevController
         #region Visuals
         private void UpdateVisuals()
         {
-            if (!_stats.tilt)
-            {
-                transform.rotation = _baseRot;
-            }
+            ///
+            /// 
+            ///
+            //if (!_stats.tilt)
+            //{
+            //    transform.rotation = _baseRot;
+            //}
 
-            if (_frameInput.Move.x > 0)
-            {
-                _functionnal.visual.transform.localScale = new Vector3(1, 1, 1);
-            }
-            else if (_frameInput.Move.x < 0)
-            {
-                _functionnal.visual.transform.localScale = new Vector3(-1, 1, 1);
-            }
+            //if (_frameInput.Move.x > 0)
+            //{
+            //    _functionnal.visual.transform.localScale = new Vector3(1, 1, 1);
+            //}
+            //else if (_frameInput.Move.x < 0)
+            //{
+            //    _functionnal.visual.transform.localScale = new Vector3(-1, 1, 1);
+            //}
         }
         #endregion
     }
