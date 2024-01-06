@@ -718,10 +718,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1400040366}
     m_Modifications:
+    - target: {fileID: 245324186893808337, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 245324186893808337, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 245324186893808337, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 501bb3cae7af67f4d81bd2759305ba0c, type: 3}
     - target: {fileID: 462347871498749441, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 620184847132630568, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7d288fffde602ab4db941bfb749f6b2c, type: 2}
     - target: {fileID: 991084870347912610, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -796,7 +812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5643403819804725663, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerMusic
       objectReference: {fileID: 0}
     - target: {fileID: 6047345853046663212, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: life
