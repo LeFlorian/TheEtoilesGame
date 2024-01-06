@@ -136,6 +136,9 @@ namespace TarodevController
         private float _hitingDelay = 0.5f;
         private float _hitingTime;
 
+        //Animation
+        public Animator animator;
+
         #endregion
 
         #region Unity methods

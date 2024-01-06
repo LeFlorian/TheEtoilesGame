@@ -12,10 +12,18 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 245324186893808337, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b277b5c8773041a4c843572a6d740caf, type: 3}
     - target: {fileID: 462347871498749441, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: _stats.JumpPower
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 620184847132630568, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b4892c188ebc65344942e5a8dcae18a9, type: 2}
     - target: {fileID: 991084870347912610, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5
@@ -60,6 +68,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4339633806325757633, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339633806325757633, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4915190078756417614, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: orthographic size
       value: 14.13
@@ -74,6 +90,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6047345853046663212, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: maxLife
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124775386489581674, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124775386489581674, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: m_Size.y
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
