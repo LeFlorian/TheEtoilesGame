@@ -15,7 +15,7 @@ D:/Users/Utilisateur/Documents/Unity/TheEtoileGame/Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56338
+60974
 Successfully changed project path to: D:/Users/Utilisateur/Documents/Unity/TheEtoileGame/Project
 D:/Users/Utilisateur/Documents/Unity/TheEtoileGame/Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/Users/Utilisateur/Documents/Unity/TheEtoileGame/Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [23024] Host "[IP] 192.168.86.33 [Port] 0 [Flags] 2 [Guid] 4003383517 [EditorId] 4003383517 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9D0QICF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6920] Host "[IP] 192.168.86.33 [Port] 0 [Flags] 2 [Guid] 4238270509 [EditorId] 4238270509 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9D0QICF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [23024] Host "[IP] 192.168.86.33 [Port] 0 [Flags] 2 [Guid] 4003383517 [EditorId] 4003383517 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9D0QICF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6920] Host "[IP] 192.168.86.33 [Port] 0 [Flags] 2 [Guid] 4238270509 [EditorId] 4238270509 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-9D0QICF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 9.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 9.44 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -69,53 +69,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56684
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009848 seconds.
+Registered in 0.011104 seconds.
 - Loaded All Assemblies, in  0.314 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 224 ms
+Android Extension - Scanning For ADB Devices 210 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.535 seconds
-Domain Reload Profiling: 847ms
-	BeginReloadAssembly (78ms)
+- Finished resetting the current domain, in  0.514 seconds
+Domain Reload Profiling: 826ms
+	BeginReloadAssembly (76ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (140ms)
-		LoadAssemblies (77ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (74ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (122ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (130ms)
+				TypeCache.ScanAssembly (119ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (535ms)
+	FinalizeReload (514ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (484ms)
+		SetupLoadedEditorAssemblies (462ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (348ms)
+			InitializePlatformSupportModulesInManaged (336ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (87ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			ProcessInitializeOnLoadAttributes (80ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,12 +123,130 @@ Domain Reload Profiling: 847ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file data-0000016FD6C89D60 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-0000021EDE213030 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE213030 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE228840 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDFAAEB90 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF392630 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE23E250 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE87F620 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE87F620 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE170010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE128240 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC514600 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDFAAEB90 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE23E250 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE23E250 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE474020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Collections.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE43B420 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDFAAEB90 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE1B1420 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC3E54D0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE5BD420 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE1B1420 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE5D7C40 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF399440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE450830 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE474020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE474020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE128240 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Collections.BurstCompatibilityGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE474020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDFAAEB90 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF399440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE450830 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE450830 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBE2C600 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE4B7050 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF399440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Collections.DocCodeSamples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE4B7050 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC7F3010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC7F3010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE128240 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.005.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE0081C20 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF399440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC845A20 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE00A5A30 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBB00020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE258C60 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE128240 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE00B5A40 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE00B5A40 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBB26630 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBB47440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE00B5A40 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC712650 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBE6DC10 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC74B060 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBE75A20 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBB5FC50 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBB98860 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBB98860 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBB98860 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBBA3270 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InputSystem.TestFramework.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.750 seconds
-Refreshing native plugins compatible for Editor in 6.35 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.720 seconds
+Refreshing native plugins compatible for Editor in 3.69 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
@@ -138,119 +256,48 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.744 seconds
-Domain Reload Profiling: 1492ms
-	BeginReloadAssembly (112ms)
+- Finished resetting the current domain, in  0.580 seconds
+Domain Reload Profiling: 1297ms
+	BeginReloadAssembly (110ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (558ms)
-		LoadAssemblies (283ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (528ms)
+		LoadAssemblies (278ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (326ms)
-			TypeCache.Refresh (287ms)
-				TypeCache.ScanAssembly (273ms)
-			ScanForSourceGeneratedMonoScriptInfo (28ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (745ms)
+		AnalyzeDomain (302ms)
+			TypeCache.Refresh (277ms)
+				TypeCache.ScanAssembly (265ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (580ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (515ms)
+		SetupLoadedEditorAssemblies (432ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (41ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (90ms)
-			ProcessInitializeOnLoadAttributes (343ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (301ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.71 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4588 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 71 unused Assets / (62.8 KB). Loaded Objects now: 5059.
 Memory consumption went from 162.8 MB to 162.8 MB.
-Total: 3.613400 ms (FindLiveObjects: 0.254500 ms CreateObjectMapping: 0.140700 ms MarkObjects: 3.088200 ms  DeleteObjects: 0.129200 ms)
+Total: 3.524600 ms (FindLiveObjects: 0.274200 ms CreateObjectMapping: 0.149500 ms MarkObjects: 2.957000 ms  DeleteObjects: 0.143000 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016FE20AB780 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.664 seconds
-Refreshing native plugins compatible for Editor in 3.41 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.791 seconds
-Domain Reload Profiling: 1453ms
-	BeginReloadAssembly (133ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (467ms)
-		LoadAssemblies (245ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (271ms)
-			TypeCache.Refresh (267ms)
-				TypeCache.ScanAssembly (254ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (792ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (394ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (260ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 4.85 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4562 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (35.8 KB). Loaded Objects now: 5064.
-Memory consumption went from 155.9 MB to 155.9 MB.
-Total: 3.436500 ms (FindLiveObjects: 0.274700 ms CreateObjectMapping: 0.141400 ms MarkObjects: 2.962700 ms  DeleteObjects: 0.056800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -266,23 +313,939 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 999953.967228 seconds.
-  path: Assets/Prefabs/04 - Versus/Enemy.prefab
-  artifactKey: Guid(7227d11b277418f4e907d02f222e0d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/04 - Versus/Enemy.prefab using Guid(7227d11b277418f4e907d02f222e0d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e058681424b3f3edee4845dbbdbf0c87') in 0.077241 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+  Time since last request: 1009531.086895 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/3 Alexandre III.jpg
+  artifactKey: Guid(22eddee79ee321340a5653ad08c54f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/3 Alexandre III.jpg using Guid(22eddee79ee321340a5653ad08c54f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d48a5a77a6ce0b97cc40e9d0dd40af') in 0.071140 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.805104 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/2 La victoire de Samothrace.jpg
+  artifactKey: Guid(84f1a43f84a5c434a8bffa5fc09ff9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/2 La victoire de Samothrace.jpg using Guid(84f1a43f84a5c434a8bffa5fc09ff9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfed6e3fe09827b469a7d1c8505eb56') in 0.017403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.243636 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/4 Claudio Montever 1.jpg
+  artifactKey: Guid(53692ad0d0953984f9993e0ee7a77256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/4 Claudio Montever 1.jpg using Guid(53692ad0d0953984f9993e0ee7a77256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ef1949aa888634f2ddde958c90f3b6') in 0.014349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.334615 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/5 Chateau Himéji.jpg
+  artifactKey: Guid(7fb1136c1885a2043a0c8e20eb4cece2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/5 Chateau Himéji.jpg using Guid(7fb1136c1885a2043a0c8e20eb4cece2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad69469ed233acc117e9ebb3140e765a') in 0.014029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.370163 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/6 Réné Descarte.jpg
+  artifactKey: Guid(6027f121a022d834e9abbb1213e05a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/6 Réné Descarte.jpg using Guid(6027f121a022d834e9abbb1213e05a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b77f17a727f31998fa59fb3f0c5f910') in 0.014252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.332406 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/7 Chateau de Luneville 1.jpg
+  artifactKey: Guid(1ae26f9e0245c364f9128cc5067ddc1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/7 Chateau de Luneville 1.jpg using Guid(1ae26f9e0245c364f9128cc5067ddc1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d878bb192e34d76fac5f48f89b04a15') in 0.013768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.820693 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/8 Denis Diderot.jpg
+  artifactKey: Guid(2ee22916aaf26e840b6db1173dc7e86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/8 Denis Diderot.jpg using Guid(2ee22916aaf26e840b6db1173dc7e86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdd8fa5802802cb0a42562319cecdeca') in 0.014311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.749223 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/9 L'elysée.jpg
+  artifactKey: Guid(1deb31623d2b0d74c82f55f63f32d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/9 L'elysée.jpg using Guid(1deb31623d2b0d74c82f55f63f32d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676d4d468c34c70e94edafa587e845a9') in 0.013275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.673285 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/10 Ching Shih 1.jpg
+  artifactKey: Guid(faf8195f74fff8243b5157ce7dc7d5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/10 Ching Shih 1.jpg using Guid(faf8195f74fff8243b5157ce7dc7d5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17818e89a680516f9c60eecbebbb69a2') in 0.015964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.517174 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/11 Le louvre 1.jpg
+  artifactKey: Guid(58f538ecae206f94395c13394bbc17a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/11 Le louvre 1.jpg using Guid(58f538ecae206f94395c13394bbc17a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38466df9c00fe7bc9b55ffa58b101be7') in 0.014063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.498206 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/12 George Sand 1.jpg
+  artifactKey: Guid(11120864966645d40969c540dcc57a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/12 George Sand 1.jpg using Guid(11120864966645d40969c540dcc57a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8dbf5190fcfb939d6fac54089e123f') in 0.013979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.352588 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.jpg
+  artifactKey: Guid(731884ed085606f4088d9740478f10d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.jpg using Guid(731884ed085606f4088d9740478f10d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4020062d0f394d3e2283d41728187ab') in 0.014116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.564608 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/14 Les romains de la décadence.jpg
+  artifactKey: Guid(f478ee868c61e7141b3b0e991c536274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/14 Les romains de la décadence.jpg using Guid(f478ee868c61e7141b3b0e991c536274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1369501ca4a98c414c37d128f2f7a6bc') in 0.014646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.400835 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/15 Nicolas Tesla.jpg
+  artifactKey: Guid(70d157b7c8c33fb4f87669c92f04274a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/15 Nicolas Tesla.jpg using Guid(70d157b7c8c33fb4f87669c92f04274a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac52c6193e085e33bbe0ab51d8d3fc1') in 0.015023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.928567 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/16 Nuit étoilée.jpg
+  artifactKey: Guid(ee8603762309bf845883d0a17fadc19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/16 Nuit étoilée.jpg using Guid(ee8603762309bf845883d0a17fadc19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6c76e2dbc10ffb355765d76f5e4a94') in 0.014383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.878639 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/17 Agatha Christie 1.jpg
+  artifactKey: Guid(9fa64eca7fa3788448eab6a7755dde04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/17 Agatha Christie 1.jpg using Guid(9fa64eca7fa3788448eab6a7755dde04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e8d847a43d9a7791bb5acacb9e0fc1') in 0.014400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.826497 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/18 Amelia Earhart 1.jpg
+  artifactKey: Guid(117c15c58f1266847bf4cb0b7c2ada2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/18 Amelia Earhart 1.jpg using Guid(117c15c58f1266847bf4cb0b7c2ada2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c54c8b3ec8901a8274541f4b67ad63') in 0.012759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.869243 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/19 Le voyage dans la lune 1.jpg
+  artifactKey: Guid(c0c645bb9a73b614d8b6a4cf9d886303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/19 Le voyage dans la lune 1.jpg using Guid(c0c645bb9a73b614d8b6a4cf9d886303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7614c939aa9e042b4f9b3c639980b416') in 0.015467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.569044 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/20 Jesse Owens 1.jpg
+  artifactKey: Guid(0216dd80a8901af4291a10f1c551f435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/20 Jesse Owens 1.jpg using Guid(0216dd80a8901af4291a10f1c551f435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd0b50e0dcf6aed450633c3a7e3a4ef') in 0.014352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.748720 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/21 American Gothic 1.jpg
+  artifactKey: Guid(6c3e78f1f2c918c47ab30fa64b316a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/21 American Gothic 1.jpg using Guid(6c3e78f1f2c918c47ab30fa64b316a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374c13cd1ce1ca4e702e0ac6483a9804') in 0.015976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.291489 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/21bis Barbara.jpg
+  artifactKey: Guid(d583a6f87d61e5642a9846085eed5d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/21bis Barbara.jpg using Guid(d583a6f87d61e5642a9846085eed5d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2dcd6bf04e987ee1d0be00a0dda228a') in 0.014205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.146611 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/22 Freaks 1.jpg
+  artifactKey: Guid(9bb9d65fcabfed04faef2a3fe9a73560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/22 Freaks 1.jpg using Guid(9bb9d65fcabfed04faef2a3fe9a73560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5ec097c435b5c0af6705775a39e5b1') in 0.013196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.870295 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/23 Nina Simone 1.jpg
+  artifactKey: Guid(e933f0ec317855a44898ccc0c06e5220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/23 Nina Simone 1.jpg using Guid(e933f0ec317855a44898ccc0c06e5220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9ac83481ae8e84aa2d824356da8f5c') in 0.012590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.642560 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/24 Guernica 1.jpg
+  artifactKey: Guid(cc862d6ebb421474ebf0ad90a44bfbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/24 Guernica 1.jpg using Guid(cc862d6ebb421474ebf0ad90a44bfbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e215494ceb7525600d28f9293d563f9') in 0.015381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.099488 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/25 Magicien d'oz 1.jpg
+  artifactKey: Guid(baa35763ac44fdc47bfa8907c682ed81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/25 Magicien d'oz 1.jpg using Guid(baa35763ac44fdc47bfa8907c682ed81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c92d70beffbbb816591cdfa800a4f5') in 0.014887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.809701 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/26 Mohamed Ali 1.jpg
+  artifactKey: Guid(e2131e3940e4fd34e9279eda7fb88d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/26 Mohamed Ali 1.jpg using Guid(e2131e3940e4fd34e9279eda7fb88d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8416d4a369ddc1afa9130f58beeadf') in 0.019318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.532794 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/27 Jazz Soul.jpg
+  artifactKey: Guid(20dae672c7329484995ff2d1b075645f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/27 Jazz Soul.jpg using Guid(20dae672c7329484995ff2d1b075645f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13d8faa661069e5a2b9e7f099f7f9816') in 0.014255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.358249 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/28 Les oiseaux 1.jpg
+  artifactKey: Guid(72ba2d4bfb581204a960b7bdf7a70edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/28 Les oiseaux 1.jpg using Guid(72ba2d4bfb581204a960b7bdf7a70edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5213f5cde7c181a096bd5237ae4dd211') in 0.013235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.915014 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/29 Keanu Reeves.jpg
+  artifactKey: Guid(bc276a3a79b48ba41ba67c762f0029ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/29 Keanu Reeves.jpg using Guid(bc276a3a79b48ba41ba67c762f0029ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c21562972c9d3a8ab932de077148e2') in 0.013672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.246681 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/29 Le fils de l'homme.jpg
+  artifactKey: Guid(e5013291985331641be24fcea3c6989e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/29 Le fils de l'homme.jpg using Guid(e5013291985331641be24fcea3c6989e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1eac3456ad234bffb8b8d9c55efc294') in 0.012682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.968247 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/30 Marjane Satrapi 1.jpg
+  artifactKey: Guid(4c7ec29140d29d648bb3822abc0031a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/30 Marjane Satrapi 1.jpg using Guid(4c7ec29140d29d648bb3822abc0031a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0f5fe407383125508e646e8ed4e2a6') in 0.015330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.183293 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/31 Zinédine Zidane.jpg
+  artifactKey: Guid(2fa782590b2e82340a4a9e172e6973be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/31 Zinédine Zidane.jpg using Guid(2fa782590b2e82340a4a9e172e6973be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9a27ab30b8afca62fbb8e23534fc71') in 0.013889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.407404 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/32 Lauryn Hill 1.jpg
+  artifactKey: Guid(5a97e41cc039c5144aaa5f545f1d494a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/32 Lauryn Hill 1.jpg using Guid(5a97e41cc039c5144aaa5f545f1d494a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc36bc5e5425ffa7a16b6826e9da23a9') in 0.015354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.422183 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/33 Rocky 1.jpg
+  artifactKey: Guid(bdacdac30c2500a478c1ba65e0664256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/33 Rocky 1.jpg using Guid(bdacdac30c2500a478c1ba65e0664256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbda8c54e552a69368916300060d350') in 0.016662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.714101 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/34 E.T.jpg
+  artifactKey: Guid(0f92e83ce1fbdae469d4748b16b5ff1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/34 E.T.jpg using Guid(0f92e83ce1fbdae469d4748b16b5ff1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377b7134cfd5a753eb4473ad4d179dca') in 0.025401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.324981 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/34 Thriller 1.jpg
+  artifactKey: Guid(360b9261b70c85e47a8ccd950c15c98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/34 Thriller 1.jpg using Guid(360b9261b70c85e47a8ccd950c15c98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0015a0b394a598c4c80c925a1801db8e') in 0.028764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.613978 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/35 Le silence des agnaux 1.jpg
+  artifactKey: Guid(988a8ed82c9f12e44a26e26e6284164a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/35 Le silence des agnaux 1.jpg using Guid(988a8ed82c9f12e44a26e26e6284164a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3edc3feb0f815b9571999a7edfe018') in 0.014771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.572958 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/36 The Chronic 1.jpg
+  artifactKey: Guid(df69eec45b5837043911c79a3f206184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/36 The Chronic 1.jpg using Guid(df69eec45b5837043911c79a3f206184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918f3b678d68275c71685f571e95443b') in 0.014467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.755962 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/37 Le roi lion 1.jpg
+  artifactKey: Guid(f7a4393c3644d4247bb65d2ef9399894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/37 Le roi lion 1.jpg using Guid(f7a4393c3644d4247bb65d2ef9399894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e8f56a08fa2d0e542f84bde0371a5d') in 0.013781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.805265 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/37 Trivia 1.jpg
+  artifactKey: Guid(73faa3b233bc7184ba48646cb82d2d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/37 Trivia 1.jpg using Guid(73faa3b233bc7184ba48646cb82d2d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8fd21f4be5e4832dfed382808e87dd') in 0.014469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.110484 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/38 Kameto.jpg
+  artifactKey: Guid(4a717c141243a18469fc13357c83a66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/38 Kameto.jpg using Guid(4a717c141243a18469fc13357c83a66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee2da47ea231d184b9d99199743fcdf') in 0.012971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.509151 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/39 Pomme 1.jpg
+  artifactKey: Guid(f178841e3d88ca9468d276d3e8608142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/39 Pomme 1.jpg using Guid(f178841e3d88ca9468d276d3e8608142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e8a61d765b6c053dff1dae75581acf') in 0.014260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.649895 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/40 Flower Thrower.jpg
+  artifactKey: Guid(7d259c54e009d624d9effe66e8d01e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/40 Flower Thrower.jpg using Guid(7d259c54e009d624d9effe66e8d01e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ac4d0265a27d99dfae1d71ea500a18') in 0.012703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.166672 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/41 Deux frères.jpg
+  artifactKey: Guid(fd56cdab0499ec345863ef6a761614da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/41 Deux frères.jpg using Guid(fd56cdab0499ec345863ef6a761614da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fdf0b95a304d3b1e528037de12e90e6') in 0.013841 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.487788 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/42 Adios Bahamas.jpg
+  artifactKey: Guid(05e8e4e8eab5f5542b4e0006ecbc70ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/42 Adios Bahamas.jpg using Guid(05e8e4e8eab5f5542b4e0006ecbc70ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc43903bf67af3de78ce59d907fd6fb') in 0.013924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.415918 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/42 Banger 1.jpg
+  artifactKey: Guid(2ae08ed0e32ed8e41b1bcdfee7000b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/42 Banger 1.jpg using Guid(2ae08ed0e32ed8e41b1bcdfee7000b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c401673cba39d995225e77c278db36c9') in 0.013765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.476319 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/43 Dune 1.jpg
+  artifactKey: Guid(e90deb2408934e64194475daf47d7885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/43 Dune 1.jpg using Guid(e90deb2408934e64194475daf47d7885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51d2d0b879d96212b716f65064e4932') in 0.014077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.842937 seconds.
+  path: Assets/Sprites/02 - Enigme/Images
+  artifactKey: Guid(828e6b6cf486393498774f42c98f77ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images using Guid(828e6b6cf486393498774f42c98f77ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1092ecbd0648c9513a29b68b33d7472f') in 0.000458 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 87.037017 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/14 Les romains de la décadence.jpg
+  artifactKey: Guid(bc090f8d7f865ef438d94edd7a5e129c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/14 Les romains de la décadence.jpg using Guid(bc090f8d7f865ef438d94edd7a5e129c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be8c6c28c4067c585675634f5b6e3ea') in 0.036166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.641082 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/2 La victoire de samothrace.jpeg
+  artifactKey: Guid(b02e49b42eb2540429d74e20a7b6b996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/2 La victoire de samothrace.jpeg using Guid(b02e49b42eb2540429d74e20a7b6b996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c9e5b1b0bbef291e10b5d7c87da03a8') in 0.019676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.593371 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/5 Chateau Himeji.jpg
+  artifactKey: Guid(deccbfcc27394704a9d361772d8d9ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/5 Chateau Himeji.jpg using Guid(deccbfcc27394704a9d361772d8d9ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f387def7e6480ec6186bd5eae60feb') in 0.021429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.903254 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/6 Réné Descarte.jpg
+  artifactKey: Guid(78f585eeb2bffad43a7b6d6a7513bc2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/6 Réné Descarte.jpg using Guid(78f585eeb2bffad43a7b6d6a7513bc2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45258a4d6f4bd5f5fa952d83bdb7726') in 0.019582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.288549 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/9 L'elisée.jpg
+  artifactKey: Guid(c48c643281dd4ac4b8c1d6527b79e62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/9 L'elisée.jpg using Guid(c48c643281dd4ac4b8c1d6527b79e62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a9fae9ad1be0689e4ce551e446e468') in 0.019719 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 13.393338 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/10 Ching Shih.jpg
+  artifactKey: Guid(6c3b829ac31ccfd42867a350680f41b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/10 Ching Shih.jpg using Guid(6c3b829ac31ccfd42867a350680f41b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2dc3121ccada6f36d35ed62c98fbfb') in 0.018862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.604429 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/11 Le louvre.jpg
+  artifactKey: Guid(5cab1c5da0f2d28439a9967e503a260f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/11 Le louvre.jpg using Guid(5cab1c5da0f2d28439a9967e503a260f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4d15523832a384a0fed9fa321e5d7e') in 0.018397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.511358 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.jpg
+  artifactKey: Guid(b300bcb94943da84982115c5cf5479c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.jpg using Guid(b300bcb94943da84982115c5cf5479c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec1cf92bf0e5b3507bb77641c18572f') in 0.019932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.464345 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/16 Nuit étoilée.jpg
+  artifactKey: Guid(4249c1fac29c11d4c81ea1f0042116d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/16 Nuit étoilée.jpg using Guid(4249c1fac29c11d4c81ea1f0042116d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5905c451f0f031a4ff652837aa15f7d0') in 0.019272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.685030 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/21 Barbara.jpg
+  artifactKey: Guid(a29839d92eec20742b9d54c58086af34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/21 Barbara.jpg using Guid(a29839d92eec20742b9d54c58086af34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e779f2e502ceb68dfd3dc3e0226e8df5') in 0.019488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.077308 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/27 Jazz Soul.jpeg
+  artifactKey: Guid(790d32e5de865b94897b568a68a17497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/27 Jazz Soul.jpeg using Guid(790d32e5de865b94897b568a68a17497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785606658cffc2118b65c974e9412bc8') in 0.018934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.848731 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/29 Le fils de l'homme.jpeg
+  artifactKey: Guid(6d8a6132c7e9c464f910feaed3ba0ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/29 Le fils de l'homme.jpeg using Guid(6d8a6132c7e9c464f910feaed3ba0ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4429e2ee8ae4633d49a196b78479aa9') in 0.022139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.938430 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/31 Zinédine Zidane.jpg
+  artifactKey: Guid(583a5af65c692114c9969eb31732dea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/31 Zinédine Zidane.jpg using Guid(583a5af65c692114c9969eb31732dea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b11574a655dd7b1c82324f456cadc329') in 0.019379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.765160 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/34 E.T..jpg
+  artifactKey: Guid(c00e868cbca8d1b4fb83285a5697612f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/34 E.T..jpg using Guid(c00e868cbca8d1b4fb83285a5697612f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750c397c5f1cc60ff35de393dc27bced') in 0.017259 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.962857 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/38 Kameto .png
+  artifactKey: Guid(f030c34e8f49f304e893311bcb045eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/38 Kameto .png using Guid(f030c34e8f49f304e893311bcb045eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e83d90f674fa2513c4d971bd39eacb0') in 0.017703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.884341 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/40 Flower Thrower .png
+  artifactKey: Guid(bd33955035c180346acc4921049ad666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/40 Flower Thrower .png using Guid(bd33955035c180346acc4921049ad666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e4489077dccbe4fea91f46d368c93a') in 0.018658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.602774 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/41 Deux frêre.png
+  artifactKey: Guid(1a24f76aa09a26d45a1b1ef96d7c6da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/41 Deux frêre.png using Guid(1a24f76aa09a26d45a1b1ef96d7c6da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f87f6f4af10f16df09cc92c46af75679') in 0.019758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.878010 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/39 Pomme.jpg
+  artifactKey: Guid(c497a396878aaff42bbd73bdb3e64aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/39 Pomme.jpg using Guid(c497a396878aaff42bbd73bdb3e64aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd73902d37794d8405c32ec431756294') in 0.020334 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.569171 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/43 Dune.jpg
+  artifactKey: Guid(b130a4ebc5a708f4a9f26880aa13a482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/43 Dune.jpg using Guid(b130a4ebc5a708f4a9f26880aa13a482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81de04958f5c7f5d135aacc37ffff30') in 0.028382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.908323 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/19 Le voyage dans la lune.jpg
+  artifactKey: Guid(62e9b16d7bab6fb418b53ee1a01fc204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/19 Le voyage dans la lune.jpg using Guid(62e9b16d7bab6fb418b53ee1a01fc204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb016170a771c799315d1ea2fc1d413') in 0.026142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.482815 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/4 Claudio Montever.jpg
+  artifactKey: Guid(c2a87492de156894e98737c2d1caeed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/4 Claudio Montever.jpg using Guid(c2a87492de156894e98737c2d1caeed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f490138bbf1bd5ac20f8ce53f37acf3e') in 0.027213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.786735 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/2 La victoire de Samothrace.jpg
+  artifactKey: Guid(84f1a43f84a5c434a8bffa5fc09ff9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/2 La victoire de Samothrace.jpg using Guid(84f1a43f84a5c434a8bffa5fc09ff9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a29c82f8b5f101031bdc24867991bfc') in 0.015159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.956727 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/3 Alexandre III.jpg
+  artifactKey: Guid(22eddee79ee321340a5653ad08c54f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/3 Alexandre III.jpg using Guid(22eddee79ee321340a5653ad08c54f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3551eb899e3a34b7a276176adfc3c17e') in 0.015595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.642463 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.jpg
+  artifactKey: Guid(731884ed085606f4088d9740478f10d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.jpg using Guid(731884ed085606f4088d9740478f10d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ceb73de093dc8ebed70f4df917a913') in 0.014267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.235519 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/9 L'elysée.jpg
+  artifactKey: Guid(1deb31623d2b0d74c82f55f63f32d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/9 L'elysée.jpg using Guid(1deb31623d2b0d74c82f55f63f32d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aedf459507a34b0dacc90eed94175aa') in 0.014738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.435253 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/1 Platon.jpg
+  artifactKey: Guid(9113965c75c50224ca3b77163729dae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/1 Platon.jpg using Guid(9113965c75c50224ca3b77163729dae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba382c3215fd66e75da7671f7f76897') in 0.017650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.619492 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/3 Alexandre III.jpg
+  artifactKey: Guid(22eddee79ee321340a5653ad08c54f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/3 Alexandre III.jpg using Guid(22eddee79ee321340a5653ad08c54f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3002dde7c053201ce52f65341f6160f0') in 0.017505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1759.516627 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/21bis Barbara.jpg
+  artifactKey: Guid(d583a6f87d61e5642a9846085eed5d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/21bis Barbara.jpg using Guid(d583a6f87d61e5642a9846085eed5d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee8dde53286416869c1ecb182c82c84') in 0.024549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 53.875241 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/2 La victoire de Samothrace.jpg
+  artifactKey: Guid(84f1a43f84a5c434a8bffa5fc09ff9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/2 La victoire de Samothrace.jpg using Guid(84f1a43f84a5c434a8bffa5fc09ff9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968a2c09366852f2bf2cdcd3c0820e25') in 0.024757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.574928 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/5 Chateau Himéji.jpg
+  artifactKey: Guid(7fb1136c1885a2043a0c8e20eb4cece2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/5 Chateau Himéji.jpg using Guid(7fb1136c1885a2043a0c8e20eb4cece2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f57afc6cc76e0f7710fd19d0a3fc1801') in 0.023321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.161678 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/6 Réné Descarte.jpg
+  artifactKey: Guid(6027f121a022d834e9abbb1213e05a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/6 Réné Descarte.jpg using Guid(6027f121a022d834e9abbb1213e05a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea690fb507822bbc400405da25e988d') in 0.050309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.130302 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/7 Chateau de Luneville.jpg
+  artifactKey: Guid(36b9ea32ef096f7409b165a1b7f0e651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/7 Chateau de Luneville.jpg using Guid(36b9ea32ef096f7409b165a1b7f0e651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f08a2f9a9e0e5f7b54f74ea3caf80c') in 0.022908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.170226 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/8 Denis Diderot.jpg
+  artifactKey: Guid(2ee22916aaf26e840b6db1173dc7e86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/8 Denis Diderot.jpg using Guid(2ee22916aaf26e840b6db1173dc7e86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84ed220b6915c99128772db04da31d0') in 0.029346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.153694 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/9 L'elysée.jpg
+  artifactKey: Guid(1deb31623d2b0d74c82f55f63f32d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/9 L'elysée.jpg using Guid(1deb31623d2b0d74c82f55f63f32d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5db9dd0321588a289f4998bb32e602') in 0.025969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.533554 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/12 George Sand.jpg
+  artifactKey: Guid(86e29664c9fe81d40843583bcf8cd59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/12 George Sand.jpg using Guid(86e29664c9fe81d40843583bcf8cd59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0eca70a617fdc7c562b4f2c13c7cff') in 0.022294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.176963 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.jpg
+  artifactKey: Guid(731884ed085606f4088d9740478f10d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.jpg using Guid(731884ed085606f4088d9740478f10d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a90123d7ed75dd0f369565648bc6c4') in 0.023075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.160157 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/14 Les romains de la décadence.jpg
+  artifactKey: Guid(f478ee868c61e7141b3b0e991c536274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/14 Les romains de la décadence.jpg using Guid(f478ee868c61e7141b3b0e991c536274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc18d51fb18a38f51ff3e2f344bcc3c1') in 0.021952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.177041 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/15 Nicolas Tesla.jpg
+  artifactKey: Guid(70d157b7c8c33fb4f87669c92f04274a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/15 Nicolas Tesla.jpg using Guid(70d157b7c8c33fb4f87669c92f04274a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4807b4ec6849c5fd77b4403f6578b9') in 0.021974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.169136 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/16 Nuit étoilée.jpg
+  artifactKey: Guid(ee8603762309bf845883d0a17fadc19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/16 Nuit étoilée.jpg using Guid(ee8603762309bf845883d0a17fadc19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477bb430e165051dc682c93d6979844e') in 0.020789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.163610 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/17 Agatha Christie.jpg
+  artifactKey: Guid(8dc83d9f0f5c61b42950eacc82ee1925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/17 Agatha Christie.jpg using Guid(8dc83d9f0f5c61b42950eacc82ee1925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc350abf95f4933422ab7949213b3e8') in 0.023804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.181872 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/18 Amelia Earhart.jpg
+  artifactKey: Guid(c6ed8551078c5bb4eb438b88da3e9043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/18 Amelia Earhart.jpg using Guid(c6ed8551078c5bb4eb438b88da3e9043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bb52666aad53a4ad45577a60149659') in 0.026247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.365591 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/20 Jesse Owens.jpg
+  artifactKey: Guid(8a4d30a09b5da8e489252282797f320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/20 Jesse Owens.jpg using Guid(8a4d30a09b5da8e489252282797f320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef84c91a625db31c66de2fbc298179b0') in 0.020511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.172278 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/21 American Gothic.jpg
+  artifactKey: Guid(fc59008d300bacf47a87d37a02b31f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/21 American Gothic.jpg using Guid(fc59008d300bacf47a87d37a02b31f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333029b40bf812eccac8a65114fd4d1a') in 0.028473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.362407 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/22 Freaks.jpg
+  artifactKey: Guid(a8c98b9aae9bb44439e2889c504fb0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/22 Freaks.jpg using Guid(a8c98b9aae9bb44439e2889c504fb0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf61aaef36d0db688fa7e37a2fdf6a8') in 0.025433 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.238219 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/23 Nina Simone.jpg
+  artifactKey: Guid(c6331e35cf5908f4ab42b04c1bbd4cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/23 Nina Simone.jpg using Guid(c6331e35cf5908f4ab42b04c1bbd4cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945faebfaffd51c5ff0b8c23598fa323') in 0.026885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.164676 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/24 Guernica.jpg
+  artifactKey: Guid(2eae24aa3d16c2048bc0c21460c9a956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/24 Guernica.jpg using Guid(2eae24aa3d16c2048bc0c21460c9a956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddd6f7c29a9a9b53899a45b019b07a7') in 0.025388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.189951 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/25 Magicien d'oz.jpg
+  artifactKey: Guid(0da218530a5d558408d2c6fd2895632d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/25 Magicien d'oz.jpg using Guid(0da218530a5d558408d2c6fd2895632d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8998cd1e34f0f5dfcf534ce7d2bf988b') in 0.026166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.204518 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/26 Mohamed Ali.jpg
+  artifactKey: Guid(755a961a64035ea4d93a1750331ea102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/26 Mohamed Ali.jpg using Guid(755a961a64035ea4d93a1750331ea102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1e0e3dee4b5a41536f20f2ec18b049') in 0.019157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.228099 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/27 Jazz Soul.jpg
+  artifactKey: Guid(20dae672c7329484995ff2d1b075645f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/27 Jazz Soul.jpg using Guid(20dae672c7329484995ff2d1b075645f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053e60a06d80ae378fb57b38b171eddd') in 0.018267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.228244 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/28 Les oiseaux.jpg
+  artifactKey: Guid(15cf48508abaa584cb03d4186f4dadf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/28 Les oiseaux.jpg using Guid(15cf48508abaa584cb03d4186f4dadf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca01ea1a22b23e1f8c313423bd63c43c') in 0.025102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.239280 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/29 Keanu Reeves.jpg
+  artifactKey: Guid(bc276a3a79b48ba41ba67c762f0029ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/29 Keanu Reeves.jpg using Guid(bc276a3a79b48ba41ba67c762f0029ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c8b1d464c78687199e6d9c08595675') in 0.023807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.288626 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/29 Le fils de l'homme.jpg
+  artifactKey: Guid(e5013291985331641be24fcea3c6989e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/29 Le fils de l'homme.jpg using Guid(e5013291985331641be24fcea3c6989e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef012ebd8b0ec53b87bede8e17891610') in 0.021498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.259781 seconds.
+  path: Assets/Sprites/02 - Enigme/Images/30 Marjane Satrapi.jpg
+  artifactKey: Guid(271a4906d1c683f44afda24fd8a75ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/02 - Enigme/Images/30 Marjane Satrapi.jpg using Guid(271a4906d1c683f44afda24fd8a75ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1854ef20496dac358e26bc1c8fd746') in 0.026828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-Symbol file data-0000016FD4E1A010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-0000021EDBEC0150 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF7EFF20 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEABDA090 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF805730 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF392630 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEBB9DA30 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF981020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEC472790 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC2DD010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEBB9DA30 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEABDA090 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBEC6F60 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF4A7010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEABDA090 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC2DD010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Collections.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEABDA090 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBD024A0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEABE44A0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC2DD010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC24C010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE508020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Burst.CodeGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEABE44A0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE8F9B440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC8CE010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEB2F37E0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC2DD010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Burst.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEC48BFA0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Collections.BurstCompatibilityGen.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE474020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE96F030 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE8F9B440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC8CE010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC8CE010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBD1F3B0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC254020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF399440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Collections.DocCodeSamples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE91FB040 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC5BD1B0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC2DD010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDE0A0E30 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.005.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDC2DD010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF399440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEAE7F430 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF981020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE8BD4020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF399440 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF4C1A20 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEC48BFA0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF4C1A20 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF981020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF981020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBEABD10 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EE98C4060 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEABE44A0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDF981020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEABE44A0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDBEABD10 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEADCC060 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EDFA6B010 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEC48BFA0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000021EEC48BFA0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.InputSystem.TestFramework.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.666 seconds
-Refreshing native plugins compatible for Editor in 3.57 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.632 seconds
+Refreshing native plugins compatible for Editor in 3.88 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
@@ -291,360 +1254,46 @@ Native extension for WebGL target not found
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.813 seconds
-Domain Reload Profiling: 1476ms
+- Finished resetting the current domain, in  0.744 seconds
+Domain Reload Profiling: 1374ms
 	BeginReloadAssembly (138ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (457ms)
-		LoadAssemblies (245ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (435ms)
+		LoadAssemblies (243ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (262ms)
-			TypeCache.Refresh (258ms)
-				TypeCache.ScanAssembly (247ms)
+		AnalyzeDomain (244ms)
+			TypeCache.Refresh (240ms)
+				TypeCache.ScanAssembly (229ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (813ms)
+	FinalizeReload (745ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (389ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (66ms)
-			ProcessInitializeOnLoadAttributes (255ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 4.27 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4561 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (36.1 KB). Loaded Objects now: 5075.
-Memory consumption went from 155.9 MB to 155.9 MB.
-Total: 3.780800 ms (FindLiveObjects: 0.261700 ms CreateObjectMapping: 0.280100 ms MarkObjects: 3.179900 ms  DeleteObjects: 0.057800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 159.054271 seconds.
-  path: Assets/Prefabs/04 - Versus/Enemy_Boss.prefab
-  artifactKey: Guid(9a7dbc96a5cfd974a84ab4ba49a54a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/04 - Versus/Enemy_Boss.prefab using Guid(9a7dbc96a5cfd974a84ab4ba49a54a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705f21afdc048372227a9abded050193') in 0.054819 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 50.270266 seconds.
-  path: Assets/Prefabs/04 - Versus/Enemy.prefab
-  artifactKey: Guid(7227d11b277418f4e907d02f222e0d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/04 - Versus/Enemy.prefab using Guid(7227d11b277418f4e907d02f222e0d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd8e53814128a5512582da76983abc1') in 0.013531 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 31
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016FE4B861A0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.635 seconds
-Refreshing native plugins compatible for Editor in 4.30 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.765 seconds
-Domain Reload Profiling: 1398ms
-	BeginReloadAssembly (128ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (445ms)
-		LoadAssemblies (245ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (247ms)
-			TypeCache.Refresh (242ms)
-				TypeCache.ScanAssembly (232ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (766ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (374ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (249ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.04 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4561 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (36.0 KB). Loaded Objects now: 5079.
-Memory consumption went from 155.9 MB to 155.9 MB.
-Total: 3.607400 ms (FindLiveObjects: 0.252100 ms CreateObjectMapping: 0.164200 ms MarkObjects: 3.125900 ms  DeleteObjects: 0.064400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016FE50FD020 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.661 seconds
-Refreshing native plugins compatible for Editor in 3.77 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.810 seconds
-Domain Reload Profiling: 1468ms
-	BeginReloadAssembly (125ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (471ms)
-		LoadAssemblies (265ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (254ms)
-			TypeCache.Refresh (250ms)
-				TypeCache.ScanAssembly (239ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (810ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (408ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (256ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 4.13 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4562 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (36.1 KB). Loaded Objects now: 5083.
-Memory consumption went from 156.2 MB to 156.2 MB.
-Total: 3.592200 ms (FindLiveObjects: 0.249300 ms CreateObjectMapping: 0.132400 ms MarkObjects: 3.154200 ms  DeleteObjects: 0.055400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016FE478CFC0 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.694 seconds
-Refreshing native plugins compatible for Editor in 3.87 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.876 seconds
-Domain Reload Profiling: 1567ms
-	BeginReloadAssembly (139ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (485ms)
-		LoadAssemblies (268ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (272ms)
-			TypeCache.Refresh (268ms)
-				TypeCache.ScanAssembly (258ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (876ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (451ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (65ms)
-			ProcessInitializeOnLoadAttributes (314ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 4.29 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4562 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (36.1 KB). Loaded Objects now: 5087.
-Memory consumption went from 156.2 MB to 156.2 MB.
-Total: 4.215200 ms (FindLiveObjects: 0.280800 ms CreateObjectMapping: 0.215600 ms MarkObjects: 3.653100 ms  DeleteObjects: 0.064800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 359.559092 seconds.
-  path: Assets/Scenes/Game/Levels/02 - Enigme.unity
-  artifactKey: Guid(c360a988a6873204a9328f80d29139ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Game/Levels/02 - Enigme.unity using Guid(c360a988a6873204a9328f80d29139ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2024679ff8efbc41c15e30e706a7298') in 0.001869 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016FD95DA030 doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\Utilisateur\Documents\Unity\TheEtoileGame\Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.632 seconds
-Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.786 seconds
-Domain Reload Profiling: 1415ms
-	BeginReloadAssembly (127ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (443ms)
-		LoadAssemblies (252ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (238ms)
-			TypeCache.Refresh (234ms)
-				TypeCache.ScanAssembly (225ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (787ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (385ms)
+		SetupLoadedEditorAssemblies (355ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (28ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (62ms)
-			ProcessInitializeOnLoadAttributes (256ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (59ms)
+			ProcessInitializeOnLoadAttributes (238ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 5.38 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.54 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4561 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (37.1 KB). Loaded Objects now: 5091.
-Memory consumption went from 156.0 MB to 155.9 MB.
-Total: 3.486900 ms (FindLiveObjects: 0.248500 ms CreateObjectMapping: 0.140000 ms MarkObjects: 3.041600 ms  DeleteObjects: 0.055800 ms)
+Unloading 37 unused Assets / (36.9 KB). Loaded Objects now: 5069.
+Memory consumption went from 155.8 MB to 155.7 MB.
+Total: 3.445000 ms (FindLiveObjects: 0.418900 ms CreateObjectMapping: 0.144700 ms MarkObjects: 2.824600 ms  DeleteObjects: 0.056200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -660,427 +1309,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 155.997130 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/29 Keanu Reeves.png
-  artifactKey: Guid(2e88b8a407b7fb740a1318ad10768f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/29 Keanu Reeves.png using Guid(2e88b8a407b7fb740a1318ad10768f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd6be67428c2f2a46ead646b96d1e9e') in 0.045234 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 3.110814 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/29 Keanu Reeves.png
-  artifactKey: Guid(2e88b8a407b7fb740a1318ad10768f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/29 Keanu Reeves.png using Guid(2e88b8a407b7fb740a1318ad10768f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb52e6df20e0c5f4646715391c116ab') in 0.028347 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 13.086178 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/43 Dune.png
-  artifactKey: Guid(64070218c17677247ab6253bb5795141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/43 Dune.png using Guid(64070218c17677247ab6253bb5795141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a933d81f3f46ef9d7b423e18c33aedc6') in 0.025933 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.573897 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/42 Banger.png
-  artifactKey: Guid(f80a77e6d4c262948b14e798b4d12ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/42 Banger.png using Guid(f80a77e6d4c262948b14e798b4d12ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '864621c4d8e4b6ec19d44e8c458babc1') in 0.018367 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.686095 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/42 Adios Bahamas 1.png
-  artifactKey: Guid(75e79217b9dab774f8ea881b3a49865f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/42 Adios Bahamas 1.png using Guid(75e79217b9dab774f8ea881b3a49865f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206412d32750e7092c006f3781a5d403') in 0.017513 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.111399 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/41 Deux frères.png
-  artifactKey: Guid(1bed2c21ef0b072479dcb9ee27e1728c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/41 Deux frères.png using Guid(1bed2c21ef0b072479dcb9ee27e1728c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7553a1a2eed50949eee3edf033f804f0') in 0.015692 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.871686 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/40 Flower Thrower.png
-  artifactKey: Guid(1f65ea843fb3d0047bf350cf934288ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/40 Flower Thrower.png using Guid(1f65ea843fb3d0047bf350cf934288ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f8bf47dfd01ad7f9c0c2c6ebcaed62') in 0.015653 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.631274 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/39 Pomme.png
-  artifactKey: Guid(8147e2d30eb9402488fa65ff2410f709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/39 Pomme.png using Guid(8147e2d30eb9402488fa65ff2410f709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571f8da0b673ab7887d5331ffcdcccdb') in 0.018399 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.022002 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/38 Kameto.png
-  artifactKey: Guid(2e58b9779f1082a418d9b2c2a4876e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/38 Kameto.png using Guid(2e58b9779f1082a418d9b2c2a4876e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1802c2804d5769c1272f0f646e0c310d') in 0.015883 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.809549 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/37 Trivia.png
-  artifactKey: Guid(d1649012de38770419385cfc688a487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/37 Trivia.png using Guid(d1649012de38770419385cfc688a487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afa880e934c2b1ea62bb07467cf2137') in 0.019938 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.765590 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/37 Le roi lion.png
-  artifactKey: Guid(be6ec7082b3b805429d3d6d6c5121169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/37 Le roi lion.png using Guid(be6ec7082b3b805429d3d6d6c5121169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b8c4de1e08ef1a1126af0dcea04409') in 0.017520 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.345122 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/36 The Chronic.png
-  artifactKey: Guid(bc368b9190540904fb0a4ef6b1f4199b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/36 The Chronic.png using Guid(bc368b9190540904fb0a4ef6b1f4199b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7640031a1b242e47b85fba5a25cc9f53') in 0.015371 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.514749 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/35 Le silence des agnaux.png
-  artifactKey: Guid(61e4c079f15676c49a4e33771445ba00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/35 Le silence des agnaux.png using Guid(61e4c079f15676c49a4e33771445ba00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88109b9a88fbc3f124a3a5a805b927bd') in 0.018884 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.514252 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/34 E.T.png
-  artifactKey: Guid(b813425b389c43243848870ce72b7b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/34 E.T.png using Guid(b813425b389c43243848870ce72b7b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '088c55a95be3c7b846d1bd9773de5f39') in 0.016123 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.542048 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/34 Thriller.png
-  artifactKey: Guid(649bf5bbcb801934bbbbbf8769ee4fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/34 Thriller.png using Guid(649bf5bbcb801934bbbbbf8769ee4fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e996dc4a293568136f2a7c5a1f5ca3e') in 0.015462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.345711 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/33 Rocky.png
-  artifactKey: Guid(1a4edb8c911520142b836e5594e0670e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/33 Rocky.png using Guid(1a4edb8c911520142b836e5594e0670e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f0010f980dea56a8b818642933366d') in 0.014826 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.179061 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/32 Lauryn Hill.png
-  artifactKey: Guid(680c2b8fb92ac9f42b23cb484d289a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/32 Lauryn Hill.png using Guid(680c2b8fb92ac9f42b23cb484d289a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31120fa84c65db5528f9600311085166') in 0.013675 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.714023 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/31 Zinédine Zidane.png
-  artifactKey: Guid(bde91700ffec73a4c88baa7a8131d4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/31 Zinédine Zidane.png using Guid(bde91700ffec73a4c88baa7a8131d4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7919ba5f8a95aa921574f22e20dbba9b') in 0.016590 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.898931 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/30 Marjane Satrapi.png
-  artifactKey: Guid(66fdfdd72248fa549a6ae2ecf645f4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/30 Marjane Satrapi.png using Guid(66fdfdd72248fa549a6ae2ecf645f4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34d48ec4dd2466cace6c3c09981304cc') in 0.015604 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.425304 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/29 Le fils de l'homme.png
-  artifactKey: Guid(8543f9dfe8c162543ad0a24220317d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/29 Le fils de l'homme.png using Guid(8543f9dfe8c162543ad0a24220317d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc5fdb948a28df29c4c07e8e79f0a8a') in 0.016468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.944657 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/28 Les oiseaux.png
-  artifactKey: Guid(f47226832abb6ab48a9de4f69b4560a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/28 Les oiseaux.png using Guid(f47226832abb6ab48a9de4f69b4560a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52978a6342e353729d05206d4c51a47d') in 0.014822 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.646260 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/27 Jazz Soul.png
-  artifactKey: Guid(8cc25dd636818fb459c455b325edf514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/27 Jazz Soul.png using Guid(8cc25dd636818fb459c455b325edf514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c268be56d122e90af2f0afda5de6b4ea') in 0.014887 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.445553 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/26 Mohamed Ali.png
-  artifactKey: Guid(053d1145764ba514b9af70537f128641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/26 Mohamed Ali.png using Guid(053d1145764ba514b9af70537f128641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c714bc75d944cd53263ff77142db7b79') in 0.015107 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.308597 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/25 Magicien d'oz.png
-  artifactKey: Guid(563461ecaf28ff34c9537640ff530cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/25 Magicien d'oz.png using Guid(563461ecaf28ff34c9537640ff530cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fca6aaf743ec038d080defee17e555f') in 0.015019 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.004282 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/24 Guernica.png
-  artifactKey: Guid(3ab49c2e7aba3494a830b0ca037300a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/24 Guernica.png using Guid(3ab49c2e7aba3494a830b0ca037300a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd398740e979a1c5bc35afbedeeea00') in 0.016057 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.467336 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/23 Nina Simone.png
-  artifactKey: Guid(a46d2df053324c148803f556be1c125a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/23 Nina Simone.png using Guid(a46d2df053324c148803f556be1c125a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5733be46a45c0f2c8a3bb62affbb71f4') in 0.013028 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.426817 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/22 Freaks.png
-  artifactKey: Guid(625260882afd82b499c642beee2a2f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/22 Freaks.png using Guid(625260882afd82b499c642beee2a2f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd1897d62ece15e70fca7f269147c2b') in 0.013778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.603397 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/21bis Barbara.png
-  artifactKey: Guid(c092589e46f1d7c4c8229e691a2b73e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/21bis Barbara.png using Guid(c092589e46f1d7c4c8229e691a2b73e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ae2ef3f012e73a44c5f2bc810c3871') in 0.013531 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.088490 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/21 American Gothic.png
-  artifactKey: Guid(7f0b0623078db1b4c81837c42ecb13c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/21 American Gothic.png using Guid(7f0b0623078db1b4c81837c42ecb13c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40ad51abe96063c43f1a7d83947b30b') in 0.015684 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.631576 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/20 Jesse Owens.png
-  artifactKey: Guid(9c25498f700c0d34b9b504f0cf5bdf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/20 Jesse Owens.png using Guid(9c25498f700c0d34b9b504f0cf5bdf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2805ef15138a9691f6338d7bb0b4cb1') in 0.014910 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.627910 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/19 Le voyage dans la lune.png
-  artifactKey: Guid(61603c49aa158084fbd4318ca9ca1ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/19 Le voyage dans la lune.png using Guid(61603c49aa158084fbd4318ca9ca1ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9a369e26b1d5cc4a21a0d869fa850e') in 0.015921 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.921285 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/18 Amelia Earhart.png
-  artifactKey: Guid(81e0b3a9f51f07f45967eb5708a2348a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/18 Amelia Earhart.png using Guid(81e0b3a9f51f07f45967eb5708a2348a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1df7e458700946e3b896bff696d74fa3') in 0.014915 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.726196 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/17 Agatha Christie.png
-  artifactKey: Guid(2bd975fc9dfdf6b4490fe8009825323d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/17 Agatha Christie.png using Guid(2bd975fc9dfdf6b4490fe8009825323d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca7773f8778ffa9446682a20f846ea4') in 0.014324 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.699215 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/16 Nuit étoilée.png
-  artifactKey: Guid(808bf8db433d78b4dad709235c1e9773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/16 Nuit étoilée.png using Guid(808bf8db433d78b4dad709235c1e9773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f8ee64b5d8730547ea032e1609141b') in 0.014849 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.063346 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/15 Nicolas Tesla 1.png
-  artifactKey: Guid(b0d28ce40e2648747bee5c2f90a6612c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/15 Nicolas Tesla 1.png using Guid(b0d28ce40e2648747bee5c2f90a6612c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a629e0aee16b429757d0ee4c12ea2a0') in 0.015914 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.368102 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/14 Les romains de la décadence.png
-  artifactKey: Guid(8822d16b09f58844bbf23b6f7202c3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/14 Les romains de la décadence.png using Guid(8822d16b09f58844bbf23b6f7202c3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7fda9e021c7263d1b3094615629bcf8') in 0.016347 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.946287 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.png
-  artifactKey: Guid(3a7b04fc0c87c2843873e720ec7152db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/13 La liberté guidant le peuple.png using Guid(3a7b04fc0c87c2843873e720ec7152db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5458b1388f3e700f06a16427366334') in 0.014764 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.357508 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/12 George Sand.png
-  artifactKey: Guid(d21c455a16235974099be276133ffe64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/12 George Sand.png using Guid(d21c455a16235974099be276133ffe64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e230887fa4bd422f415bc3507988d4c4') in 0.015247 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.562965 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/11 Le louvre.png
-  artifactKey: Guid(7c5b71e18f84b9a41be961c41713c037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/11 Le louvre.png using Guid(7c5b71e18f84b9a41be961c41713c037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe3fcb44a041fff3d641ecba632cf66') in 0.015346 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.359308 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/10 Ching Shih.png
-  artifactKey: Guid(c82afbc1b8d6f4a47a02199d0e5fa9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/10 Ching Shih.png using Guid(c82afbc1b8d6f4a47a02199d0e5fa9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb56e3d9801ae370f0780f82844f76e1') in 0.013799 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.919485 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/9 L'elysée.png
-  artifactKey: Guid(a5090bc8a2014f343ada36e1c1fddbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/9 L'elysée.png using Guid(a5090bc8a2014f343ada36e1c1fddbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69411330170af19e8a0de47746aef16b') in 0.014293 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.708748 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/8 Denis Diderot 1.png
-  artifactKey: Guid(f4594065a8ae1cb49b8706c5f148c51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/8 Denis Diderot 1.png using Guid(f4594065a8ae1cb49b8706c5f148c51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5bff360b5a8406a96a9d068888796d') in 0.014116 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.556637 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/7 Chateau de Luneville.png
-  artifactKey: Guid(cb7af2f66bf9b7d4b809fb7094cf856b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/7 Chateau de Luneville.png using Guid(cb7af2f66bf9b7d4b809fb7094cf856b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ab2b03928115ec4b16943b5622bdc8') in 0.016734 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.111397 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/6 Réné Descarte.png
-  artifactKey: Guid(39434d87e338b0c4abaf5cb873f401f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/6 Réné Descarte.png using Guid(39434d87e338b0c4abaf5cb873f401f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ec53dca4906637f94d6c3bcbfb1253') in 0.015023 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.327135 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/5 Chateau Himeji.png
-  artifactKey: Guid(d44cace763882ff4b883fe7c8ee02f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/5 Chateau Himeji.png using Guid(d44cace763882ff4b883fe7c8ee02f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960800f74f72cc9eec8d374b5ee5ca39') in 0.014401 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.992972 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/4 Claudio Montever.png
-  artifactKey: Guid(e0f0d0d00cd9d384fbde2b1d07719315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/4 Claudio Montever.png using Guid(e0f0d0d00cd9d384fbde2b1d07719315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76392854cde8d406078138430718816') in 0.016123 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.736732 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/3 Alexandre III 1.png
-  artifactKey: Guid(8274452c30e6cec4b8ffdf95c35a696f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/3 Alexandre III 1.png using Guid(8274452c30e6cec4b8ffdf95c35a696f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede593cfd63de57f2e675b99a155298a') in 0.013842 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.247385 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/2 La victoire de samothrace.png
-  artifactKey: Guid(481d31333d7cda04ea651b3424f897bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/2 La victoire de samothrace.png using Guid(481d31333d7cda04ea651b3424f897bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9794982172c0933a35b52c8b573fc84') in 0.015550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.930154 seconds.
-  path: Assets/Sprites/02 - Enigme/Images/1 Platon.png
-  artifactKey: Guid(8d305a299f0d935498887723de94eb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Images/1 Platon.png using Guid(8d305a299f0d935498887723de94eb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170b8a82bdd9514862c3247b2755f7c8') in 0.016889 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 11.859394 seconds.
-  path: Assets/Sprites/02 - Enigme/Image2
-  artifactKey: Guid(5d96152620b71374b89c4a93c75400c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Image2 using Guid(5d96152620b71374b89c4a93c75400c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251306d0973d62918abb8cc51b376514') in 0.000708 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 7.886628 seconds.
-  path: Assets/Sprites/02 - Enigme/Image2/1 Platon.png
-  artifactKey: Guid(4435a7bbb7df42744ad5916877b8ffbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Image2/1 Platon.png using Guid(4435a7bbb7df42744ad5916877b8ffbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b1566ce191eace007ac8f7c1299e07') in 0.016405 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.291387 seconds.
-  path: Assets/Sprites/02 - Enigme/Image2/43 Dune.png
-  artifactKey: Guid(e5a8fa026893daa479c224c9c3d6c658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Image2/43 Dune.png using Guid(e5a8fa026893daa479c224c9c3d6c658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f8845737ad037f5b33fc271611c3144') in 0.015336 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.973531 seconds.
-  path: Assets/Sprites/02 - Enigme/Image2/43 Dune.png
-  artifactKey: Guid(e5a8fa026893daa479c224c9c3d6c658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/02 - Enigme/Image2/43 Dune.png using Guid(e5a8fa026893daa479c224c9c3d6c658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c5d965c46cafedc43ee948c6d0f78bf') in 0.017234 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3

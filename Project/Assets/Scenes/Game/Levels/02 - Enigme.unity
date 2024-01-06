@@ -215,7 +215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 1975
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -224,8 +224,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -533,15 +533,15 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 78f585eeb2bffad43a7b6d6a7513bc2f, type: 3}
+      objectReference: {fileID: 21300000, guid: 6027f121a022d834e9abbb1213e05a6d, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: a29839d92eec20742b9d54c58086af34, type: 3}
+      objectReference: {fileID: 21300000, guid: d583a6f87d61e5642a9846085eed5d05, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: c48c643281dd4ac4b8c1d6527b79e62e, type: 3}
+      objectReference: {fileID: 21300000, guid: 1deb31623d2b0d74c82f55f63f32d704, type: 3}
     - target: {fileID: 6406967523430464747, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -926,7 +926,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 356
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -935,8 +935,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: -190
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1227,8 +1227,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1314,7 +1314,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 6bc7de5559b05e84ca6990b3b41c7941, type: 3}
+      objectReference: {fileID: 21300000, guid: 22eddee79ee321340a5653ad08c54f6f, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[1]
       value: 
@@ -1322,7 +1322,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 4249c1fac29c11d4c81ea1f0042116d8, type: 3}
+      objectReference: {fileID: 21300000, guid: ee8603762309bf845883d0a17fadc19d, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
@@ -1405,7 +1405,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 790d32e5de865b94897b568a68a17497, type: 3}
+      objectReference: {fileID: 21300000, guid: 20dae672c7329484995ff2d1b075645f, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[1]
       value: 
@@ -1417,7 +1417,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: 583a5af65c692114c9969eb31732dea3, type: 3}
+      objectReference: {fileID: 21300000, guid: 2fa782590b2e82340a4a9e172e6973be, type: 3}
     - target: {fileID: 6406967523430464747, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 2003
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1578,8 +1578,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2140,7 +2140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 1964
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2149,8 +2149,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2353,11 +2353,11 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: deccbfcc27394704a9d361772d8d9ea8, type: 3}
+      objectReference: {fileID: 21300000, guid: 7fb1136c1885a2043a0c8e20eb4cece2, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 82791538ba186cd4da6d6fcba96d650c, type: 3}
+      objectReference: {fileID: 21300000, guid: 70d157b7c8c33fb4f87669c92f04274a, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[2]
       value: 
@@ -2365,7 +2365,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: b02e49b42eb2540429d74e20a7b6b996, type: 3}
+      objectReference: {fileID: 21300000, guid: 84f1a43f84a5c434a8bffa5fc09ff9cd, type: 3}
     - target: {fileID: 6406967523430464747, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2450,7 +2450,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: b300bcb94943da84982115c5cf5479c4, type: 3}
+      objectReference: {fileID: 21300000, guid: 731884ed085606f4088d9740478f10d8, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[1]
       value: 
@@ -2585,7 +2585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 1964
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2594,8 +2594,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2811,7 +2811,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: bc090f8d7f865ef438d94edd7a5e129c, type: 3}
+      objectReference: {fileID: 21300000, guid: f478ee868c61e7141b3b0e991c536274, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
@@ -2938,7 +2938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 1718
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2947,8 +2947,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3258,7 +3258,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: bd33955035c180346acc4921049ad666, type: 3}
+      objectReference: {fileID: 21300000, guid: 7d259c54e009d624d9effe66e8d01e15, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[1]
       value: 
@@ -3266,7 +3266,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: f030c34e8f49f304e893311bcb045eba, type: 3}
+      objectReference: {fileID: 21300000, guid: 4a717c141243a18469fc13357c83a66e, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
@@ -3573,7 +3573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 1933
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3582,8 +3582,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4025,11 +4025,11 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 1a24f76aa09a26d45a1b1ef96d7c6da4, type: 3}
+      objectReference: {fileID: 21300000, guid: fd56cdab0499ec345863ef6a761614da, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: 6d8a6132c7e9c464f910feaed3ba0ca7, type: 3}
+      objectReference: {fileID: 21300000, guid: e5013291985331641be24fcea3c6989e, type: 3}
     - target: {fileID: 6406967523430464747, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18
@@ -4152,7 +4152,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 1972
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4161,8 +4161,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4286,7 +4286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 1847
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4295,8 +4295,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4477,7 +4477,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: bb024e67a333e3b4cb099975889b4c40, type: 3}
+      objectReference: {fileID: 21300000, guid: 2ee22916aaf26e840b6db1173dc7e86d, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[1]
       value: 
@@ -4790,7 +4790,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: c00e868cbca8d1b4fb83285a5697612f, type: 3}
+      objectReference: {fileID: 21300000, guid: 0f92e83ce1fbdae469d4748b16b5ff1d, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[1]
       value: 
@@ -4798,7 +4798,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 2b36af3380e002a49bdc362530feaa7a, type: 3}
+      objectReference: {fileID: 21300000, guid: 05e8e4e8eab5f5542b4e0006ecbc70ed, type: 3}
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
@@ -4925,7 +4925,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 2020
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4934,8 +4934,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5267,7 +5267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9999
+  m_text: 1890
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5276,8 +5276,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5891,7 +5891,7 @@ PrefabInstance:
     - target: {fileID: 3512388703951894888, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: visuels.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: 2e88b8a407b7fb740a1318ad10768f12, type: 3}
+      objectReference: {fileID: 21300000, guid: bc276a3a79b48ba41ba67c762f0029ee, type: 3}
     - target: {fileID: 6406967523430464747, guid: d81b8f05403c5eb4d9252bfd11d72c21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
