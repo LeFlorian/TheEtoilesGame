@@ -168,6 +168,7 @@ MonoBehaviour:
   hitingDistance: 2.8
   forceHiting: 10
   decreaseForceHiting: 200
+  animator: {fileID: 0}
 --- !u!1 &8128278414688526272
 GameObject:
   m_ObjectHideFlags: 0

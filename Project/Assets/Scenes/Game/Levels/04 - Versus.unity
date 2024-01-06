@@ -2807,19 +2807,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
       propertyPath: nbOfEnemyByWaves.Array.data[0]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
       propertyPath: nbOfEnemyByWaves.Array.data[1]
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
       propertyPath: nbOfEnemyByWaves.Array.data[2]
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
       propertyPath: nbOfEnemyByWaves.Array.data[3]
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
       propertyPath: nbOfEnemyByWaves.Array.data[4]
