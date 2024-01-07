@@ -1,1 +1,0 @@
-{"root":[{"assemblyName":"TwitchIntegration","nameSpace":"TwitchIntegration","className":"TwitchManager","methodName":"CreateInstance","loadTypes":0,"isUnityClass":false},{"assemblyName":"Unity.VisualScripting.Core","nameSpace":"Unity.VisualScripting","className":"RuntimeVSUsageUtility","methodName":"RuntimeInitializeOnLoadBeforeSceneLoad","loadTypes":1,"isUnityClass":true}]}
