@@ -19,19 +19,13 @@ public class DamagePlayerCollisionEvent : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-		Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.tag == "Player")
         {
 			LifeController hp = collision.gameObject.GetComponent<LifeController>();
 			hp.InflictDamage(damage);
-			Debug.Log("Hit Player "+damage+" "+hp.life+"Hp left");
+			// Debug.Log("Hit Player "+damage+" "+hp.life+"Hp left");
 			Destroy(gameObject);
         }
     }
 
-	// public override void Execute()
-	// {
-	// 	if (!player.jumping || !jumpable)
-	// 		player.GetComponent<LifeController>().InflictDamage(damage);
-	// }
 }
