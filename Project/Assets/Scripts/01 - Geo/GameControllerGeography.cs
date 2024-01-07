@@ -23,6 +23,8 @@ public class GameControllerGeography : MonoBehaviour
 
     public Animator star;
 
+    public bool canRespawn;
+
     void Start()
     {
         myRenderer = GetComponent<SpriteRenderer>();
@@ -50,6 +52,8 @@ public class GameControllerGeography : MonoBehaviour
 
     public IEnumerator ChangeLevel()
     {
+        canRespawn = true;
+
         myRenderer.color = Color.white;
         currentTexture = listQuestionsLevel[currentLevel];
 
@@ -78,6 +82,7 @@ public class GameControllerGeography : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
 
+        canRespawn = false;
         spawnPlatform.SetPlatformActive(false);
 
 
@@ -92,17 +97,13 @@ public class GameControllerGeography : MonoBehaviour
 
         //TeleportPlayerToCenter();
 
-        foreach (var platform in listPlatforms)
-        {
-            platform.SetPlatformActive(true);
-        }
-
-        yield return new WaitForSeconds(4f);
 
         currentLevel++;
 
         if (currentLevel >= levelMax)
         {
+            canRespawn = true;
+
             Win();
             
         }
@@ -112,6 +113,12 @@ public class GameControllerGeography : MonoBehaviour
             yield return new WaitForSeconds(1f);
 
             spawnPlatform.SetPlatformActive(true);
+
+            foreach (var platform in listPlatforms)
+            {
+                platform.SetPlatformActive(true);
+            }
+
 
             StartCoroutine(ChangeLevel());
         }

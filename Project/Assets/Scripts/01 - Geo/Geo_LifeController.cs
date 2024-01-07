@@ -10,7 +10,7 @@ public class Geo_LifeController : LifeController
     {
         int life = base.InflictDamage(damage);
 
-        transform.position = point.position;
+        StartCoroutine(WaitingRespawn());
 
         return life;
     }
@@ -18,5 +18,16 @@ public class Geo_LifeController : LifeController
     public override void KillPlayer()
     {
         SceneSwitcher.instance.ChangeScene("Lobby");
+    }
+
+    private IEnumerator WaitingRespawn()
+    {
+        while (FindAnyObjectByType<GameControllerGeography>().canRespawn == false)
+        {
+            yield return new WaitForSeconds(1);
+        }
+
+        transform.position = point.position;
+
     }
 }

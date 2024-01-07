@@ -6,22 +6,18 @@ public class GeographyPlatform : MonoBehaviour
 {
     public bool isActive = true;
     private Collider2D collider;
-    private Renderer renderer;
+    private Renderer[] renderers;
 
     // Start is called before the first frame update
     void Start()
     {
         // Récupérer les composants nécessaires
         collider = GetComponent<Collider2D>();
-        renderer = GetComponent<Renderer>();
+        renderers = GetComponentsInChildren<Renderer>();
 
         SetPlatformActive(isActive);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     public void SetPlatformActive(bool isActive)
     {
@@ -31,10 +27,14 @@ public class GeographyPlatform : MonoBehaviour
             collider.enabled = isActive;
         }
 
-        // Activer ou désactiver le Renderer
-        if (renderer != null)
+        foreach (Renderer renderer in renderers)
         {
-            renderer.enabled = isActive;
+            // Activer ou désactiver le Renderer
+            if (renderer != null)
+            {
+                renderer.enabled = isActive;
+            }
         }
+
     }
 }
