@@ -404,7 +404,7 @@ namespace TarodevController
                 {
                     _interactObject.Action();
                     /// animation punch parameter for smash level
-                    animator.SetBool("Punch", true);
+                    if (SceneManager.GetActiveScene().name == "04 - Versus") animator.SetBool("Punch", true);
                     // sound page turning
                     if (SceneManager.GetActiveScene().name == "02 - Enigme") pageTurn.Play();
 
@@ -424,7 +424,8 @@ namespace TarodevController
             _functionnal.interactInfo.SetActive(false);
             _interactObject = null;
             /// animation punch parameter for smash level
-            animator.SetBool("Punch", false);
+            if (SceneManager.GetActiveScene().name == "04 - Versus") animator.SetBool("Punch", false);
+
         }
 
         #endregion
@@ -441,7 +442,9 @@ namespace TarodevController
             {
                 _functionnal.visual.transform.localScale = new Vector3(1, 1, 1);
 
-                if (!walkSound.isPlaying)
+
+                if (!walkSound.isPlaying && (SceneManager.GetActiveScene().name == "Lobby" || SceneManager.GetActiveScene().name == "05 - Amour"))
+
                 {
                     walkSound.Play();
 
@@ -450,7 +453,8 @@ namespace TarodevController
             else if (_frameInput.Move.x < 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(-1, 1, 1);
-                if (!walkSound.isPlaying)
+                if (!walkSound.isPlaying && (SceneManager.GetActiveScene().name == "Lobby" || SceneManager.GetActiveScene().name == "05 - Amour"))
+
                 {
                     walkSound.Play();
 
