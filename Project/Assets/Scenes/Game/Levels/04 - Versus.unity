@@ -1509,7 +1509,7 @@ MonoBehaviour:
   _spawnPoints:
   - {fileID: 625062391}
   - {fileID: 1824030057}
-  _chargeTime: 60
+  _chargeTime: 45
   _addingAMessage: {fileID: 0}
 --- !u!1 &1181979439
 GameObject:

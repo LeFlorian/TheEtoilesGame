@@ -30,7 +30,7 @@ public class InteractObject_SteleEnigme : InteractObject
 
         position = position%visuels.Length;
 
-        FindAnyObjectByType<Enigme_GameManager>().CheckValidity();
+        //FindAnyObjectByType<Enigme_GameManager>().CheckValidity();
 
         Debug.Log(visuels.Length.ToString());
 

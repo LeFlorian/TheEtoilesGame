@@ -33,11 +33,14 @@ public class Enigme_GameManager : MonoBehaviour
         CheckValidity();
     }
 
-    public void CheckValidity()
+    public bool CheckValidity()
     {
+        bool allValid = false;
+
         if (IsAValidArray(validConfigs))
         {
             Win();
+            allValid = true;
         }
 
         foreach (Line line in validLines)
@@ -53,6 +56,8 @@ public class Enigme_GameManager : MonoBehaviour
                     s.color = Color.red;
             }
         }
+
+        return allValid;
     }
 
     private bool IsAValidArray(ElementValidationConfig[] config)

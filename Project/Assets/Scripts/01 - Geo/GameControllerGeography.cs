@@ -20,9 +20,19 @@ public class GameControllerGeography : MonoBehaviour
     private SpriteRenderer myRenderer;
     private Texture2D currentTexture;
 
+
+    public Animator star;
+
     void Start()
     {
         myRenderer = GetComponent<SpriteRenderer>();
+
+        foreach (MyScreen s in listScreens)
+        {
+            s.GetComponent<SpriteRenderer>().color = Color.clear;
+        }
+
+        myRenderer.color = Color.clear;
 
         foreach (var platform in listPlatforms)
         {
@@ -40,6 +50,7 @@ public class GameControllerGeography : MonoBehaviour
 
     public IEnumerator ChangeLevel()
     {
+        myRenderer.color = Color.white;
         currentTexture = listQuestionsLevel[currentLevel];
 
         // Draw Indice
@@ -51,21 +62,24 @@ public class GameControllerGeography : MonoBehaviour
             transform.localScale = currentScale;
         }
 
+        foreach (MyScreen s in listScreens)
+        {
+            s.GetComponent<SpriteRenderer>().color = Color.clear;
+        }
+
         yield return new WaitForSeconds(1.5f);
 
         // Draw response
         foreach (MyScreen s in listScreens)
         {
+            s.GetComponent<SpriteRenderer>().color = Color.white;
             s.ChangeTexture(currentLevel);
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3f);
 
         spawnPlatform.SetPlatformActive(false);
 
-        yield return new WaitForSeconds(1f);
-
-        spawnPlatform.SetPlatformActive(true);
 
         yield return new WaitForSeconds(3f);
 
@@ -89,10 +103,18 @@ public class GameControllerGeography : MonoBehaviour
 
         if (currentLevel >= levelMax)
         {
-            SceneSwitcher.instance.ChangeScene("Lobby");
+            Win();
+            
         }
+        else
+        {
 
-        StartCoroutine(ChangeLevel());
+            yield return new WaitForSeconds(1f);
+
+            spawnPlatform.SetPlatformActive(true);
+
+            StartCoroutine(ChangeLevel());
+        }
     }
 
     private IEnumerator FallPlatformsRandom()
@@ -116,8 +138,17 @@ public class GameControllerGeography : MonoBehaviour
         }
     }
 
-
-    void Update()
+    private void Win()
     {
+        star.SetTrigger("Win");
+
+        spawnPlatform.SetPlatformActive(true);
+
+        foreach (MyScreen s in listScreens)
+        {
+            s.GetComponent<SpriteRenderer>().color = Color.clear;
+        }
+
+        myRenderer.color = Color.clear;
     }
 }
