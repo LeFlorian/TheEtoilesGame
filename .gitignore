@@ -81,3 +81,4 @@ Project/Library/SourceAssetDB
 Project/Library/Search/transactions.db
 Project/Library/ArtifactDB-lock
 Project/Library/ArtifactDB
+*.dll
