@@ -71,3 +71,13 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Project/Library/Artifacts/*
+*.db
+Project/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+Project/Logs/shadercompiler-AssetImportWorker0.log
+Project/Logs/AssetImportWorker1.log
+Project/Logs/AssetImportWorker0.log
+Project/Library/SourceAssetDB-lock
+Project/Library/SourceAssetDB
+Project/Library/Search/transactions.db
+Project/Library/ArtifactDB-lock
+Project/Library/ArtifactDB
