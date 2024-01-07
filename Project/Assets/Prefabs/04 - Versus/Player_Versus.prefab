@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: _stats.JumpPower
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 462347871498749441, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
+      propertyPath: _functionnal.activeCamera
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 620184847132630568, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       propertyPath: m_Controller
       value: 
