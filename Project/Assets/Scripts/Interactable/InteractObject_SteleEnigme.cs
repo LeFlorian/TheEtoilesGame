@@ -32,6 +32,8 @@ public class InteractObject_SteleEnigme : InteractObject
 
         FindAnyObjectByType<Enigme_GameManager>().CheckValidity();
 
+        Debug.Log(visuels.Length.ToString());
+
 
         ChangeImage();
     }

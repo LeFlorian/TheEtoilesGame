@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace TarodevController
 {
@@ -121,6 +122,9 @@ namespace TarodevController
 
         //Animation
         public Animator animator;
+
+        public AudioSource walkSound; 
+        public AudioSource pageTurn; 
         #endregion
 
         #region Unity methods
@@ -301,9 +305,10 @@ namespace TarodevController
             if (_grounded && _asPressedJump)
                 ExecuteJump();
             /// vertical parameter for animation player
-            ///
-            //animator.SetFloat("Vertical", math.abs(_frameVelocity.y));
-            animator.SetFloat("Vertical", Input.GetAxis("Jump"));
+            /// 1 -> 36 -> 1 -> -36
+            //animator.SetFloat("Vertical", math.abs(_frameVelocity.y)); 
+            animator.SetFloat("Vertical", _frameVelocity.y);
+            //animator.SetFloat("Vertical", Input.GetAxis("Jump"));
         }
 
         private void ExecuteJump()
@@ -400,6 +405,10 @@ namespace TarodevController
                     _interactObject.Action();
                     /// animation punch parameter for smash level
                     animator.SetBool("Punch", true);
+                    // sound page turning
+                    if (SceneManager.GetActiveScene().name == "02 - Enigme") pageTurn.Play();
+
+                    
                 }
             }
         }
@@ -427,15 +436,27 @@ namespace TarodevController
             {
                 transform.rotation = _baseRot;
             }
-
+            
             if (_frameInput.Move.x > 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(1, 1, 1);
+
+                if (!walkSound.isPlaying)
+                {
+                    walkSound.Play();
+
+                }
             }
             else if (_frameInput.Move.x < 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(-1, 1, 1);
+                if (!walkSound.isPlaying)
+                {
+                    walkSound.Play();
+
+                }
             }
+            
         }
         #endregion
     }
