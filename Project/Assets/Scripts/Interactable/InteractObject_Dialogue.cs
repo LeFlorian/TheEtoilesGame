@@ -40,7 +40,7 @@ public class InteractObject_Dialogue : InteractObject
 
     private void ChangeClue()
     {
-        //itération en boucle :D
+        //itï¿½ration en boucle :D
         if (numberOfClick % indices.Length == 0) dialogue.SetActive(false);
         else
             dialogue.SetActive(true);
