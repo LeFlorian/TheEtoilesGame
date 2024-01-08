@@ -26,7 +26,7 @@ public class Intro : MonoBehaviour
 			float percent = timer / speed;
 			cam.position = startPoint + diff * percent;
         }
-        else if (! _start)
+        if (! _start)
         {
             _start = true;
             ChartReader chart = GetComponent<ChartReader>();
