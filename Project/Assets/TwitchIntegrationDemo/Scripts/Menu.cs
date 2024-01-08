@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using TarodevController;
+using TMPro;
 using UnityEngine;
 
 namespace TwitchIntegration.Demo
@@ -23,4 +24,6 @@ namespace TwitchIntegration.Demo
             });
         }
     }
+
+    
 }

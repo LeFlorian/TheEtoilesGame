@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using TarodevController;
 
 public class InteractObject_Dialogue : InteractObject
 {
@@ -18,19 +19,16 @@ public class InteractObject_Dialogue : InteractObject
     public override void Action()
     {
         numberOfClick++;
-        if (Input.GetKey("r")) {
-            dialogue.SetActive(false); }
+
+        if (numberOfClick == 1)
+        {
+            ShowDialogue();
+        }
         else
         {
-            if (numberOfClick == 1)
-            {
-                ShowDialogue();
-            }
-            else
-            {
-                ChangeClue();
-            }
+             ChangeClue();
         }
+        
             
     }
 
@@ -47,6 +45,16 @@ public class InteractObject_Dialogue : InteractObject
         else
             dialogue.SetActive(true);
             clue.text = indices[numberOfClick%indices.Length];
+    }
+
+    private void Update()
+    {
+        if (Vector2.Distance(FindAnyObjectByType<PlayerController>().transform.position, transform.position) > 3f && dialogue.active)
+        {
+            dialogue.SetActive(false);
+            numberOfClick = 0;
+            clue.text = indices[0];
+        }
     }
 
 }
