@@ -21,7 +21,7 @@ public class DamagePlayerCollisionEvent : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-			LifeController hp = collision.gameObject.GetComponent<LifeController>();
+			Music_LifeController hp = collision.gameObject.GetComponent<Music_LifeController>();
 			hp.InflictDamage(damage);
 			// Debug.Log("Hit Player "+damage+" "+hp.life+"Hp left");
 			Destroy(gameObject);
