@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using TarodevController;
 
 public class InteractObject_Dialogue : InteractObject
 {
