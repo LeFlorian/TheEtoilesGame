@@ -108,7 +108,7 @@ public class AudioManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "04 - Versus")
         {
-            Debug.Log(SceneManager.GetActiveScene().name);
+            //Debug.Log(SceneManager.GetActiveScene().name);
             if (musicSource.clip != music_smash)
             {
                 musicSource.Stop();

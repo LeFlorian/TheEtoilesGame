@@ -4,8 +4,6 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace TarodevController
-{
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
     public class PlayerController : MonoBehaviour
     {
@@ -482,4 +480,3 @@ namespace TarodevController
         public bool JumpHeld;
         public Vector2 Move;
     }
-}
