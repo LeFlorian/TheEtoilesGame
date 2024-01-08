@@ -437,24 +437,25 @@ namespace TarodevController
                 transform.rotation = _baseRot;
             }
             
+
+            if (_frameInput.Move.magnitude > 0)
+            {
+                if (walkSound != null)
+                {
+                    if (!walkSound.isPlaying)
+                    {
+                        walkSound.Play();
+                    }
+                }
+            }
+
             if (_frameInput.Move.x > 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(1, 1, 1);
-
-                if (!walkSound.isPlaying)
-                {
-                    walkSound.Play();
-
-                }
             }
             else if (_frameInput.Move.x < 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(-1, 1, 1);
-                if (!walkSound.isPlaying)
-                {
-                    walkSound.Play();
-
-                }
             }
             
         }
