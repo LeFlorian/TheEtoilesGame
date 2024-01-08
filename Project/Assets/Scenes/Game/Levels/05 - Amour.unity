@@ -3448,6 +3448,14 @@ PrefabInstance:
       propertyPath: lumaID
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
+      propertyPath: m_text
+      value: "Salut l\xE9gende, on se prom\xE8ne ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6383433263539698747, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_Size.x
       value: 1.45
@@ -3470,7 +3478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7781799592362407753, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_Name
-      value: PNJ_Hazana
+      value: PNJ_Hazano
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3844,11 +3852,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4315587116639468419, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.2
+      value: -3.68
       objectReference: {fileID: 0}
     - target: {fileID: 4315587116639468419, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.11
+      value: 16.6
       objectReference: {fileID: 0}
     - target: {fileID: 4315587116639468419, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3892,7 +3900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_text
-      value: Merci pour toute les aventures que l'on vit avec toi !
+      value: "Alors ? T'es mort combien de fois contre mon N\xE9oPayou ?"
       objectReference: {fileID: 0}
     - target: {fileID: 6383433263539698747, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_Size.x
@@ -4181,7 +4189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_text
-      value: Coucou !
+      value: Mon biblically accurate fanart, pour le moral bloop
       objectReference: {fileID: 0}
     - target: {fileID: 6383433263539698747, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_Size.x
