@@ -168,10 +168,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33497743}
-  - component: {fileID: 33497744}
   - component: {fileID: 33497745}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: Boss1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,67 +184,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33497742}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.16, y: 6.57, z: -5.08}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.6270003, z: 23}
+  m_LocalScale: {x: 0.050000004, y: 0.75, z: 7.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 249214730}
-  - {fileID: 1936661694}
-  m_Father: {fileID: 1400040366}
+  - {fileID: 736745808}
+  m_Father: {fileID: 480464513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &33497744
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33497742}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 22c5d9b368ef22c4cb622ce5179c58b0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!95 &33497745
 Animator:
   serializedVersion: 5
@@ -267,6 +214,119 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &103656017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 103656018}
+  - component: {fileID: 103656022}
+  - component: {fileID: 103656021}
+  - component: {fileID: 103656020}
+  - component: {fileID: 103656023}
+  - component: {fileID: 103656024}
+  m_Layer: 0
+  m_Name: Event
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &103656018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103656017}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1405609089}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &103656020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103656017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &103656021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103656017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c6ad87a08fc7e4d8fd38b1f636c779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &103656022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103656017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f3f9d63a46d944fb14a3e2c292ad8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteID: 6
+  offset: 0
+  minMaxCorridorID: {x: 0, y: 4}
+  _name: 
+--- !u!114 &103656023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103656017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49638a2747f48f34e8f6bd9c57740de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  corridors: {fileID: 1229404940}
+  noteEventHandler: {fileID: 103656022}
+  data:
+    projectilPrefab: {fileID: 821363167750708517, guid: 507fd6ae86a30784d8fb6b405f3795fd, type: 3}
+    target: {fileID: 0}
+    speed: 20
+    collideType: 0
+    damage: 1
+    eventType: 0
+    collisionEvent: {fileID: 0}
+--- !u!114 &103656024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103656017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d513548150aae324aad1594f21919519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1846716320}
+  _size: 1.5
+  _speed: 1
 --- !u!1 &125395617
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d513548150aae324aad1594f21919519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 33497743}
+  target: {fileID: 249214730}
   _size: 1.2
   _speed: 1
 --- !u!4 &158744486 stripped
@@ -433,16 +493,25 @@ MonoBehaviour:
   chart: {fileID: 1229404939}
   startItSelf: 0
   startItSelfDelay: 0
-  offset: 0.2
+  offset: 0.4
   noteHolder:
-  - {fileID: 476574234}
+  - {fileID: 103656022}
   - {fileID: 125395622}
   - {fileID: 199703729}
-  - {fileID: 0}
+  - {fileID: 476574234}
+  - {fileID: 1829607558}
   delayAnticipation: 0
   sectionHolder:
-  - {fileID: 1463291357}
-  - {fileID: 519850504}
+  - {fileID: 271457356}
+  - {fileID: 291423994}
+  - {fileID: 513567953}
+  - {fileID: 935772795}
+  - {fileID: 977434155}
+  - {fileID: 1474974879}
+  - {fileID: 1614014715}
+  - {fileID: 1641153364}
+  - {fileID: 1826171416}
+  - {fileID: 1873095406}
   _endAnimator: {fileID: 1691781453}
 --- !u!114 &162669739
 MonoBehaviour:
@@ -522,8 +591,8 @@ MonoBehaviour:
     damage: 1
     eventType: 0
     collisionEvent: {fileID: 0}
-    waveHeightX: 4.5
-    waveSpeedX: 0
+    waveHeightX: 2
+    waveSpeedX: 10
     waveHeightY: 0
     waveSpeedY: 0
     customStartTimeSinWave: 0
@@ -580,7 +649,7 @@ GameObject:
   - component: {fileID: 249214730}
   - component: {fileID: 249214731}
   m_Layer: 0
-  m_Name: dj
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,6 +722,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &256279855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256279856}
+  - component: {fileID: 256279857}
+  m_Layer: 0
+  m_Name: Boss2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &256279856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256279855}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.12, z: 9.1}
+  m_LocalScale: {x: 0.050000004, y: 0.75, z: 7.5}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1846716320}
+  - {fileID: 425792428}
+  m_Father: {fileID: 480464513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &256279857
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256279855}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &271457352
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +789,8 @@ GameObject:
   - component: {fileID: 271457356}
   - component: {fileID: 271457355}
   - component: {fileID: 271457354}
+  - component: {fileID: 271457357}
+  - component: {fileID: 271457358}
   m_Layer: 0
   m_Name: Section - Changement
   m_TagString: Untagged
@@ -725,6 +851,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sectionID: Changement
   _name: 
+--- !u!114 &271457357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271457352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6358abdefaa4354ba190e67192e899d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 249214729}
+  _speed: 0.1
+  _time: 2
+--- !u!114 &271457358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271457352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6358abdefaa4354ba190e67192e899d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 736745807}
+  _speed: 0.1
+  _time: 2
 --- !u!1 &290052965
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +932,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.07058824, g: 0.08627451, b: 0.08627451, a: 0}
+  m_BackGroundColor: {r: 0.019607844, g: 0.027450982, b: 0.019607844, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -924,8 +1080,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1463291353}
-  - {fileID: 519850501}
   - {fileID: 1826171413}
   - {fileID: 291423991}
   - {fileID: 1474974876}
@@ -1109,11 +1263,179 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &386287740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 386287741}
+  - component: {fileID: 386287742}
+  m_Layer: 0
+  m_Name: back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &386287741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386287740}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.372, z: 66.725}
+  m_LocalScale: {x: 0.10000002, y: 1.5, z: 15}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 480464513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &386287742
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386287740}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 800e3921bb185be47aa99bc0abffc2f4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7, y: 7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &406738703 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7620482800456716691, guid: 85ad8c941c0b18d4e901d8fb4c929e30, type: 3}
   m_PrefabInstance: {fileID: 3970506937920766507}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &425792427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 425792428}
+  - component: {fileID: 425792429}
+  m_Layer: 0
+  m_Name: InsulineNicotine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &425792428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425792427}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256279856}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &425792429
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425792427}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 97c4924377879b84eb89125647abdb0c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7, y: 7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!4 &428961459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 227481209269366840, guid: b5947c4968d44bf4786f9e4cde576b47, type: 3}
@@ -1170,7 +1492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1307,6 +1629,41 @@ MonoBehaviour:
     damage: 1
     eventType: 0
     collisionEvent: {fileID: 0}
+--- !u!1 &480464512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 480464513}
+  m_Layer: 0
+  m_Name: Boss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &480464513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480464512}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.057, z: -7.38}
+  m_LocalScale: {x: 15, y: 1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 33497743}
+  - {fileID: 256279856}
+  - {fileID: 386287741}
+  - {fileID: 1936661694}
+  m_Father: {fileID: 1400040366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &500831693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8681752468304836448, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
@@ -1563,78 +1920,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1424753307}
   m_SourcePrefab: {fileID: 100100000, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
---- !u!1 &519850500
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 519850501}
-  - component: {fileID: 519850504}
-  - component: {fileID: 519850503}
-  - component: {fileID: 519850502}
-  m_Layer: 0
-  m_Name: Section -  [Not In Use]
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &519850501
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519850500}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 312058367}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519850502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519850500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &519850503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519850500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c6ad87a08fc7e4d8fd38b1f636c779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &519850504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519850500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c3666177530934386315c2675417c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sectionID: test2
-  _name: 
 --- !u!1 &527725100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,6 +2020,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 848693842090304484, guid: 660b39846bc00604cbde89c71d6eabbf, type: 3}
   m_PrefabInstance: {fileID: 612487639}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &634142055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634142056}
+  - component: {fileID: 634142057}
+  m_Layer: 0
+  m_Name: Smock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &634142056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634142055}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1936661694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &634142057
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634142055}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cd3c0adbd532881459307957dad53ec2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3254902}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7, y: 7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &653935953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,8 +2138,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.34069824, y: -0.28619957}
-  m_SizeDelta: {x: -7.7949, y: -5.3449}
+  m_AnchoredPosition: {x: 0.013999939, y: -0.005}
+  m_SizeDelta: {x: -0.892, y: -0.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653935955
 MonoBehaviour:
@@ -1810,6 +2179,174 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653935953}
   m_CullTransparentMesh: 1
+--- !u!1 &736745807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736745808}
+  - component: {fileID: 736745809}
+  m_Layer: 0
+  m_Name: InsulineNicotine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &736745808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736745807}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.574, z: 0.022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 33497743}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &736745809
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736745807}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 7afd1ae10b1854045933e71d80bb63cc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.51, y: 1.96}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &752866158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 752866159}
+  - component: {fileID: 752866160}
+  m_Layer: 0
+  m_Name: Smock (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &752866159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752866158}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0.57}
+  m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1936661694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &752866160
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752866158}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cd3c0adbd532881459307957dad53ec2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5803922}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7, y: 7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &777496879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,9 +2419,9 @@ Transform:
   m_GameObject: {fileID: 826699898}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13052598, y: -0, z: -0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 1.8400002, z: -4.8199997}
-  m_LocalScale: {x: 4.74653, y: 4.746528, z: 2.90549}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0.1, y: 1.8400002, z: 19.3}
+  m_LocalScale: {x: 10, y: 10, z: 6.1212926}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2122719854}
   m_LocalEulerAnglesHint: {x: 15.000001, y: 0, z: 0}
@@ -1930,7 +2467,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 83787fdef41aa0347a142ddbd72cef90, type: 3}
-  m_Color: {r: 0.07058824, g: 0.08627451, b: 0.08627451, a: 1}
+  m_Color: {r: 0.6431373, g: 0.023529412, b: 0.7529412, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2111,7 +2648,8 @@ GameObject:
   - component: {fileID: 977434152}
   - component: {fileID: 977434155}
   - component: {fileID: 977434154}
-  - component: {fileID: 977434153}
+  - component: {fileID: 977434158}
+  - component: {fileID: 977434159}
   m_Layer: 0
   m_Name: Section - Fin changement
   m_TagString: Untagged
@@ -2134,18 +2672,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 312058367}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &977434153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977434151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &977434154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,6 +2698,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sectionID: Fin changement
   _name: 
+--- !u!114 &977434158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977434151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822b4248ca065394b9a5d5d5f127f544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  From: {fileID: 33497742}
+  To: {fileID: 256279855}
+--- !u!114 &977434159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977434151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1016957217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2656221722024678082, guid: 660b39846bc00604cbde89c71d6eabbf, type: 3}
@@ -2364,7 +2916,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: dcb2a95d980e28a44bcb09bab294d380, type: 3}
-  m_Color: {r: 0.07058824, g: 0.49411768, b: 0.15294118, a: 1}
+  m_Color: {r: 0.10588236, g: 0.46274513, b: 0.04705883, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2536,6 +3088,90 @@ Transform:
   - {fileID: 527725101}
   m_Father: {fileID: 2122719854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1221241551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1221241552}
+  - component: {fileID: 1221241553}
+  m_Layer: 0
+  m_Name: Smock (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1221241552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221241551}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0.57}
+  m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1936661694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1221241553
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221241551}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cd3c0adbd532881459307957dad53ec2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7, y: 7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1229404935
 GameObject:
   m_ObjectHideFlags: 0
@@ -9713,295 +10349,295 @@ MonoBehaviour:
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 7903
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 7903
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 7903
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 7903
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 7903
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 7936
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 7951
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 7975
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 7998
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 7998
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 7998
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8013
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8013
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8029
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 8029
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8044
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8044
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8059
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8166
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8166
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8181
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8346
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8364
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8379
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8379
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8379
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 8394
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8425
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8425
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8440
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8455
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8472
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8488
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8503
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8533
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8548
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8548
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8548
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8563
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8578
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8578
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8594
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8609
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 8624
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8624
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8639
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8669
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8669
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 8685
       noteCorridorID: 4
       noteDurationTick: 0
@@ -10013,1171 +10649,1171 @@ MonoBehaviour:
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8716
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8731
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8746
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8746
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8746
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8761
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8839
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8854
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 8869
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8869
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8869
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8884
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8914
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8929
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8929
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 8929
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 8944
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8944
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 8961
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 8976
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 8976
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 8991
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9036
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9036
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9036
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9051
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9051
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9066
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9066
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9082
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9082
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9097
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9097
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9097
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9112
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9127
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9127
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9127
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9142
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9188
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9203
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9218
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9235
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9250
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9250
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9250
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9265
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9265
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9280
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9280
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9295
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9310
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9325
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9340
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9340
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9356
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9356
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9371
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9371
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9387
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9387
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9387
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9449
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9464
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9479
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9494
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9494
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9509
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9524
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9524
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9539
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 9554
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9630
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9630
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9630
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9645
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 9749
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9859
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 9890
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 9890
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 9905
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10027
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10027
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10119
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10119
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10134
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10134
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10164
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10164
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10179
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10195
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10195
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10210
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10226
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10241
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10241
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10241
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10348
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10348
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10363
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10363
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10379
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10379
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10409
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10409
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10426
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10441
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10441
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10456
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10456
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10456
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10472
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10487
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10502
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10533
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10534
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10549
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10564
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10579
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10594
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10609
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10609
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10624
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10624
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10639
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10639
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10647
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10654
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10654
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10654
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10669
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10699
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10699
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10714
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10729
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10729
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10744
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10744
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10759
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10805
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10820
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10820
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10820
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10835
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10865
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10865
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10865
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10910
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10910
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10925
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10925
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10940
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 10940
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 10955
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 10955
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10955
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10985
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 10985
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 10985
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 11000
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 11000
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 11015
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 11015
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11030
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 11045
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11045
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 11075
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 11090
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 11105
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11105
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 11105
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 11120
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11135
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 11135
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 11150
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 11165
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11180
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 11195
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11210
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 11210
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11255
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11270
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 11270
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 11285
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11285
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 11285
       noteCorridorID: 4
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 4
-    - noteID: 1
+    - noteID: 6
       noteTick: 11300
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 11300
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 11315
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 11330
       noteCorridorID: 0
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 0
-    - noteID: 1
+    - noteID: 6
       noteTick: 11330
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11330
       noteCorridorID: 3
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 3
-    - noteID: 1
+    - noteID: 6
       noteTick: 11376
       noteCorridorID: 1
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 1
-    - noteID: 1
+    - noteID: 6
       noteTick: 11376
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
+    - noteID: 6
       noteTick: 11376
       noteCorridorID: 3
       noteDurationTick: 0
@@ -11189,42 +11825,6 @@ MonoBehaviour:
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 1
-      noteTick: 11698
-      noteCorridorID: 1
-      noteDurationTick: 0
-      noteTypeID: N
-      noteColorID: 1
-    - noteID: 1
-      noteTick: 11698
-      noteCorridorID: 2
-      noteDurationTick: 0
-      noteTypeID: N
-      noteColorID: 2
-    - noteID: 1
-      noteTick: 11744
-      noteCorridorID: 0
-      noteDurationTick: 0
-      noteTypeID: N
-      noteColorID: 0
-    - noteID: 1
-      noteTick: 11744
-      noteCorridorID: 1
-      noteDurationTick: 0
-      noteTypeID: N
-      noteColorID: 1
-    - noteID: 1
-      noteTick: 11744
-      noteCorridorID: 4
-      noteDurationTick: 0
-      noteTypeID: N
-      noteColorID: 4
-    - noteID: 1
-      noteTick: 11767
-      noteCorridorID: 3
-      noteDurationTick: 0
-      noteTypeID: N
-      noteColorID: 3
     sections:
     - sectionID: 5sec
       sectionTick: 430
@@ -11277,7 +11877,7 @@ MonoBehaviour:
   pathCorridor4:
     startPoint: {fileID: 1016957217}
     endPoint: {fileID: 829142260}
-  target: {fileID: 1424753299}
+  target: {fileID: 0}
 --- !u!1001 &1276350582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11375,8 +11975,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -474.15747, y: -302.8148}
-  m_SizeDelta: {x: 144.2007, y: 18.8846}
+  m_AnchoredPosition: {x: 0, y: -3.81}
+  m_SizeDelta: {x: 20, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276809390
 MonoBehaviour:
@@ -11459,7 +12059,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1925958052}
-  - {fileID: 33497743}
+  - {fileID: 480464513}
   - {fileID: 1424753300}
   - {fileID: 290052966}
   - {fileID: 2122719854}
@@ -11467,6 +12067,52 @@ Transform:
   - {fileID: 1691781452}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1405609088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405609089}
+  - component: {fileID: 1405609090}
+  m_Layer: 0
+  m_Name: Note - ID = 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1405609089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405609088}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 103656018}
+  m_Father: {fileID: 1939447769}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1405609090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405609088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37262eefae850914ca6d307a96395274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteID: 6
 --- !u!1 &1420753535
 GameObject:
   m_ObjectHideFlags: 0
@@ -11619,7 +12265,7 @@ MonoBehaviour:
   _frameVelocity: {x: 0, y: 0}
   animator: {fileID: 1424753303}
   corridors: {fileID: 1829281795}
-  _seuilTime: 0.125
+  _seuilTime: 0.075
 --- !u!114 &1424753307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11632,81 +12278,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9f900055c5bb342a5e83d3810788fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLife: 25
-  life: 25
+  maxLife: 100
+  life: 100
   slider: {fileID: 1276809390}
---- !u!1 &1463291352
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1463291353}
-  - component: {fileID: 1463291357}
-  - component: {fileID: 1463291356}
-  - component: {fileID: 1463291355}
-  m_Layer: 0
-  m_Name: Section -  [Not In Use]
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1463291353
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463291352}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 312058367}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1463291355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463291352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1463291356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463291352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c6ad87a08fc7e4d8fd38b1f636c779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1463291357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463291352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c3666177530934386315c2675417c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sectionID: test
-  _name: 
 --- !u!1 &1474974875
 GameObject:
   m_ObjectHideFlags: 0
@@ -12054,9 +12628,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769872067}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1067601, y: 0.1067601, z: 0.1067601}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1276809389}
@@ -12064,9 +12638,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2}
+  m_SizeDelta: {x: 0.1, y: 0.1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1769872069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12106,7 +12680,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1769872071
 Canvas:
   m_ObjectHideFlags: 0
@@ -12116,7 +12690,7 @@ Canvas:
   m_GameObject: {fileID: 1769872067}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -12445,6 +13019,90 @@ MonoBehaviour:
     damage: 1
     eventType: 0
     collisionEvent: {fileID: 0}
+--- !u!1 &1846716319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846716320}
+  - component: {fileID: 1846716321}
+  m_Layer: 0
+  m_Name: Table
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1846716320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846716319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256279856}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1846716321
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846716319}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 95bc0d0c4c740924395a1f73d9a49a0e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7, y: 7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1873095402
 GameObject:
   m_ObjectHideFlags: 0
@@ -12614,9 +13272,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1936661694}
-  - component: {fileID: 1936661695}
   m_Layer: 0
-  m_Name: "Fum\xE9e"
+  m_Name: Smock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12630,65 +13287,17 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936661693}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.14}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.6270003, z: 23.525}
+  m_LocalScale: {x: 0.05000001, y: 0.75, z: 7.5}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 33497743}
+  m_Children:
+  - {fileID: 634142056}
+  - {fileID: 752866159}
+  - {fileID: 1961882900}
+  - {fileID: 1221241552}
+  m_Father: {fileID: 480464513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1936661695
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936661693}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cd3c0adbd532881459307957dad53ec2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 7, y: 7}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1939447768
 GameObject:
   m_ObjectHideFlags: 0
@@ -12723,6 +13332,7 @@ Transform:
   - {fileID: 777496880}
   - {fileID: 1420753536}
   - {fileID: 1757824821}
+  - {fileID: 1405609089}
   m_Father: {fileID: 1229404936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1939447770
@@ -12815,6 +13425,90 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1 &1961882899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961882900}
+  - component: {fileID: 1961882901}
+  m_Layer: 0
+  m_Name: Smock (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1961882900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961882899}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0.45}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1936661694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1961882901
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961882899}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cd3c0adbd532881459307957dad53ec2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9137255}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7, y: 7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!4 &2093453371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6314143035412403895, guid: 660b39846bc00604cbde89c71d6eabbf, type: 3}
@@ -13044,6 +13738,10 @@ PrefabInstance:
     - target: {fileID: 3563079324935814805, guid: b5947c4968d44bf4786f9e4cde576b47, type: 3}
       propertyPath: m_Name
       value: TwitchManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563079324935814805, guid: b5947c4968d44bf4786f9e4cde576b47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
