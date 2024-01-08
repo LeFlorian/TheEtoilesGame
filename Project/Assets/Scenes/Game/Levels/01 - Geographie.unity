@@ -3273,6 +3273,7 @@ GameObject:
   - component: {fileID: 1931066608}
   - component: {fileID: 1931066607}
   - component: {fileID: 1931066606}
+  - component: {fileID: 1931066609}
   m_Layer: 0
   m_Name: Drug_Lee
   m_TagString: Untagged
@@ -3368,6 +3369,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1931066609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931066605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698663ea9d6832541ba596c4722bce26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1931066606}
 --- !u!1 &1953167471
 GameObject:
   m_ObjectHideFlags: 0
