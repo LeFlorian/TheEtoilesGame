@@ -107,7 +107,7 @@ public class ChartReader : MonoBehaviour
 		Debug.Log(audioSource.isPlaying);
 		yield return new WaitWhile (()=> audioSource.isPlaying);
 		// Change scene // cinematique
-		// yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(2f);
 		//SceneSwitcher.instance.ChangeScene("Lobby");
 		Win();
 		yield return null;
@@ -146,7 +146,7 @@ public class ChartReader : MonoBehaviour
 		}
 
 		if (_currentNoteIndex >= _notes.Count ){
-			Debug.Log("end note");
+			//Debug.Log("end note");
 			_endNote = true;
 		}
 	}
@@ -175,7 +175,7 @@ public class ChartReader : MonoBehaviour
 		}
 		else if (_currentSectionIndex >= _sections.Count)
 		{
-			Debug.Log("section");
+			//Debug.Log("section");
 			_endSection = true;
 		}
 	}
@@ -192,7 +192,7 @@ public class ChartReader : MonoBehaviour
 
 	IEnumerator WaitingChangeScene()
 	{
-		yield return new WaitForSeconds(5);
+		yield return new WaitForSeconds(3);
 		SceneSwitcher.instance.ChangeScene("Lobby");
 	}
 }
