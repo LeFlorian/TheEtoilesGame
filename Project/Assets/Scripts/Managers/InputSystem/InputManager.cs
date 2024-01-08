@@ -24,6 +24,11 @@ public class InputManager : MonoBehaviour
     public bool interactPerformed;
 
     [HideInInspector]
+    public InputAction interact_R;
+    [HideInInspector]
+    public bool interact_R_Performed;
+
+    [HideInInspector]
     public InputAction any;
     [HideInInspector]
     public bool anyPerformed;
@@ -48,7 +53,11 @@ public class InputManager : MonoBehaviour
         interact = c.Game.Interact;
         interact.Enable();
 
+        interact_R = c.Game.Interact;
+        interact_R.Enable();
+
         interact.performed += delegate { StartCoroutine(PerformedInteract()); };
+        interact_R.performed += delegate { StartCoroutine(PerformedInteract_R()); };
 
         any = c.Game.Any;
         any.Enable();
@@ -61,6 +70,7 @@ public class InputManager : MonoBehaviour
         move.Disable();
         jump.Disable();
         interact.Disable();
+        interact_R.Disable();
         any.Disable();
     }
 
@@ -76,6 +86,13 @@ public class InputManager : MonoBehaviour
         yield return new WaitForEndOfFrame();
         interactPerformed = false;
     }
+    private IEnumerator PerformedInteract_R()
+    {
+        interact_R_Performed = true;
+        yield return new WaitForEndOfFrame();
+        interact_R_Performed = false;
+    }
+
     private IEnumerator PerformedAny()
     {
         anyPerformed = true;

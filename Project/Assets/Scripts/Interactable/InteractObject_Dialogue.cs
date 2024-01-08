@@ -18,16 +18,20 @@ public class InteractObject_Dialogue : InteractObject
     public override void Action()
     {
         numberOfClick++;
-        numberOfClick = Mathf.Clamp(numberOfClick, 0,indices.Length);
-
-        if (numberOfClick == 1)
-        {
-            ShowDialogue();
-        }
+        if (Input.GetKey("r")) {
+            dialogue.SetActive(false); }
         else
         {
-            ChangeClue();
+            if (numberOfClick == 1)
+            {
+                ShowDialogue();
+            }
+            else
+            {
+                ChangeClue();
+            }
         }
+            
     }
 
     private void ShowDialogue()
@@ -38,7 +42,11 @@ public class InteractObject_Dialogue : InteractObject
 
     private void ChangeClue()
     {
-        clue.text = indices[numberOfClick-1];
+        //itération en boucle :D
+        if (numberOfClick % indices.Length == 0) dialogue.SetActive(false);
+        else
+            dialogue.SetActive(true);
+            clue.text = indices[numberOfClick%indices.Length];
     }
 
 }

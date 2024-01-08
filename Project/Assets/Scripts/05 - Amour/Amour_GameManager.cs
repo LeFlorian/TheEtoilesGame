@@ -7,10 +7,16 @@ public class Amour_GameManager : MonoBehaviour
     public int numberOfCollectableObtain;
     public int howManyCollectable;
 
+    public Animator starFragmentAnim;
+
     public void ObtainCollectable()
     {
         numberOfCollectableObtain++;
 
+    }
+
+    public void CheckValidity()
+    {
         if (numberOfCollectableObtain >= howManyCollectable)
         {
             Win();
@@ -19,6 +25,6 @@ public class Amour_GameManager : MonoBehaviour
 
     private void Win()
     {
-        Debug.Log("YOU WIN");
+        starFragmentAnim.SetTrigger("Win");
     }
 }

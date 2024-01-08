@@ -155,6 +155,17 @@
                 },
                 {
                     "name": "",
+                    "id": "19cdae6a-41c5-4a4b-ab16-31dbda2055e5",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b0cedf4f-93b1-47b1-b438-0bdbb67cc709",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",

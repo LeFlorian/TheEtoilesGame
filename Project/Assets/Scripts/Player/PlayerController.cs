@@ -296,19 +296,26 @@ namespace TarodevController
         {
             if (!_grounded)
             {
+                //jump handle value animation
+                animator.SetFloat("Vertical", 1);
                 if (_timeWhenJumpPressed + _stats.JumpBuffer < _time)
                 {
                     _asPressedJump = false;
                 }
             }
 
-            if (_grounded && _asPressedJump)
-                ExecuteJump();
-            /// vertical parameter for animation player
-            /// 1 -> 36 -> 1 -> -36
-            //animator.SetFloat("Vertical", math.abs(_frameVelocity.y)); 
-            animator.SetFloat("Vertical", _frameVelocity.y);
-            //animator.SetFloat("Vertical", Input.GetAxis("Jump"));
+            if (_grounded)
+                if (_asPressedJump)
+                {
+                    ExecuteJump();
+                    //jump handle value animation
+                    animator.SetFloat("Vertical", 1);
+
+                }
+
+                else
+                    //jump handle value animation
+                    animator.SetFloat("Vertical", 0);
         }
 
         private void ExecuteJump()
@@ -398,8 +405,10 @@ namespace TarodevController
 
         private void HandleInteraction()
         {
+
             if (_functionnal.interactInfo.activeSelf)
             {
+
                 if (InputManager.instance.interactPerformed)
                 {
                     _interactObject.Action();
@@ -409,6 +418,10 @@ namespace TarodevController
                     if (SceneManager.GetActiveScene().name == "02 - Enigme") pageTurn.Play();
 
                     
+                }
+                else if (InputManager.instance.interact_R_Performed)
+                {
+                    Debug.Log("sakljhdasjkd");
                 }
             }
         }
@@ -438,27 +451,25 @@ namespace TarodevController
                 transform.rotation = _baseRot;
             }
             
+
+            if (_frameInput.Move.magnitude > 0)
+            {
+                if (walkSound != null)
+                {
+                    if (!walkSound.isPlaying && _grounded)
+                    {
+                        walkSound.Play();
+                    }
+                }
+            }
+
             if (_frameInput.Move.x > 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(1, 1, 1);
-
-
-                if (!walkSound.isPlaying && (SceneManager.GetActiveScene().name == "Lobby" || SceneManager.GetActiveScene().name == "05 - Amour"))
-
-                {
-                    walkSound.Play();
-
-                }
             }
             else if (_frameInput.Move.x < 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(-1, 1, 1);
-                if (!walkSound.isPlaying && (SceneManager.GetActiveScene().name == "Lobby" || SceneManager.GetActiveScene().name == "05 - Amour"))
-
-                {
-                    walkSound.Play();
-
-                }
             }
             
         }

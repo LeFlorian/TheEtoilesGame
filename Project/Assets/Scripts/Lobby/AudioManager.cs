@@ -27,6 +27,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip music_enigme;
     //public AudioClip music_musique; // pu besoin
     public AudioClip music_smash;
+    public AudioClip music_boss_smash;
+    public AudioClip sfx_entre_boss_smash;
     public AudioClip music_fanart;
 
 
@@ -88,7 +90,7 @@ public class AudioManager : MonoBehaviour
                 musicSource.Stop();
                 musicSource.clip = music_enigme;
                 musicSource.loop = true;
-                musicSource.volume = 0.01f;
+                musicSource.volume = 0.1f;
 
             }
             sfxSource.clip = null;
@@ -106,7 +108,7 @@ public class AudioManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "04 - Versus")
         {
-
+            Debug.Log(SceneManager.GetActiveScene().name);
             if (musicSource.clip != music_smash)
             {
                 musicSource.Stop();
@@ -119,7 +121,11 @@ public class AudioManager : MonoBehaviour
                 musicSource.Play();
             }
 
-        }
+            music_boss_smash = null;
+            sfx_entre_boss_smash = null;
+
+
+}
         else if (SceneManager.GetActiveScene().name == "05 - Amour")
         {
             if (musicSource.clip != music_fanart)

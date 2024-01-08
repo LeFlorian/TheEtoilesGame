@@ -24,7 +24,7 @@ public class InteractObject_Enemy : InteractObject
             {
                 if (tc._addingAMessage.value >= tc._addingAMessage.maxValue)
                 {
-                    force = 200;
+                    force = 10;
                 }
             }
 
