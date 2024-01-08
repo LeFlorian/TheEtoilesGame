@@ -46,7 +46,10 @@ public class ChartReader : MonoBehaviour
 
 	private bool _endNote = false;
 	private bool _endSection = false;
-	
+
+	[SerializeField]
+	private Animator _endAnimator;
+
 
 	[ContextMenu("Update Chart Reader")]
     public void UpdateReader()
@@ -59,8 +62,6 @@ public class ChartReader : MonoBehaviour
 		sectionHolder = FindObjectsOfType<SectionHolder>();
 		__init = true;
     }
-
-
 
     // Init Music
 	private void Awake()
@@ -107,7 +108,8 @@ public class ChartReader : MonoBehaviour
 		yield return new WaitWhile (()=> audioSource.isPlaying);
 		// Change scene // cinematique
 		// yield return new WaitForSeconds(3f);
-		SceneSwitcher.instance.ChangeScene("Lobby");
+		//SceneSwitcher.instance.ChangeScene("Lobby");
+		Win();
 		yield return null;
 	}
     
@@ -180,5 +182,17 @@ public class ChartReader : MonoBehaviour
 
 	public void Restart() { StartMusic(0f); }
 
+	private void Win()
+	{
+		_endAnimator.SetTrigger("Win");
+        PlayerPrefs.SetInt($"AsCompletedLvl{3}", 1);
 
+		StartCoroutine(WaitingChangeScene());
+    }
+
+	IEnumerator WaitingChangeScene()
+	{
+		yield return new WaitForSeconds(5);
+		SceneSwitcher.instance.ChangeScene("Lobby");
+	}
 }
