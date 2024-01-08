@@ -404,7 +404,7 @@ namespace TarodevController
                 {
                     _interactObject.Action();
                     /// animation punch parameter for smash level
-                    animator.SetBool("Punch", true);
+                    if (SceneManager.GetActiveScene().name == "04 - Versus") animator.SetBool("Punch", true);
                     // sound page turning
                     if (SceneManager.GetActiveScene().name == "02 - Enigme") pageTurn.Play();
 
@@ -424,7 +424,8 @@ namespace TarodevController
             _functionnal.interactInfo.SetActive(false);
             _interactObject = null;
             /// animation punch parameter for smash level
-            animator.SetBool("Punch", false);
+            if (SceneManager.GetActiveScene().name == "04 - Versus") animator.SetBool("Punch", false);
+
         }
 
         #endregion
