@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using TarodevController;
+// using TarodevController;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,14 +26,13 @@ public class Music_LifeController : MonoBehaviour
         {
             KillPlayer();
         }
-
         slider.value = life;
-
         return life;
     }
 
     public void KillPlayer()
     {
+        Destroy(gameObject);
         SceneSwitcher.instance.ChangeScene("Lobby");
     }
 }
