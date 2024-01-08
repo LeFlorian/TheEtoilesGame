@@ -7,37 +7,25 @@ using System;
 [Serializable]
 public class DamagePlayerCollisionEvent : MonoBehaviour
 {
-	[SerializeField] public GameObject player;
+	// [SerializeField] public GameObject player;
 	[SerializeField] public int damage = 1;
-	[SerializeField] public bool jumpable;
+	// [SerializeField] public bool jumpable;
 	// [SerializeField] private bool overrideDeflectVisualAsJumpable;
 	// [SerializeField] private bool overrideDeflectVisualAsNotJumpable;
 
-	public bool IsJumpable => jumpable;
+	// public bool IsJumpable => jumpable;
 	// public bool OverrideDeflectVisualAsJumpable => overrideDeflectVisualAsJumpable;
 	// public bool OverrideDeflectVisualAsNotJumpable => overrideDeflectVisualAsNotJumpable;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-			Debug.Log("colision");
-			// player = gameObject.GetComponent;
-			if (!jumpable){
-				Debug.Log("Hit ! ");
-				collision.gameObject.GetComponent<LifeController>().InflictDamage(damage);
-			}	
-        }
-
-        if (collision.tag == "Interactable")
-        {
-            Destroy(collision.gameObject);
+			Music_LifeController hp = collision.gameObject.GetComponent<Music_LifeController>();
+			hp.InflictDamage(damage);
+			// Debug.Log("Hit Player "+damage+" "+hp.life+"Hp left");
+			Destroy(gameObject);
         }
     }
 
-	// public override void Execute()
-	// {
-	// 	if (!player.jumping || !jumpable)
-	// 		player.GetComponent<LifeController>().InflictDamage(damage);
-	// }
 }

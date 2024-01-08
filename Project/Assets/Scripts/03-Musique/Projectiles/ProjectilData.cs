@@ -22,7 +22,7 @@ public class ProjectilData
 
 	[SerializeField] public GameObject target;
 
-	[Space(10f)] [SerializeField] private bool Jumpable = true;
+	// [Space(10f)] [SerializeField] private bool Jumpable = true;
 
 	[SerializeField]
 	[Range(0f, 100f)]
@@ -35,7 +35,7 @@ public class ProjectilData
 
 	public EventType eventType;
 
-	public bool IsJumpable => Jumpable;
+	// public bool IsJumpable => Jumpable;
 	// public UnityEvent onCollide;
 	[SerializeField] public DamagePlayerCollisionEvent collisionEvent;
 

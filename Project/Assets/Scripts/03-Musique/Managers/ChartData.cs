@@ -170,6 +170,7 @@ public class ChartData : MonoBehaviour
         sectionSlot.transform.SetParent(sectionParent.transform);
         SectionHolder sectionEventHolder = sectionSlot.AddComponent<SectionHolder>();
         sectionEventHolder.sectionID = sectionID;
+        sectionSlot.AddComponent<EventCommandsGroupExecutor>();
     }
     
 }
