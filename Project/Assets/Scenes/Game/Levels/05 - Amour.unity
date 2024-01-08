@@ -6818,7 +6818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 462347871498749441, guid: 752dbb8c3f801654e88fa4397e994895, type: 3}
       propertyPath: _stats.JumpPower
-      value: 25.5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 462347871498749441, guid: 752dbb8c3f801654e88fa4397e994895, type: 3}
       propertyPath: _stats.Acceleration
@@ -6846,11 +6846,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 1842fb4d5a6f5bf4fa02e95b3fb44880, type: 2}
     - target: {fileID: 1968726667285817916, guid: 752dbb8c3f801654e88fa4397e994895, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1968726667285817916, guid: 752dbb8c3f801654e88fa4397e994895, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1968726667285817916, guid: 752dbb8c3f801654e88fa4397e994895, type: 3}
       propertyPath: m_LocalScale.z

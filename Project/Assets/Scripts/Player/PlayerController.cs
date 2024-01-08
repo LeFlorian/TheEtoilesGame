@@ -296,19 +296,26 @@ namespace TarodevController
         {
             if (!_grounded)
             {
+                //jump handle value animation
+                animator.SetFloat("Vertical", 1);
                 if (_timeWhenJumpPressed + _stats.JumpBuffer < _time)
                 {
                     _asPressedJump = false;
                 }
             }
 
-            if (_grounded && _asPressedJump)
-                ExecuteJump();
-            /// vertical parameter for animation player
-            /// 1 -> 36 -> 1 -> -36
-            //animator.SetFloat("Vertical", math.abs(_frameVelocity.y)); 
-            animator.SetFloat("Vertical", _frameVelocity.y);
-            //animator.SetFloat("Vertical", Input.GetAxis("Jump"));
+            if (_grounded)
+                if (_asPressedJump)
+                {
+                    ExecuteJump();
+                    //jump handle value animation
+                    animator.SetFloat("Vertical", 1);
+
+                }
+
+                else
+                    //jump handle value animation
+                    animator.SetFloat("Vertical", 0);
         }
 
         private void ExecuteJump()
@@ -449,7 +456,7 @@ namespace TarodevController
             {
                 if (walkSound != null)
                 {
-                    if (!walkSound.isPlaying)
+                    if (!walkSound.isPlaying && _grounded)
                     {
                         walkSound.Play();
                     }

@@ -150,6 +150,8 @@ namespace TarodevController
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
 
             _baseRot = transform.rotation;
+            animator.SetBool("Punch", false);
+
         }
 
         private void Update()
@@ -226,10 +228,22 @@ namespace TarodevController
                 if (diff.x < 0)
                 {
                     _inputsMovement.x = Mathf.Lerp(_inputsMovement.x, -1, 1 * Time.deltaTime);
+                    try {
+                        animator.SetFloat("Horizontal", -1);
+                    
+                    }catch { }
+
                 }
                 else
                 {
                     _inputsMovement.x = Mathf.Lerp(_inputsMovement.x, 1, 1 * Time.deltaTime);
+                    try
+                    {
+                        animator.SetFloat("Horizontal", -1);
+
+                    }
+                    catch { }
+
                 }
 
                 if (diff.y > 1)
@@ -252,7 +266,6 @@ namespace TarodevController
                     if (_hitingTime >= _hitingDelay)
                     {
                         pc.HitingPlayer(diff, forceHiting, decreaseForceHiting);
-
                         _hitingTime = 0;
                     }
                 }
@@ -433,9 +446,13 @@ namespace TarodevController
 
         public void HitingPlayer(Vector2 dir, float force, float deacreseForce)
         {
+            animator.SetBool("Punch", true);
+
             force = force + GetComponent<DamageVersus>().AddingDamage()*force;
 
             StartCoroutine(ExplosionHit(dir, force, deacreseForce));
+            animator.SetBool("Punch", false);
+
         }
 
         public IEnumerator ExplosionHit(Vector2 dir, float force, float deacreseForce)
@@ -454,7 +471,7 @@ namespace TarodevController
         #region Visuals
         private void UpdateVisuals()
         {
-            if (!_stats.tilt)
+            /*if (!_stats.tilt)
             {
                 transform.rotation = _baseRot;
             }
@@ -466,7 +483,7 @@ namespace TarodevController
             else if (_frameInput.Move.x < 0)
             {
                 _functionnal.visual.transform.localScale = new Vector3(-1, 1, 1);
-            }
+            }*/
         }
         #endregion
     }
