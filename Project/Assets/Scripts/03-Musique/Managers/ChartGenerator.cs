@@ -9,7 +9,8 @@ using System.Linq;
 /// Generer les notes a partir d'un fichier de configuration
 public class ChartGenerator 
 {
-    public static Data.ChartData UpdateChart(DefaultAsset chartTxt){
+#if UNITY_EDITOR
+    public static Data.ChartData UpdateChart(UnityEditor.DefaultAsset chartTxt){
         Data.ChartData chart = new Data.ChartData();
         // Lire le .chart
         TextAsset textAsset = new TextAsset(File.ReadAllText(AssetDatabase.GetAssetPath(chartTxt)));
@@ -24,6 +25,7 @@ public class ChartGenerator
 
         return chart;
     }
+#endif
 }
 
 

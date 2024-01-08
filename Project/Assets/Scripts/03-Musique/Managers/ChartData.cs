@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.UI;
 
-// using UnityEngine.AddressableAssets;
+//using UnityEngine.AddressableAssets;
 
 // Chart : contient Notes et Sections
 public class ChartData : MonoBehaviour
@@ -12,7 +11,9 @@ public class ChartData : MonoBehaviour
     // Rangement des notes créées
 	public const string notesParentName = "NOTES";
 	public const string sectionsParentName = "SECTIONS";
-    [SerializeField] private DefaultAsset chart;
+#if UNITY_EDITOR
+    [SerializeField] private UnityEditor.DefaultAsset chart;
+#endif
     public AudioSource song;
     public Data.ChartData chartData;
 
@@ -24,7 +25,9 @@ public class ChartData : MonoBehaviour
     public void GenerateData()
     {
         corridors = GetComponent<ProjectileHandler>();
+#if UNITY_EDITOR
         chartData = ChartGenerator.UpdateChart(chart);
+#endif
         CreateNotesLayout();
         CreateSectionsLayout();
         this.update = new UpdateShootProjectile();
