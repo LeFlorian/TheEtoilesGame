@@ -88,7 +88,7 @@ public class AudioManager : MonoBehaviour
                 musicSource.Stop();
                 musicSource.clip = music_enigme;
                 musicSource.loop = true;
-                musicSource.volume = 0.01f;
+                musicSource.volume = 0.1f;
 
             }
             sfxSource.clip = null;

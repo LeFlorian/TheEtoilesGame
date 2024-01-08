@@ -398,8 +398,10 @@ namespace TarodevController
 
         private void HandleInteraction()
         {
+
             if (_functionnal.interactInfo.activeSelf)
             {
+
                 if (InputManager.instance.interactPerformed)
                 {
                     _interactObject.Action();
@@ -409,6 +411,10 @@ namespace TarodevController
                     if (SceneManager.GetActiveScene().name == "02 - Enigme") pageTurn.Play();
 
                     
+                }
+                else if (InputManager.instance.interact_R_Performed)
+                {
+                    Debug.Log("sakljhdasjkd");
                 }
             }
         }
