@@ -10,6 +10,8 @@ public class SceneSwitcher : MonoBehaviour
 
     public Image fader;
 
+    public int speed = 1;
+
     private void Awake()
     {
         instance = this;
