@@ -141,6 +141,11 @@ public class AudioManager : MonoBehaviour
             }
 
         }
+        else if (SceneManager.GetActiveScene().name == "Credits")
+        {
+                musicSource.Stop();
+
+        }
     }
 
     private void Awake()
