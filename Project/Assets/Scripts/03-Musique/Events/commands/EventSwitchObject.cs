@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using UnityEditor.PackageManager;
+//causing build error here
+//using UnityEditor.PackageManager;
 
 [Serializable]
 
