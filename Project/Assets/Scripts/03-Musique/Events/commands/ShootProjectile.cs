@@ -16,6 +16,7 @@ public class ShootProjectile : EventCommand
 	[SerializeField] public NoteHolder noteEventHandler;
 	[Space(5f)]
 
+	private GameObject target;
 	public static float localProjectilSpeedModifier = 1f;
 	// public static readonly Dictionary<Tuple<GameObject, GameObject>, GameObject> projectilesWithTarget = new Dictionary<Tuple<GameObject, GameObject>, GameObject>();
 	// public static readonly HashSet<GameObject> projectiles = new HashSet<GameObject>();
@@ -34,9 +35,14 @@ public class ShootProjectile : EventCommand
 		_Execute();
 	}
 
+	void Awake(){
+		target = GameObject.FindWithTag("Target");	
+	}
+
 	public virtual void  _Execute(){
 		if (base.enabled)
-		{	ProjectilData data = getData();
+		{	
+			ProjectilData data = getData();
 			int corridorId = GetCorridor();
 			GameObject projectile = UnityEngine.Object.Instantiate(data.projectilPrefab, this.transform);
 			copyTo(projectile);
@@ -71,7 +77,7 @@ public class ShootProjectile : EventCommand
     // Shoot projectile
     private IEnumerator MoveProjectil(GameObject projectile,Vector3 from, Vector3 to, ProjectilData data){
         Rigidbody projectileRigidbody = projectile.transform.GetComponent<Rigidbody>();
-		projectile.transform.LookAt(to);
+		projectile.transform.LookAt(target.transform);
 		projectile.transform.position = from;
 		Vector3 direction = (to - projectile.transform.position).normalized;
 		bool positive = direction.z > 0f;

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Plateform
   - Interactable
+  - Projectil
+  - Target
   layers:
   - Default
   - TransparentFX
