@@ -239,7 +239,7 @@ namespace TarodevController
                     _inputsMovement.x = Mathf.Lerp(_inputsMovement.x, 1, 1 * Time.deltaTime);
                     try
                     {
-                        animator.SetFloat("Horizontal", -1);
+                        animator.SetFloat("Horizontal", 1);
 
                     }
                     catch { }
@@ -424,10 +424,22 @@ namespace TarodevController
         {
             if (_grounded && _frameVelocity.y <= 0f)
             {
+                try
+                {
+                    animator.SetFloat("Vertical", 0);
+
+                }
+                catch { }
                 _frameVelocity.y = _stats.GroundingForce;
             }
             else
             {
+                try
+                {
+                    animator.SetFloat("Vertical", 1);
+
+                }
+                catch { }
                 var inAirGravity = _stats.FallAcceleration;
                 if (_frameVelocity.y > 0)
                     inAirGravity *= _stats.JumpEndEarlyGravityModifier;
@@ -446,12 +458,9 @@ namespace TarodevController
 
         public void HitingPlayer(Vector2 dir, float force, float deacreseForce)
         {
-            animator.SetBool("Punch", true);
-
             force = force + GetComponent<DamageVersus>().AddingDamage()*force;
 
             StartCoroutine(ExplosionHit(dir, force, deacreseForce));
-            animator.SetBool("Punch", false);
 
         }
 

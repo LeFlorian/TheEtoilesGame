@@ -3450,7 +3450,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_text
-      value: "Salut l\xE9gende, on se prom\xE8ne ?"
+      value: "Tu sais, m\xEAme si tu erres, tu n\u2019est pas perdus ici ! \u2026.euh
+        j\u2019veux dire \xAB\_M\xEA\xEA\xEA\xEA\xEAh\_\xBB"
       objectReference: {fileID: 0}
     - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_fontStyle
@@ -5305,7 +5306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_text
-      value: "Dis, t'aime bien quand m\xEAme notre surprise ? :x"
+      value: Domo, je suis japonais
       objectReference: {fileID: 0}
     - target: {fileID: 6383433263539698747, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_Size.x
