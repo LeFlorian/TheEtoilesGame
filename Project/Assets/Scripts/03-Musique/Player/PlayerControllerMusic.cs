@@ -86,7 +86,7 @@ namespace TarodevController
         [HideInInspector]
         public Rigidbody _rb;
         private CapsuleCollider _col;
-        private FrameInput _frameInput;
+        protected FrameInput _frameInput;
         [HideInInspector]
         public Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
@@ -353,11 +353,11 @@ namespace TarodevController
             if (_frameInput.Move.x == 0)
             {
                 var deceleration = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
-                _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, deceleration * Time.fixedDeltaTime);
+                // _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, deceleration * Time.fixedDeltaTime);
             }
             else
             {
-                _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
+                // _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
             }
         }
 
