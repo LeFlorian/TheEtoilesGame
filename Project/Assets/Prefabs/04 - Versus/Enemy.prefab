@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cbdad592ca5c494f9aa9811c5621f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 10
+  force: 11
   decreaseForce: 150
   isBoss: 0
 --- !u!114 &9006000965553002676

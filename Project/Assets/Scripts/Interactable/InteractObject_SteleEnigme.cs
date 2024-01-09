@@ -9,6 +9,8 @@ public class InteractObject_SteleEnigme : InteractObject
 
     public int position;
 
+    public AudioSource page;
+
     private SpriteRenderer rend;
 
     private Animator animator;
@@ -32,6 +34,7 @@ public class InteractObject_SteleEnigme : InteractObject
 
         //FindAnyObjectByType<Enigme_GameManager>().CheckValidity();
         ChangeImage();
+        page.Play();
     }
 
     private void ChangeImage()
