@@ -66,23 +66,11 @@ public class Versus_GameManager : MonoBehaviour
         else{
             if (canSpawnCode)
             {
-                StartCoroutine(CodesSpawn(6f, UnityEngine.Random.Range(0, 2)));
+                StartCoroutine(CodesSpawn(8f, UnityEngine.Random.Range(0, 2)));
                 
                 if (FindObjectsOfType<EnemyController_Clone>().Length <= 3) spawnedCode = false;
                 else spawnedCode = true;
 
-
-                /*
-                if (FindObjectsOfType<EnemyController_Clone>().Length <= 0)
-                {
-                    for (int i = 0; i < nbOfEnemyByWaves[currentWave]; i++)
-                    {
-                        Transform chooseSpawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
-                        Instantiate(enemyPrefab, chooseSpawnPoint);
-                    }
-
-                    currentWave += 1;
-                }*/
             }
             else
             {
@@ -150,9 +138,6 @@ public class Versus_GameManager : MonoBehaviour
             }
             spawnedCode = true;
         }
-        
-        //currentWave += 1;
-        //Debug.Log(currentWave);
         
     }
 
