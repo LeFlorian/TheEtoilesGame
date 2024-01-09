@@ -23,12 +23,13 @@ public class PlayerController_Horizontal : PlayerControllerMusic
     public override void HandleDirection()
     {
         // Debug.Log("Traget: "+ _targetPosition.ToString());
-        _frameVelocity.x = 0; // Pour etre sûr
+        // _frameVelocity.x = 0; // Pour etre sûr
         if (_detltaTime >= _seuilTime){
             // Debug.Log("Key: "+ FrameInput.x.ToString());
             Move(FrameInput.x);
             _detltaTime = 0;
-        }      
+        }
+        if (_frameInput.Move.x == 0) _detltaTime = _seuilTime;     
         _detltaTime += Time.deltaTime;
     }
 

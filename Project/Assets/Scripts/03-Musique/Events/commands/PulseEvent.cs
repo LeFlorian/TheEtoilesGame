@@ -17,7 +17,8 @@ public class PulseEvent : EventCommand
     }
 
     void Update(){
-        target.localScale = Vector3.Lerp(target.localScale, _start, Time.deltaTime * _speed);
+        
+        if (target.gameObject.activeSelf) target.localScale = Vector3.Lerp(target.localScale, _start, Time.deltaTime * _speed);
     }
 
 	public override void Execute()
