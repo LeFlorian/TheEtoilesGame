@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TarodevController;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -37,30 +38,55 @@ public class Versus_GameManager : MonoBehaviour
     [SerializeField]
     private GameObject level;
 
+    private bool canSpawnCode;
+
+    private bool spawnedCode;
+
+    private float timerBoss;
+
+
     private void Start()
     {
         RespawnPlayer();
+        currentWave = -1;
+        timerBoss = 63f;
+        canSpawnCode = true;
+        spawnedCode = false;
+        StartCoroutine(BossSpawn(timerBoss));
+        
+        
     }
 
     private void Update()
     {
-        if (currentWave < nbOfEnemyByWaves.Length)
-        {
-            if (FindObjectsOfType<EnemyController_Clone>().Length <= 0)
-            {
-                for (int i = 0; i < nbOfEnemyByWaves[currentWave]; i++)
-                {
-                    Transform chooseSpawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
-                    Instantiate(enemyPrefab, chooseSpawnPoint);
-                }
+        if(currentWave == -1){
+            StartCoroutine(Spawn());
 
-                currentWave += 1;
-            }
         }
-        else
-        {
-            if (FindObjectsOfType<EnemyController_Clone>().Length <= 0)
+        else{
+            if (canSpawnCode)
             {
+                StartCoroutine(CodesSpawn(6f, UnityEngine.Random.Range(0, 2)));
+                
+                if (FindObjectsOfType<EnemyController_Clone>().Length <= 3) spawnedCode = false;
+                else spawnedCode = true;
+
+
+                /*
+                if (FindObjectsOfType<EnemyController_Clone>().Length <= 0)
+                {
+                    for (int i = 0; i < nbOfEnemyByWaves[currentWave]; i++)
+                    {
+                        Transform chooseSpawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
+                        Instantiate(enemyPrefab, chooseSpawnPoint);
+                    }
+
+                    currentWave += 1;
+                }*/
+            }
+            else
+            {
+                
                 if (!doOnce)
                 {
                     foreach(GameObject go in plateforms)
@@ -76,13 +102,14 @@ public class Versus_GameManager : MonoBehaviour
 
 
                 }
+                
+                if (doOnce && FindObjectsOfType<EnemyController_Clone>().Length <= 0 && !doOnce2)
+                {
+                    doOnce2 = true;
+                        level.GetComponent<Animator>().SetTrigger("ActiveFinalScene");
+                }
             }
-
-            if (doOnce && FindObjectsOfType<EnemyController_Clone>().Length <= 0 && !doOnce2)
-            {
-                doOnce2 = true;
-                level.GetComponent<Animator>().SetTrigger("ActiveFinalScene");
-            }
+        
         }
     }
 
@@ -101,4 +128,37 @@ public class Versus_GameManager : MonoBehaviour
         player.transform.position = playerSpawnPoint.position;
         player.GetComponent<Versus_LifeController>().life = actualLife;
     }
+    public IEnumerator Spawn(){
+        if(currentWave == -1){
+            yield return new WaitForSeconds(21f);
+            if(currentWave == -1 ) 
+            {
+                currentWave = 0;
+                Transform chooseSpawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
+                Instantiate(enemyPrefab, chooseSpawnPoint);
+            }
+        }
+    }
+    
+    public IEnumerator CodesSpawn(float timer, int multiplier){
+        yield return new WaitForSeconds(timer);
+        if(!spawnedCode){
+            for (int i = 0; i < multiplier; i++)
+            {
+                Transform chooseSpawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
+                Instantiate(enemyPrefab, chooseSpawnPoint);
+            }
+            spawnedCode = true;
+        }
+        
+        //currentWave += 1;
+        //Debug.Log(currentWave);
+        
+    }
+
+    public IEnumerator BossSpawn(float timer){
+        yield return new WaitForSeconds(timer);
+        canSpawnCode = false;
+    }
+
 }
