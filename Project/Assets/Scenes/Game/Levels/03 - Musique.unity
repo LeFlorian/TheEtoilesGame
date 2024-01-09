@@ -318,6 +318,103 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &68616550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68616551}
+  - component: {fileID: 68616555}
+  - component: {fileID: 68616554}
+  - component: {fileID: 68616553}
+  - component: {fileID: 68616552}
+  m_Layer: 0
+  m_Name: Event
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68616551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68616550}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1213171829}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &68616552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68616550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49638a2747f48f34e8f6bd9c57740de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  corridors: {fileID: 1229404940}
+  noteEventHandler: {fileID: 68616555}
+  data:
+    projectilPrefab: {fileID: 3371630579892623197, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
+    target: {fileID: 0}
+    speed: 15
+    collideType: 0
+    damage: 1
+    eventType: 0
+    collisionEvent: {fileID: 0}
+--- !u!114 &68616553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68616550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &68616554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68616550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c6ad87a08fc7e4d8fd38b1f636c779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &68616555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68616550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f3f9d63a46d944fb14a3e2c292ad8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteID: 14
+  offset: 0
+  minMaxCorridorID: {x: 0, y: 4}
+  _name: 
 --- !u!1 &83665111
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,27 +613,31 @@ MonoBehaviour:
   startItSelfDelay: 0
   offset: 0.75
   noteHolder:
-  - {fileID: 1797170738}
-  - {fileID: 408206659}
-  - {fileID: 1817265392}
-  - {fileID: 1215009442}
-  - {fileID: 851991767}
   - {fileID: 17814950}
-  - {fileID: 1408343439}
-  - {fileID: 1691916052}
-  - {fileID: 1797293482}
-  - {fileID: 1606766921}
+  - {fileID: 68616555}
   - {fileID: 83665116}
-  - {fileID: 1077105011}
   - {fileID: 392817208}
+  - {fileID: 408206659}
+  - {fileID: 737522507}
+  - {fileID: 851991767}
+  - {fileID: 1077105011}
+  - {fileID: 1215009442}
+  - {fileID: 1408343439}
+  - {fileID: 1606766921}
+  - {fileID: 1648174718}
+  - {fileID: 1691916052}
+  - {fileID: 1797170738}
+  - {fileID: 1797293482}
+  - {fileID: 1817265392}
   delayAnticipation: 0
   sectionHolder:
   - {fileID: 638138210}
-  - {fileID: 2095823572}
-  - {fileID: 1193014180}
-  - {fileID: 1806701992}
   - {fileID: 1140806048}
+  - {fileID: 1193014180}
   - {fileID: 1281592393}
+  - {fileID: 1319529916}
+  - {fileID: 1806701992}
+  - {fileID: 2095823572}
   _endAnimator: {fileID: 1691781453}
 --- !u!114 &162669739
 MonoBehaviour:
@@ -888,40 +989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: 6
---- !u!1 &348117290
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 348117291}
-  m_Layer: 0
-  m_Name: Insuline
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &348117291
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 348117290}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1619452268}
-  - {fileID: 865038909}
-  - {fileID: 1148630574}
-  m_Father: {fileID: 658672447}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351608571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,148 +1148,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &375138909
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1727434609}
-    m_Modifications:
-    - target: {fileID: 4342163543366305519, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4342163543366305519, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 4342163543366305519, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.09411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 4505474347484748497, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_Name
-      value: Nicotine_Long
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507602455933709805, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507602455933709805, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.32754186
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507602455933709805, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.32754186
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507602455933709805, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508159113959056853, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508159113959056853, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.32472983
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508159113959056853, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.32472983
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508252038812856625, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2962
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508252038812856625, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33349904
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508252038812856625, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14.400002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508650928553235341, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.33333
-      objectReference: {fileID: 0}
-    - target: {fileID: 5557101275226880947, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 16ea504fccf6780479a156c1cad50a97, type: 3}
-    - target: {fileID: 8005785196823371341, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0ff81365472654a489e33bdca1439012, type: 3}
---- !u!4 &375138910 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-  m_PrefabInstance: {fileID: 375138909}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &386287740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,7 +1384,7 @@ MonoBehaviour:
   corridors: {fileID: 1229404940}
   noteEventHandler: {fileID: 408206659}
   data:
-    projectilPrefab: {fileID: 821363167750708517, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
+    projectilPrefab: {fileID: 821363167750708517, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
     target: {fileID: 0}
     speed: 15
     collideType: 0
@@ -1687,39 +1612,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: 0
---- !u!1 &449451777
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 449451778}
-  m_Layer: 0
-  m_Name: Normal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &449451778
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449451777}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -13.66}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1893136057}
-  - {fileID: 571039879}
-  m_Father: {fileID: 679848306}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &460765159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1712,7 @@ Transform:
   m_GameObject: {fileID: 480464512}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.057, z: -7.38}
+  m_LocalPosition: {x: 0, y: -0.057, z: -5.78}
   m_LocalScale: {x: 15, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2093,102 +1985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: 8
---- !u!1001 &562951711
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1893136057}
-    m_Modifications:
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3371630579892623197, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_Name
-      value: Insuline_Tall
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
---- !u!4 &562951712 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-  m_PrefabInstance: {fileID: 562951711}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &571039878
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 571039879}
-  m_Layer: 0
-  m_Name: Nicotine
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &571039879
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571039878}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.400002, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1985465352}
-  - {fileID: 1048663930}
-  - {fileID: 1337411453}
-  m_Father: {fileID: 449451778}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &610444466 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5092508832336515497, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
@@ -2502,72 +2298,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653935953}
   m_CullTransparentMesh: 1
---- !u!1 &658672446
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 658672447}
-  m_Layer: 0
-  m_Name: Speed
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &658672447
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658672446}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 348117291}
-  - {fileID: 1727434609}
-  m_Father: {fileID: 679848306}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &679848305
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 679848306}
-  m_Layer: 0
-  m_Name: Projectiles
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &679848306
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679848305}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 74, y: -1.3, z: 1.5339432}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 449451778}
-  - {fileID: 658672447}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &735512691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,6 +2428,103 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &737522502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737522503}
+  - component: {fileID: 737522507}
+  - component: {fileID: 737522506}
+  - component: {fileID: 737522505}
+  - component: {fileID: 737522504}
+  m_Layer: 0
+  m_Name: Event
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &737522503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737522502}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1792245911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737522504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737522502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49638a2747f48f34e8f6bd9c57740de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  corridors: {fileID: 1229404940}
+  noteEventHandler: {fileID: 737522507}
+  data:
+    projectilPrefab: {fileID: 4505474347484748497, guid: 0ff81365472654a489e33bdca1439012, type: 3}
+    target: {fileID: 0}
+    speed: 15
+    collideType: 0
+    damage: 1
+    eventType: 0
+    collisionEvent: {fileID: 0}
+--- !u!114 &737522505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737522502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &737522506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737522502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c6ad87a08fc7e4d8fd38b1f636c779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &737522507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737522502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f3f9d63a46d944fb14a3e2c292ad8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteID: 15
+  offset: 0
+  minMaxCorridorID: {x: 0, y: 4}
+  _name: 
 --- !u!1 &752866158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,144 +2880,6 @@ MonoBehaviour:
   offset: 0
   minMaxCorridorID: {x: 0, y: 4}
   _name: 
---- !u!1001 &865038908
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 348117291}
-    m_Modifications:
-    - target: {fileID: 694344633377374491, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 694344633377374491, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 694344633377374491, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.09411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 821363167750708517, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_Name
-      value: Insuline_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 823737560499169817, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 823737560499169817, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 823737560499169817, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 823737560499169817, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824228176001939141, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824228176001939141, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 824228176001939141, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824311200955261473, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824311200955261473, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824311200955261473, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824311200955261473, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824521978593334393, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
---- !u!4 &865038909 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-  m_PrefabInstance: {fileID: 865038908}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &898197994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,6 +3054,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: 1
+--- !u!1 &987742966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987742967}
+  - component: {fileID: 987742968}
+  m_Layer: 0
+  m_Name: Note - ID = 13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &987742967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987742966}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1648174714}
+  m_Father: {fileID: 1362658690}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &987742968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987742966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37262eefae850914ca6d307a96395274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteID: 13
 --- !u!1 &1008250646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,68 +3155,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6314143035412403895, guid: 660b39846bc00604cbde89c71d6eabbf, type: 3}
   m_PrefabInstance: {fileID: 1091885265}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1048663929
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 571039879}
-    m_Modifications:
-    - target: {fileID: 821363167750708517, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_Name
-      value: Nicotine_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
---- !u!4 &1048663930 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 824672877807971849, guid: 8407460f3e38e0543bb62ccd76f32b5b, type: 3}
-  m_PrefabInstance: {fileID: 1048663929}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1058141348
 PrefabInstance:
@@ -3927,244 +3600,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2656221722024678082, guid: 660b39846bc00604cbde89c71d6eabbf, type: 3}
   m_PrefabInstance: {fileID: 1058141348}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1148630573
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 348117291}
-    m_Modifications:
-    - target: {fileID: 3173954453990919841, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3173954453990919841, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 3173954453990919841, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.09411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174037559348122671, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.9490196
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174037559348122671, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174037559348122671, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.85882354
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174817175645346341, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174817175645346341, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174817175645346341, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.09411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368721109480103417, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9058
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368721109480103417, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368721109480103417, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368721109480103417, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368977742319885693, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368977742319885693, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368977742319885693, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368977742319885693, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369221298886490453, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369221298886490453, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.18178715
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369221298886490453, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.3280074
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369221298886490453, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369250121308761795, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369250121308761795, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369250121308761795, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369250121308761795, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3371630579892623197, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_Name
-      value: Insuline_Tall
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377240128489690221, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377240128489690221, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.18178715
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377240128489690221, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.3280074
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377240128489690221, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377443088964029345, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.43862402
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377443088964029345, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377443088964029345, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.4536449
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377443088964029345, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377519034055323477, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377519034055323477, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377519034055323477, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377662654903225117, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377662654903225117, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5149745
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377662654903225117, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9456075
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377662654903225117, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
---- !u!4 &1148630574 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-  m_PrefabInstance: {fileID: 1148630573}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1154350132
 GameObject:
   m_ObjectHideFlags: 0
@@ -4270,6 +3705,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sectionID: Fin Drop
   _name: 
+--- !u!1 &1213171828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213171829}
+  - component: {fileID: 1213171830}
+  m_Layer: 0
+  m_Name: Note - ID = 14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1213171829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213171828}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 68616551}
+  m_Father: {fileID: 1362658690}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1213171830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213171828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37262eefae850914ca6d307a96395274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteID: 14
 --- !u!1 &1215009437
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,6 +3884,7 @@ Transform:
   - {fileID: 1193014177}
   - {fileID: 2095823569}
   - {fileID: 638138207}
+  - {fileID: 1319529913}
   m_Father: {fileID: 1229404936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1219031913
@@ -4548,7 +4030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 134b54d48fd40944e8f29bfcb51b59b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chart: {fileID: 102900000, guid: bb0ac9ebc6799cf479ce9a902d5c4582, type: 3}
+  chart: {fileID: 102900000, guid: a670bf728bdd61d4485ccc1b9cf11e66, type: 3}
   song: {fileID: 357886268}
   chartData:
     songName: C:\Users\guill\Desktop\Projet\git\TheEtoilesGame\Project\Assets\Music\son_niveau_musique.wav
@@ -13796,205 +13278,2413 @@ MonoBehaviour:
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 14
       noteTick: 52932
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 7
+      noteTick: 53088
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 53088
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 53292
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 53292
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 53344
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 53468
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 53468
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 53664
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
-      noteTick: 54432
+    - noteID: 13
+      noteTick: 53744
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 53856
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 53856
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 54024
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 54024
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 54024
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 54024
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 54208
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 54208
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 54408
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 54496
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 54580
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 54580
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 54744
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 54744
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 54744
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 54744
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 54824
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 54936
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 54936
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 55116
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 55200
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 55296
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 55296
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 55476
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 55476
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 55476
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 55476
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 55476
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 55576
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 55580
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 55660
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 55660
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 55860
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 55912
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 55912
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 56040
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 56040
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 56208
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 56208
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 56208
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 56208
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 56208
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 56316
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 56404
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 56404
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 56562
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 56632
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 56632
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 56744
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 56744
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 56928
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 56928
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 56928
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 56928
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 56928
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 57024
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 57028
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 8
+      noteTick: 57128
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 57128
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 57288
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 57348
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 57460
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 57460
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 57660
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 57660
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 57660
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 57660
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 57660
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 57836
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 57836
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 57984
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 58064
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 58200
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 58200
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 58380
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 58380
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 58380
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 58380
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 58380
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 58468
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 58468
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 58564
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 58564
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 58752
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 7
+      noteTick: 58944
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 58944
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 59112
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 59112
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 59112
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 59112
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 59112
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 59288
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 59288
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 59478
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 59560
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 59560
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 59664
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 59664
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 59844
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 59844
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 59844
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 59844
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 59844
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 60020
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 60020
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 60192
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 60272
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 60388
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 60388
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 60564
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 60564
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 60564
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 60564
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 60564
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 60748
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 60748
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 60930
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 61000
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 61000
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 61116
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 61116
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 61284
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 61284
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 61284
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 61284
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 61284
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 61380
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 61384
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 8
+      noteTick: 61496
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 61496
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 61656
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 61728
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 61728
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 61840
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 61840
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 62016
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 62016
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 62016
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 62016
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 62016
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 62208
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 62208
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 62388
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 7
+      noteTick: 62568
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 62568
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 62748
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 62748
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 62748
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 62748
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 62748
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 62932
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 62932
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 63108
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 63184
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 63184
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 63292
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 63292
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 63456
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 63456
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 63456
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 63456
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 63456
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 63548
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 63656
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 63656
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
       noteTick: 63840
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
-      noteTick: 64548
+    - noteID: 7
+      noteTick: 64032
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 64032
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 64200
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 64200
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 64200
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 8
+      noteTick: 64200
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 64200
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 64372
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 64372
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 64372
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 13
+      noteTick: 64372
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 64552
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 13
+      noteTick: 64648
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 64748
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 64748
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 64932
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 64932
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 64932
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 64932
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 64932
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 65104
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 65104
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
     - noteID: 0
       noteTick: 65298
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 14
+      noteTick: 65300
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 13
+      noteTick: 65396
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 65480
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 65480
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 65664
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 65664
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 65664
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 65664
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 65664
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 65844
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 65844
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
       noteTick: 66024
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 13
+      noteTick: 66124
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 66124
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 66216
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 66216
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 66384
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 66384
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 66384
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 66384
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 66384
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 66572
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 66572
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
     - noteID: 0
       noteTick: 66750
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 14
+      noteTick: 66752
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 66936
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 66936
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 67116
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 67116
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 67116
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 67116
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 67200
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 7
+      noteTick: 67296
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 67296
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
       noteTick: 67476
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 8
+      noteTick: 67660
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 67660
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 67848
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 67848
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 67848
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 67848
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 67960
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 7
+      noteTick: 68024
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 68024
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
     - noteID: 0
       noteTick: 68202
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 14
+      noteTick: 68204
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 13
+      noteTick: 68288
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 8
+      noteTick: 68388
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 68388
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 68568
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 68568
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 68568
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 68568
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 68568
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 68744
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 68744
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
       noteTick: 68928
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 13
+      noteTick: 69020
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 69020
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 69124
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 69124
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 69300
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
     - noteID: 0
+      noteTick: 69300
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 69300
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 69300
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 69300
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 69304
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 69472
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 69472
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
       noteTick: 69660
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 69740
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 69744
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 69844
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 69844
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 70032
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 70032
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 70032
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 70032
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 70116
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 7
+      noteTick: 70224
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 70224
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
       noteTick: 70392
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 13
+      noteTick: 70464
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 70468
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 8
+      noteTick: 70568
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 70568
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 70752
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 70752
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 70752
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 70752
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 70816
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 70816
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 70936
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 70936
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
     - noteID: 0
       noteTick: 71118
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 14
+      noteTick: 71120
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 13
+      noteTick: 71212
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 71216
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 71304
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 71304
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 0
+      noteTick: 71484
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 71484
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 71484
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 71484
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 0
+      noteTick: 71484
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 71488
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 71492
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 71568
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 13
+      noteTick: 71572
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 71664
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 71664
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
     - noteID: 0
       noteTick: 71838
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
-      noteTick: 72570
+    - noteID: 14
+      noteTick: 71840
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 13
+      noteTick: 71944
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 71944
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 72028
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 72028
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 72204
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 72204
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
     - noteID: 0
+      noteTick: 72204
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 72204
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 72208
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 13
+      noteTick: 72288
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 72288
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 72396
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 72396
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 72576
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 13
+      noteTick: 72620
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 72620
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 72740
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 72740
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 72936
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 72936
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 72936
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 72936
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 73008
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 73008
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 73112
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 73112
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
       noteTick: 73296
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 13
+      noteTick: 73344
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 73344
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 73468
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 73468
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 73668
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 73668
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 73668
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 73668
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 73728
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 7
+      noteTick: 73852
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 73852
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
     - noteID: 0
       noteTick: 74022
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 14
+      noteTick: 74024
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 13
+      noteTick: 74108
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 74112
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 74208
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 74208
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 74388
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 74388
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 74388
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 14
+      noteTick: 74388
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 74388
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 74464
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 13
+      noteTick: 74468
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 74572
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 74572
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
       noteTick: 74760
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 13
+      noteTick: 74848
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 74940
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 74940
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 14
+      noteTick: 75120
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 75120
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 7
+      noteTick: 75120
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 75120
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 75120
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 75188
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 75188
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 7
+      noteTick: 75296
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 75296
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
       noteTick: 75480
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
+    - noteID: 13
+      noteTick: 75552
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 13
+      noteTick: 75552
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 8
+      noteTick: 75664
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 75664
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 75840
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 75840
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 75840
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 75840
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 13
+      noteTick: 75908
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 13
+      noteTick: 75908
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 76020
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 7
+      noteTick: 76020
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 8
+      noteTick: 76020
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 8
+      noteTick: 76020
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 14
+      noteTick: 76020
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
     - noteID: 0
+      noteTick: 76116
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 14
+      noteTick: 76116
+      noteCorridorID: 1
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 1
+    - noteID: 14
+      noteTick: 76116
+      noteCorridorID: 3
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 3
+    - noteID: 8
+      noteTick: 76116
+      noteCorridorID: 4
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 4
+    - noteID: 7
+      noteTick: 76120
+      noteCorridorID: 0
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 0
+    - noteID: 9
+      noteTick: 76224
+      noteCorridorID: 2
+      noteDurationTick: 0
+      noteTypeID: N
+      noteColorID: 2
+    - noteID: 15
       noteTick: 76812
       noteCorridorID: 2
       noteDurationTick: 0
       noteTypeID: N
       noteColorID: 2
-    - noteID: 0
+    - noteID: 14
       noteTick: 77880
       noteCorridorID: 2
       noteDurationTick: 0
@@ -14013,6 +15703,8 @@ MonoBehaviour:
       sectionTick: 51456
     - sectionID: Fin Changement
       sectionTick: 52932
+    - sectionID: End
+      sectionTick: 76224
   corridors: {fileID: 1229404940}
   update:
     corridors: {fileID: 1229404940}
@@ -14268,68 +15960,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sectionID: Kick
   _name: 
---- !u!1001 &1337411452
-PrefabInstance:
+--- !u!1 &1319529912
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 571039879}
-    m_Modifications:
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3371630579892623197, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-      propertyPath: m_Name
-      value: Nicotine_Tall
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
---- !u!4 &1337411453 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3368947599484848311, guid: 4c37e782ca0c7d14c9e9558e56f298dd, type: 3}
-  m_PrefabInstance: {fileID: 1337411452}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319529913}
+  - component: {fileID: 1319529916}
+  - component: {fileID: 1319529915}
+  - component: {fileID: 1319529914}
+  m_Layer: 0
+  m_Name: Section - End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1319529913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319529912}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1219031912}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1319529914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319529912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1319529915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319529912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c6ad87a08fc7e4d8fd38b1f636c779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1319529916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319529912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c3666177530934386315c2675417c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sectionID: End
+  _name: 
 --- !u!1 &1362658689
 GameObject:
   m_ObjectHideFlags: 0
@@ -14373,6 +16075,9 @@ Transform:
   - {fileID: 735512692}
   - {fileID: 104060404}
   - {fileID: 297962999}
+  - {fileID: 987742967}
+  - {fileID: 1213171829}
+  - {fileID: 1792245911}
   m_Father: {fileID: 1229404936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1362658691
@@ -14648,221 +16353,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9f900055c5bb342a5e83d3810788fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLife: 100
-  life: 100
+  maxLife: 75
+  life: 75
   slider: {fileID: 1276809390}
---- !u!1001 &1425332725
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1893136057}
-    m_Modifications:
-    - target: {fileID: 821363167750708517, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_Name
-      value: Insuline_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
---- !u!4 &1425332726 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-  m_PrefabInstance: {fileID: 1425332725}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1559564326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6314143035412403895, guid: 660b39846bc00604cbde89c71d6eabbf, type: 3}
   m_PrefabInstance: {fileID: 1276350582}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1600231289
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1727434609}
-    m_Modifications:
-    - target: {fileID: 694344633377374491, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 694344633377374491, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 694344633377374491, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.09411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 821363167750708517, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_Name
-      value: Nicotine_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 823737560499169817, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 823737560499169817, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 823737560499169817, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 823737560499169817, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824228176001939141, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824228176001939141, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 824228176001939141, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824311200955261473, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824311200955261473, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824311200955261473, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824311200955261473, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824521978593334393, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14.400002
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958819033150233864, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 59148961dc91ef342a756f306f0ae5b5, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
---- !u!4 &1600231290 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 824672877807971849, guid: 3da678ba393af5848a96d429d04b7051, type: 3}
-  m_PrefabInstance: {fileID: 1600231289}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1606766916
 GameObject:
@@ -14961,206 +16458,103 @@ MonoBehaviour:
   offset: 0
   minMaxCorridorID: {x: 0, y: 4}
   _name: 
---- !u!1001 &1618634381
-PrefabInstance:
+--- !u!1 &1648174713
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1893136057}
-    m_Modifications:
-    - target: {fileID: 4505474347484748497, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_Name
-      value: Insuline_Long
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0ff81365472654a489e33bdca1439012, type: 3}
---- !u!4 &1618634382 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-  m_PrefabInstance: {fileID: 1618634381}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1619452267
-PrefabInstance:
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1648174714}
+  - component: {fileID: 1648174718}
+  - component: {fileID: 1648174717}
+  - component: {fileID: 1648174716}
+  - component: {fileID: 1648174715}
+  m_Layer: 0
+  m_Name: Event
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1648174714
+Transform:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 348117291}
-    m_Modifications:
-    - target: {fileID: 4342163543366305519, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4342163543366305519, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 4342163543366305519, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.09411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 4505474347484748497, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_Name
-      value: Insuline_Long
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507602455933709805, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507602455933709805, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.32754186
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507602455933709805, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.32754186
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507602455933709805, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508159113959056853, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508159113959056853, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.32472983
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508159113959056853, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.32472983
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508252038812856625, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2962
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508252038812856625, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33349904
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508252038812856625, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508650928553235341, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.33333
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005785196823371341, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0ff81365472654a489e33bdca1439012, type: 3}
---- !u!4 &1619452268 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4508503327873231357, guid: 0ff81365472654a489e33bdca1439012, type: 3}
-  m_PrefabInstance: {fileID: 1619452267}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648174713}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987742967}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1648174715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648174713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49638a2747f48f34e8f6bd9c57740de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  corridors: {fileID: 1229404940}
+  noteEventHandler: {fileID: 1648174718}
+  data:
+    projectilPrefab: {fileID: 3371630579892623197, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
+    target: {fileID: 0}
+    speed: 15
+    collideType: 0
+    damage: 1
+    eventType: 0
+    collisionEvent: {fileID: 0}
+--- !u!114 &1648174716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648174713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d2292388dd6af469fdfd8b37b54a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1648174717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648174713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c6ad87a08fc7e4d8fd38b1f636c779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1648174718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648174713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f3f9d63a46d944fb14a3e2c292ad8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteID: 13
+  offset: 0
+  minMaxCorridorID: {x: 0, y: 4}
+  _name: 
 --- !u!1 &1691781451
 GameObject:
   m_ObjectHideFlags: 0
@@ -15319,40 +16713,6 @@ MonoBehaviour:
   offset: 0
   minMaxCorridorID: {x: 0, y: 4}
   _name: 
---- !u!1 &1727434608
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1727434609}
-  m_Layer: 0
-  m_Name: Nicotine
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1727434609
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727434608}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.13, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1987783860}
-  - {fileID: 1600231290}
-  - {fileID: 375138910}
-  m_Father: {fileID: 658672447}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769872067
 GameObject:
   m_ObjectHideFlags: 0
@@ -15549,6 +16909,52 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1792245910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792245911}
+  - component: {fileID: 1792245912}
+  m_Layer: 0
+  m_Name: Note - ID = 15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1792245911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792245910}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 737522503}
+  m_Father: {fileID: 1362658690}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792245912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792245910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37262eefae850914ca6d307a96395274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteID: 15
 --- !u!1 &1797170733
 GameObject:
   m_ObjectHideFlags: 0
@@ -16078,40 +17484,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1893136056
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1893136057}
-  m_Layer: 0
-  m_Name: Insuline
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1893136057
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893136056}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1618634382}
-  - {fileID: 1425332726}
-  - {fileID: 562951712}
-  m_Father: {fileID: 449451778}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1925958052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5475060030062158843, guid: 85ad8c941c0b18d4e901d8fb4c929e30, type: 3}
@@ -16397,314 +17769,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1985465351
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 571039879}
-    m_Modifications:
-    - target: {fileID: 4505474347484748497, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_Name
-      value: Nicotine_Long
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
---- !u!4 &1985465352 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4508503327873231357, guid: 2c5f7bebb264f0742974de8d228466b5, type: 3}
-  m_PrefabInstance: {fileID: 1985465351}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1987783859
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1727434609}
-    m_Modifications:
-    - target: {fileID: 2788449461562260746, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7bdee5c61930ea2449367936a2115fca, type: 3}
-    - target: {fileID: 3173954453990919841, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3173954453990919841, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 3173954453990919841, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.09411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174037559348122671, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.9490196
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174037559348122671, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174037559348122671, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.85882354
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174817175645346341, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174817175645346341, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.7019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 3174817175645346341, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.09411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368721109480103417, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9058
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368721109480103417, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368721109480103417, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368721109480103417, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14.200005
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368977742319885693, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368977742319885693, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368977742319885693, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 3368977742319885693, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369221298886490453, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369221298886490453, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.18178715
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369221298886490453, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.3280074
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369221298886490453, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369250121308761795, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369250121308761795, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369250121308761795, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369250121308761795, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3371630579892623197, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_Name
-      value: Nicotine_Tall
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377240128489690221, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377240128489690221, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.18178715
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377240128489690221, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.3280074
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377240128489690221, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377443088964029345, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.43862402
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377443088964029345, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377443088964029345, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.4536449
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377443088964029345, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377519034055323477, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377519034055323477, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.50000083
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377519034055323477, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377662654903225117, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377662654903225117, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5149745
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377662654903225117, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9456075
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377662654903225117, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644742377217290839, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7bdee5c61930ea2449367936a2115fca, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
---- !u!4 &1987783860 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3368947599484848311, guid: e10039f43c0d78249924096d051cb9ab, type: 3}
-  m_PrefabInstance: {fileID: 1987783859}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2093453371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6314143035412403895, guid: 660b39846bc00604cbde89c71d6eabbf, type: 3}
@@ -17102,4 +18166,3 @@ SceneRoots:
   - {fileID: 1400040366}
   - {fileID: 1953167474}
   - {fileID: 12798559}
-  - {fileID: 679848306}
