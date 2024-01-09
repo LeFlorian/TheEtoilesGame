@@ -1,0 +1,52 @@
+N°      Prefab  Speed Traj 		
+1  - S Insuline - 10 - N
+2  - S Nicotine - 10 - N      Small
+
+3  - L Insuline - 10 - N      Large
+4  - L Nicotine - 10 - N
+
+5  - H Insuline - 10 - N      Haut
+6  - H Nicotine - 10 - N
+
+7  - S Insuline - 10 - S      Sin Small
+8  - S Nicotine - 10 - S 
+
+9  - H Insuline - 10 - S      Sin Haut
+10 - H Nicotine - 10 - S
+
+11 - S Insuline - 20 - N      Small fast
+12 - S Nic otine - 20 - N
+
+13 - H Insuline -  20 - N      Haut fast
+14 - H Nicotine - 20 - N
+
+15 - L Insuline - 20 - N      Large Fast
+16 - L Nicotine - 20 - N
+
+
+
+
+
+////////
+17 - S Insuline - 20 - S      Small Sin Fast
+18 - S Nicotine - 20 - S
+
+19 - H Insuline - 20 - S      Haut Sin Fast
+20 - H Nicotine - 20 - S
+
+
+BPM: 90 - 95
+
+32
+64
+
+
+
+
+    8 10 8 
+7 9 7 
+    10 8 10     
+9 7 9
+
+
+
