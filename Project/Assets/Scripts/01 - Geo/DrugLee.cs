@@ -16,7 +16,8 @@ public class DrugLee : MonoBehaviour
     {
         if (FindAnyObjectByType<GameControllerGeography>().canRespawn == false)
         {
-            animator.SetBool("PlayerDeath", true);
+            //animator.SetBool("PlayerDeath", true);
+            
         }
         else {
             animator.SetBool("PlayerDeath", false);

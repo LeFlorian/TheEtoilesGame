@@ -40,11 +40,13 @@ public class InteractObject_Dialogue : InteractObject
 
     private void ChangeClue()
     {
-        //it�ration en boucle :D
-        if (numberOfClick % indices.Length == 0) dialogue.SetActive(false);
-        else
-            dialogue.SetActive(true);
-            clue.text = indices[numberOfClick%indices.Length];
+        if(indices.Length > 0){
+            if (numberOfClick % indices.Length == 0) dialogue.SetActive(false);
+            else
+                dialogue.SetActive(true);
+                clue.text = indices[numberOfClick%indices.Length];
+        }
+        
     }
 
     private void Update()
@@ -53,7 +55,7 @@ public class InteractObject_Dialogue : InteractObject
         {
             dialogue.SetActive(false);
             numberOfClick = 0;
-            clue.text = indices[0];
+            if(indices.Length > 0) clue.text = indices[0];
         }
     }
 
