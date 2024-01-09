@@ -6734,10 +6734,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indices:
   - 
-  - sdasdsadas
-  - lyn est moche skjdaskl
-  - lyn est moche skjdaskl
-  - WORK IN PROGRESS
+  - Huh ? ... Un visiteur ?
+  - Hum Hum Bonjour Voyageur !
+  - "O\xF9 on est? Je sais pas c\u2019est \xE0 toi de me le dire, c\u2019est ta faute
+    si on en est l\xE0\u2026d\xE9brouille toi!! "
+  - "De toute fa\xE7on personne ne m\u2019\xE9coute moi, quand \xE7a a commenc\xE9
+    \xE0 aller mal j\u2019ai dit qu\u2019il fallait l\u2019aider, rallumer sa galaxie,
+    et maintenant il n\u2019y a plus personne pour m\u2019\xE9couter. "
+  - "Comment \xE7a tu n\u2019as pas beaucoup de temps ?... Moi non plus\u2026 "
+  - "Avant j\u2019avais tellement de temps et ils me l\u2019ont vol\xE9, ils m\u2019ont
+    trait\xE9 de fou d\u2019illumin\xE9 et m\u2019ont jet\xE9 \xE0 la porte et quand
+    tout est parti en sucette tu\u2026tu\u2026 sais ce qu'ils ont fait, ils m\u2019ont
+    rappel\xE9!! Non d\u2019une n\xE9buleuse!! hehehe mais je ne suis pas revenu. "
+  - "Faut pas s\u2019\xE9tonner apr\xE8s que le mus\xE9e tombe en ruine, un vrai
+    trou noir cet endroit. "
+  - "\xC7a va sinon toi ? Ne me r\xE9ponds pas !"
+  - ...
+  - "Ce mus\xE9e? Il n'y a encore pas si longtemps, il \xE9tait complet tous les
+    jours."
+  - "Le ma\xEEtre \xE9tait un passionn\xE9 d\u2019art, une vraie nova, il illuminait
+    les endroits par lesquels il passait de l\u2019art il disait que toutes les \u0153uvres
+    valaient la peine d\u2019\xEAtre regard\xE9es et qu\u2019il y a avait de la beaut\xE9
+    dans toutes \u0153uvres, il n'aurait jamais pu dire quelque chose d\u2019aussi
+    abject. "
+  - "Le luma: Le ma\xEEtre de ces lieux prenait grand soin de l\u2019endroit, mais
+    il y a quelque temps de cela il a cess\xE9 de venir et tout est tomb\xE9 en ruine.
+    Un si bel endroit, tu y crois toi ?"
+  - ...
+  - "Dis-le moi si je t\u2019emmerde.."
+  - "Avant nous avions des \u0153uvres qui venaient du monde entier, le propri\xE9taire
+    des lieux \xE9tait une personne tr\xE8s cultiv\xE9e. "
+  - 'Parce que tu crois vraiment qu''on a eu le temps de coder 2513 lignes de dialogues? '
+  - ...
+  - ...
+  - ...
+  - ...
   dialogue: {fileID: 149319931}
   clue: {fileID: 620557690}
 --- !u!58 &2073785751
