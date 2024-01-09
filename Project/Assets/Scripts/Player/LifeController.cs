@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
+[Serializable]
 public class LifeController : MonoBehaviour
 {
     [SerializeField]
-    private int maxLife;
+    public int maxLife;
     public int life;
 
     public virtual int InflictDamage(int damage)

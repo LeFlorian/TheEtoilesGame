@@ -342,6 +342,8 @@ MonoBehaviour:
   _rb: {fileID: 0}
   _frameVelocity: {x: 0, y: 0}
   animator: {fileID: 620184847132630568}
+  walkSound: {fileID: 0}
+  pageTurn: {fileID: 0}
 --- !u!114 &6047345853046663212
 MonoBehaviour:
   m_ObjectHideFlags: 0

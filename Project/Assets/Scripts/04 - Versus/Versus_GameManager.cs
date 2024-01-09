@@ -115,6 +115,8 @@ public class Versus_GameManager : MonoBehaviour
         player = Instantiate(playerPrefab);
         player.transform.position = playerSpawnPoint.position;
         player.GetComponent<Versus_LifeController>().life = actualLife;
+        HearthController hps = GameObject.Find("LifeBar").GetComponent<HearthController>(); //GameObject.GetComponent<HearthController>();
+        hps.hps = player.GetComponent<Versus_LifeController>();
     }
     public IEnumerator Spawn(){
         if(currentWave == -1){
