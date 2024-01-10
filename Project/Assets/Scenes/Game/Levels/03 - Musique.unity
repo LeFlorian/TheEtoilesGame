@@ -18887,8 +18887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9f900055c5bb342a5e83d3810788fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLife: 75
-  life: 75
+  maxLife: 65
+  life: 65
   slider: {fileID: 1276809390}
 --- !u!4 &1559564326 stripped
 Transform:
