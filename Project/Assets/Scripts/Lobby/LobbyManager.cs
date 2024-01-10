@@ -10,11 +10,11 @@ public class LobbyManager : MonoBehaviour
 
     private void Start()
     {
-        PlayerPrefs.SetInt($"AsCompletedLvl{1}",1);
+        /*PlayerPrefs.SetInt($"AsCompletedLvl{1}",1);
         PlayerPrefs.SetInt($"AsCompletedLvl{2}",1);
         PlayerPrefs.SetInt($"AsCompletedLvl{3}",1);
         PlayerPrefs.SetInt($"AsCompletedLvl{4}",1);
-        PlayerPrefs.SetInt($"AsCompletedLvl{5}",1);
+        PlayerPrefs.SetInt($"AsCompletedLvl{5}",1);*/
 
         StartCoroutine(WaitCheck());
     }
