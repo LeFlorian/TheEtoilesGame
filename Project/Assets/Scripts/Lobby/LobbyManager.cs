@@ -10,13 +10,13 @@ public class LobbyManager : MonoBehaviour
 
     private void Start()
     {
-        /*PlayerPrefs.SetInt($"AsCompletedLvl{1}",1);
+        PlayerPrefs.SetInt($"AsCompletedLvl{1}",1);
         PlayerPrefs.SetInt($"AsCompletedLvl{2}",1);
         PlayerPrefs.SetInt($"AsCompletedLvl{3}",1);
         PlayerPrefs.SetInt($"AsCompletedLvl{4}",1);
-        PlayerPrefs.SetInt($"AsCompletedLvl{5}",1);*/
+        PlayerPrefs.SetInt($"AsCompletedLvl{5}",1);
 
-        CheckAsFinishTheGame();
+        StartCoroutine(WaitCheck());
     }
 
     private void CheckAsFinishTheGame()
@@ -47,6 +47,12 @@ public class LobbyManager : MonoBehaviour
             Win();
         }
        
+    }
+
+    private IEnumerator WaitCheck()
+    {
+        yield return new WaitForSeconds(0.1f);
+        CheckAsFinishTheGame();
     }
 
     private void Win()
