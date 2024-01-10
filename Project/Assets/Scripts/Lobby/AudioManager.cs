@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
 
 
 
-    // à modifier, continuer
+    // ï¿½ modifier, continuer
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +57,7 @@ public class AudioManager : MonoBehaviour
                 musicSource.Stop();
                 musicSource.clip = music_lobby;
                 musicSource.loop = true;
-                musicSource.volume = 0.1f;
+                musicSource.volume = 0.05f;
 
             }
             sfxSource.clip = null;
@@ -75,6 +75,8 @@ public class AudioManager : MonoBehaviour
                 musicSource.Stop();
                 musicSource.clip = music_geo;
                 musicSource.loop = true;
+                musicSource.volume = 0.07f;
+
             }
             sfxSource.clip = null;
             if (!musicSource.isPlaying)
@@ -90,7 +92,7 @@ public class AudioManager : MonoBehaviour
                 musicSource.Stop();
                 musicSource.clip = music_enigme;
                 musicSource.loop = true;
-                musicSource.volume = 0.1f;
+                musicSource.volume = 0.05f;
 
             }
             sfxSource.clip = null;
@@ -114,6 +116,8 @@ public class AudioManager : MonoBehaviour
                 musicSource.Stop();
                 musicSource.clip = music_smash;
                 musicSource.loop = true;
+                musicSource.volume = 0.07f;
+
             }
             sfxSource.clip = null;
             if (!musicSource.isPlaying)
@@ -133,6 +137,8 @@ public class AudioManager : MonoBehaviour
                 musicSource.Stop();
                 musicSource.clip = music_fanart;
                 musicSource.loop = true;
+                musicSource.volume = 0.07f;
+
             }
             sfxSource.clip = null;
             if (!musicSource.isPlaying)
