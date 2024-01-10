@@ -1074,6 +1074,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6863521511506845323, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
+      propertyPath: spawn.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863521511506845323, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
+      propertyPath: spawn.y
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7673252262315968923, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
       propertyPath: m_Name
       value: SceneSwitcher

@@ -223,3 +223,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 7908948739067665346}
+  speed: 1
+  spawn: {x: 0, y: 0, z: 0}
