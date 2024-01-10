@@ -42,6 +42,7 @@ public class SceneSwitcher : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         fader.gameObject.SetActive(false);
+        Debug.Log("starting");
     }
 
     IEnumerator ChangeSceneC(string scene)
@@ -62,6 +63,8 @@ public class SceneSwitcher : MonoBehaviour
         fader.gameObject.SetActive(false);
         // starting();
         // SceneManager.LoadScene(scene);
+        Debug.Log("ChangeScene");
+
 
     }
 }
