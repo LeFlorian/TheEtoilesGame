@@ -923,7 +923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a3b6a5fcdb5bde4dbbef09292813a46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af7ec555dbbf34b4cb07c6383e2dbc14, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1157,7 +1157,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ATTENTION UN PAYOU ENRAG\xC9 APPARAIT"
+  m_text: "Viewers, donnez toute votre force \xE0 \xC9toiles pour l'aider \xE0 vaincre
+    le boss !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1432,11 +1433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 536844720960049108, guid: 048ac9d9934ec1745bdbd99d5d1182b0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -694
-      objectReference: {fileID: 0}
-    - target: {fileID: 536844720960049108, guid: 048ac9d9934ec1745bdbd99d5d1182b0, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 357
+      value: -447.90625
       objectReference: {fileID: 0}
     - target: {fileID: 2880970018946409962, guid: 048ac9d9934ec1745bdbd99d5d1182b0, type: 3}
       propertyPath: m_Name

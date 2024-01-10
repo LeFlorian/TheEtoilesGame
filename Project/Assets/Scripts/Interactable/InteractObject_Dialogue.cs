@@ -51,7 +51,7 @@ public class InteractObject_Dialogue : InteractObject
 
     private void Update()
     {
-        if (Vector2.Distance(FindAnyObjectByType<PlayerController>().transform.position, transform.position) > 3f && dialogue.activeSelf)
+        if (Vector2.Distance(FindAnyObjectByType<PlayerController>().transform.position, transform.position) > 3f && dialogue.active)
         {
             dialogue.SetActive(false);
             numberOfClick = 0;
