@@ -154,7 +154,6 @@ Transform:
   m_Children:
   - {fileID: 428961459}
   - {fileID: 167007236}
-  - {fileID: 610444466}
   - {fileID: 162669737}
   - {fileID: 1229404936}
   m_Father: {fileID: 0}
@@ -2097,11 +2096,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteID: 8
---- !u!4 &610444466 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5092508832336515497, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
-  m_PrefabInstance: {fileID: 1095924690}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &612487639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3680,7 +3674,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 12798559}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5092508832336515497, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3721,6 +3715,10 @@ PrefabInstance:
     - target: {fileID: 5092508832336515497, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863521511506845323, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
+      propertyPath: spawn.x
+      value: 43.25119
       objectReference: {fileID: 0}
     - target: {fileID: 7673252262315968923, guid: db716dd33d0ac67468f0fc430d62d964, type: 3}
       propertyPath: m_Name
@@ -20797,4 +20795,5 @@ SceneRoots:
   - {fileID: 357886269}
   - {fileID: 1400040366}
   - {fileID: 1953167474}
+  - {fileID: 1095924690}
   - {fileID: 12798559}

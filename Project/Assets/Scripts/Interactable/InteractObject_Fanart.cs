@@ -8,13 +8,7 @@ public class InteractObject_Fanart : InteractObject
     [SerializeField]
     private Image _fanart;
 
-
-    public override void Action()
-    {
-        _fanart.gameObject.SetActive(!_fanart.IsActive());
-    }
-
-    private void Update()
+	private void Update()
     {
         if (Vector2.Distance(FindAnyObjectByType<PlayerController>().transform.position, transform.position) > 3f && _fanart.IsActive())
         {
@@ -22,5 +16,8 @@ public class InteractObject_Fanart : InteractObject
         }
     }
 
-
+    public override void Action()
+    {
+        _fanart.gameObject.SetActive(!_fanart.IsActive());
+    }
 }

@@ -103,7 +103,7 @@ public class Versus_GameManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
-        int actualLife = 3;
+        int actualLife = 4;
         if (player != null)
         {
             actualLife = player.GetComponent<Versus_LifeController>().life;

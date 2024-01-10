@@ -12,10 +12,12 @@ public class SceneSwitcher : MonoBehaviour
 
     public int speed = 1;
 
+    public Vector3 spawn = new Vector3(0f,0f,0f);
+
     private void Awake()
     {
         instance = this;
-        
+        DontDestroyOnLoad(this.gameObject);
 
     }
 
@@ -44,6 +46,7 @@ public class SceneSwitcher : MonoBehaviour
 
     IEnumerator ChangeSceneC(string scene)
     {
+        Vector3 pos = spawn;
         fader.gameObject.SetActive(true);
         fader.color = Color.clear;
         while (fader.color.a < 1)
@@ -51,8 +54,14 @@ public class SceneSwitcher : MonoBehaviour
             fader.color += Color.black*Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
-
-        SceneManager.LoadScene(scene);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
+        while (!asyncLoad.isDone) yield return null;
+        GameObject Player = GameObject.FindWithTag("Player");
+        Player.transform.position = pos;
+        yield return new WaitForEndOfFrame();
+        fader.gameObject.SetActive(false);
+        // starting();
+        // SceneManager.LoadScene(scene);
 
     }
 }
