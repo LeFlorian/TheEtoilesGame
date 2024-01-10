@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 138804399696725550}
   m_Layer: 2
   m_Name: Visual
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,7 +311,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 6.81
 --- !u!1 &6467101766830034658
 GameObject:
   m_ObjectHideFlags: 0

@@ -8511,7 +8511,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 3dd962c80a2467743b5b47405d8af25c, type: 3}
     - target: {fileID: 7318298627182437615, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7352983279843055972, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_SortingOrder
@@ -8529,8 +8529,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: PNJ_Florian
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4339736974702957005, guid: 594a5285a6c548446b06470b406bd648, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4315587116639468419, guid: 594a5285a6c548446b06470b406bd648, type: 3}
