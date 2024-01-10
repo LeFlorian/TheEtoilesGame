@@ -177,6 +177,17 @@
                 },
                 {
                     "name": "",
+                    "id": "0e69a3f2-0fa2-46b0-ab16-262dbdd42cb9",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "7d51a7a4-d76e-4cc3-981e-c11f41f49b88",
                     "path": "<Keyboard>/anyKey",
                     "interactions": "",
