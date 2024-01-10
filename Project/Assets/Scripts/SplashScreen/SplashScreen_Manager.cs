@@ -24,7 +24,7 @@ public class SplashScreen_Manager : MonoBehaviour
             switch (state)
             {
                 case State.Title:
-                    ShowTwitchMenu();
+                    //ShowTwitchMenu();
                     break;
                     
                 case State.Twitch:
@@ -37,9 +37,9 @@ public class SplashScreen_Manager : MonoBehaviour
         }
     }
 
-    private void ShowTwitchMenu()
-    {
-        twitchmenu.SetActive(true);
-    }
+    //private void ShowTwitchMenu()
+    //{
+    //    twitchmenu.SetActive(true);
+    //}
 
 }
