@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TarodevController;
 using UnityEngine;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class LobbyManager : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class LobbyManager : MonoBehaviour
 
     private void Start()
     {
+        /*PlayerPrefs.SetInt($"AsCompletedLvl{1}",1);
+        PlayerPrefs.SetInt($"AsCompletedLvl{2}",1);
+        PlayerPrefs.SetInt($"AsCompletedLvl{3}",1);
+        PlayerPrefs.SetInt($"AsCompletedLvl{4}",1);
+        PlayerPrefs.SetInt($"AsCompletedLvl{5}",1);*/
 
         CheckAsFinishTheGame();
     }
@@ -46,6 +52,16 @@ public class LobbyManager : MonoBehaviour
     private void Win()
     {
         FindAnyObjectByType<PlayerController>().transform.position = spawnEndCinematic.position;
+
+        PlayerPrefs.DeleteKey($"AsCompletedLvl{1}");
+
+        PlayerPrefs.DeleteKey($"AsCompletedLvl{2}");
+
+        PlayerPrefs.DeleteKey($"AsCompletedLvl{3}");
+
+        PlayerPrefs.DeleteKey($"AsCompletedLvl{4}");
+
+        PlayerPrefs.DeleteKey($"AsCompletedLvl{5}");
     }
 
     IEnumerator waitToGoCredits()
