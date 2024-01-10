@@ -2474,11 +2474,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_text
-      value: 'Parce que tu as cru qu''on a eu le temps de coder 2513 lignes de dialogues
-        ?
-
-
-        Du coup oui ! :D'
+      value: "Etoiles :\"Bandes de tryhardeurs de merde...\" \r\n\nNous :\"T'imagines
+        m\xEAme pas \xE0 quel point ! :D\""
       objectReference: {fileID: 0}
     - target: {fileID: 4959705967837260605, guid: 594a5285a6c548446b06470b406bd648, type: 3}
       propertyPath: m_fontSize

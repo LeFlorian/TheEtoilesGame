@@ -66,7 +66,7 @@ public class Versus_GameManager : MonoBehaviour
         else{
             if (canSpawnCode)
             {
-                StartCoroutine(CodesSpawn(8f, UnityEngine.Random.Range(0, 2)));
+                StartCoroutine(CodesSpawn(11f, UnityEngine.Random.Range(0, 2)));
                 
                 if (FindObjectsOfType<EnemyController_Clone>().Length <= 3) spawnedCode = false;
                 else spawnedCode = true;
@@ -120,7 +120,7 @@ public class Versus_GameManager : MonoBehaviour
     }
     public IEnumerator Spawn(){
         if(currentWave == -1){
-            yield return new WaitForSeconds(21f);
+            yield return new WaitForSeconds(10f);
             if(currentWave == -1 ) 
             {
                 currentWave = 0;
