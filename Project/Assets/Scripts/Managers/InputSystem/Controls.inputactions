@@ -177,8 +177,8 @@
                 },
                 {
                     "name": "",
-                    "id": "0e69a3f2-0fa2-46b0-ab16-262dbdd42cb9",
-                    "path": "<Mouse>/leftButton",
+                    "id": "db3f3ed8-4e55-46eb-8a60-95a473a2854b",
+                    "path": "<Mouse>/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -42,14 +42,14 @@ public class Versus_GameManager : MonoBehaviour
 
     private bool spawnedCode;
 
-    private float timerBoss;
+    [SerializeField]
+    private float timerBoss = 63f;
 
 
     private void Start()
     {
         RespawnPlayer();
         currentWave = -1;
-        timerBoss = 63f;
         canSpawnCode = true;
         spawnedCode = false;
         StartCoroutine(BossSpawn(timerBoss));

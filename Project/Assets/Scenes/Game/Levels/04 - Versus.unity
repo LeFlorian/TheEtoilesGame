@@ -2087,7 +2087,7 @@ Transform:
   m_GameObject: {fileID: 1631508654}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 61.3, z: 0}
   m_LocalScale: {x: 87.36, y: 35.71, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3024,6 +3024,10 @@ PrefabInstance:
       propertyPath: enemyBoss
       value: 
       objectReference: {fileID: 3021555439340095461, guid: 9a7dbc96a5cfd974a84ab4ba49a54a15, type: 3}
+    - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
+      propertyPath: timerBoss
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
       propertyPath: enemyPrefab
       value: 
