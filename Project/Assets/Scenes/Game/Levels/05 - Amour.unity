@@ -965,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 3b5fd0684d4cc0f478e857b51bab6441, type: 3}
     - target: {fileID: 2040024189763433784, guid: 5e6c4645ad4c4294fa338610825f4a08, type: 3}
       propertyPath: m_SortingOrder
-      value: -9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2383220972286502634, guid: 5e6c4645ad4c4294fa338610825f4a08, type: 3}
       propertyPath: _fanart

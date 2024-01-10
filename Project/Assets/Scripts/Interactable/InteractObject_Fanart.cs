@@ -14,5 +14,13 @@ public class InteractObject_Fanart : InteractObject
         _fanart.gameObject.SetActive(!_fanart.IsActive());
     }
 
+    private void Update()
+    {
+        if (Vector2.Distance(FindAnyObjectByType<PlayerController>().transform.position, transform.position) > 3f && _fanart.IsActive())
+        {
+             _fanart.gameObject.SetActive(false);
+        }
+    }
+
 
 }

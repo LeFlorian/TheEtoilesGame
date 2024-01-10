@@ -660,8 +660,8 @@ Transform:
   m_GameObject: {fileID: 149319931}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18, y: 2.47, z: 0}
-  m_LocalScale: {x: 4, y: 2, z: 1}
+  m_LocalPosition: {x: 3.59, y: 3.7, z: 0}
+  m_LocalScale: {x: 6, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5615099}
@@ -6746,8 +6746,8 @@ Transform:
   m_GameObject: {fileID: 2073785747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.3, y: -2.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -37.3, y: -2.32, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 149319932}
@@ -6794,7 +6794,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9c287958fcc817545ab7b658375f5f1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d748c8f9fb9f50347a3ea734356f8cb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6854,10 +6854,8 @@ MonoBehaviour:
   - ...
   - 'Ne me fais pas perdre mon temps ! '
   - "T\u2019as rien de mieux \xE0 faire ? Va faire une game d\xE9tends-toi ? "
-  - "T\u2019as rien de mieux \xE0 faire ? Va faire une game d\xE9tends-toi ? "
   - "Il y en a qui ont cod\xE9 des dialogues et tu vas pas les lire ?  "
   - "T\u2019as pas ton petit cousin \xE0 tabasser dans Smash ? "
-  - "T\u2019as rien de mieux \xE0 faire ? Va faire une game d\xE9tends-toi ? "
   dialogue: {fileID: 149319931}
   clue: {fileID: 620557690}
 --- !u!58 &2073785751
