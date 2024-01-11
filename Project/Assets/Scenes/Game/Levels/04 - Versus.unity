@@ -3026,7 +3026,7 @@ PrefabInstance:
       objectReference: {fileID: 3021555439340095461, guid: 9a7dbc96a5cfd974a84ab4ba49a54a15, type: 3}
     - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
       propertyPath: timerBoss
-      value: 1
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 3481750195984828230, guid: e9cb0957c47df004b85ecfac55fd05c1, type: 3}
       propertyPath: enemyPrefab
