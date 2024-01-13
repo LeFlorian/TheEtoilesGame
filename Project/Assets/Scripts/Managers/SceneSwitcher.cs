@@ -16,6 +16,8 @@ public class SceneSwitcher : MonoBehaviour
 
     private int nbLevels = 5;
 
+    private bool hardcore_mode = false;
+
     private void Awake()
     {
         instance = this;

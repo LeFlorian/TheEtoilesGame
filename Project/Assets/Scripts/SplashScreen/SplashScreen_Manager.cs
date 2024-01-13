@@ -8,12 +8,19 @@ public class SplashScreen_Manager : MonoBehaviour
     {
         Title,
         Twitch,
-        ToPlay
+        ToPlay,
+
+        Hardcore
     }
 
     public State state;
 
     public GameObject twitchmenu;
+
+    //public GameObject normal_game;
+
+    //public GameObject hardcore_game;
+
 
     private void Update()
     {
@@ -25,13 +32,19 @@ public class SplashScreen_Manager : MonoBehaviour
             {
                 case State.Title:
                     ShowTwitchMenu();
+                    Debug.Log("title");
+
                     break;
                     
                 case State.Twitch:
                     break;
                     
                 case State.ToPlay:
-                
+                    break;
+
+                case State.Hardcore:
+                    Hardcore();
+                    Debug.Log("hardcore");
                     break;
             }
         }
@@ -40,6 +53,11 @@ public class SplashScreen_Manager : MonoBehaviour
     private void ShowTwitchMenu()
     {
         twitchmenu.SetActive(true);
+    }
+
+    public void Hardcore(){
+        twitchmenu.SetActive(false);
+
     }
 
 }
