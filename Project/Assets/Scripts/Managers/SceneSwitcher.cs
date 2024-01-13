@@ -14,6 +14,8 @@ public class SceneSwitcher : MonoBehaviour
 
     public Vector3 spawn = new Vector3(0f,0f,0f);
 
+    private int nbLevels = 5;
+
     private void Awake()
     {
         instance = this;
@@ -65,8 +67,17 @@ public class SceneSwitcher : MonoBehaviour
     }
 
     public void Reset(){
-        Debug.Log("Deleted player files");
-        PlayerPrefs.DeleteAll();
+        Debug.Log("Deleted player files!");
+        for(int i = 1; i < nbLevels+1; i++){
+            try{
+                PlayerPrefs.DeleteKey($"AsCompletedLvl{i}");
+            
+            }
+            catch{
+                Debug.Log(i);
+            }
+        }
+        ChangeScene("Lobby");
 
     }
 }
