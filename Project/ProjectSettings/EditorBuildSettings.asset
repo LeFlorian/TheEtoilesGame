@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/Lobby.unity
     guid: 1f588caf7a8b1f84388ea0593f7527a5
   - enabled: 1
+    path: Assets/Scenes/Game/Lobby Hardcore.unity
+    guid: ffe8faaba3ff879458c5468eebfb2d59
+  - enabled: 1
     path: Assets/Scenes/Game/Credits.unity
     guid: 80a4c4a62fa43c84f9f66c7ace4502c4
   - enabled: 1
@@ -22,11 +25,26 @@ EditorBuildSettings:
     guid: c360a988a6873204a9328f80d29139ed
   - enabled: 1
     path: Assets/Scenes/Game/Levels/03 - Musique.unity
-    guid: a5437f8cbc6b04347aa63113493931d0
+    guid: 9c806299e64136547b81d8713b7fc703
   - enabled: 1
     path: Assets/Scenes/Game/Levels/04 - Versus.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Game/Levels/05 - Amour.unity
     guid: c30d49ea82784f94c85d203bab81a2a9
+  - enabled: 1
+    path: Assets/Scenes/Game/Hardcore/Amour Hardcore.unity
+    guid: 1b335fb1a2c449f49aeb879551189c4e
+  - enabled: 1
+    path: Assets/Scenes/Game/Hardcore/Enigme Hardcore.unity
+    guid: 2ac96ebd2cbf0fe45aca133539d57a12
+  - enabled: 1
+    path: Assets/Scenes/Game/Hardcore/Geographie Hardcore.unity
+    guid: 1d89e18df086f3a449ff113c3b0ea92a
+  - enabled: 1
+    path: Assets/Scenes/Game/Hardcore/Musique Hardcore.unity
+    guid: 13e518cd76f4a424c81328169ffb8b25
+  - enabled: 1
+    path: Assets/Scenes/Game/Hardcore/Versus Hardcore.unity
+    guid: 651e391946a3e324182da5f1ed5da388
   m_configObjects: {}

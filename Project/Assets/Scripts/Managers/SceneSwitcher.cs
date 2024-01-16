@@ -16,24 +16,19 @@ public class SceneSwitcher : MonoBehaviour
 
     private int nbLevels = 5;
 
-    private bool hardcore_mode = false;
+    public bool hardcore = false;
 
     private void Awake()
     {
+
         instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(transform.root.gameObject);
 
     }
 
     private void Start()
     {
         StartCoroutine(starting());
-    }
-
-    public void ChangeScene(string scene)
-    {
-        StartCoroutine(ChangeSceneC(scene));
-
     }
 
     IEnumerator starting()
@@ -64,8 +59,23 @@ public class SceneSwitcher : MonoBehaviour
         Player.transform.position = pos;
         yield return new WaitForEndOfFrame();
         fader.gameObject.SetActive(false);
-        // starting();
-        // SceneManager.LoadScene(scene);
+    }
+
+        public void ChangeScene(string scene)
+    {
+        StartCoroutine(ChangeSceneC(scene));
+
+    }
+
+    public void Play(){
+        if(hardcore){
+            ChangeScene("Lobby Hardcore");
+        }
+        else{
+            ChangeScene("Lobby");
+        }
+
+
     }
 
     public void Reset(){
@@ -81,5 +91,13 @@ public class SceneSwitcher : MonoBehaviour
         }
         ChangeScene("Lobby");
 
+    }
+
+    public bool isModeHardcore(){
+        return hardcore;
+    }
+
+    public void setModeHardcore(bool mode){
+        hardcore = mode;
     }
 }

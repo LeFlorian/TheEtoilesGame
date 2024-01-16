@@ -8,9 +8,7 @@ public class SplashScreen_Manager : MonoBehaviour
     {
         Title,
         Twitch,
-        ToPlay,
-
-        Hardcore
+        ToPlay
     }
 
     public State state;
@@ -40,11 +38,6 @@ public class SplashScreen_Manager : MonoBehaviour
                     break;
                     
                 case State.ToPlay:
-                    break;
-
-                case State.Hardcore:
-                    Hardcore();
-                    Debug.Log("hardcore");
                     break;
             }
         }
