@@ -118,7 +118,7 @@ PrefabInstance:
       addedObject: {fileID: 8008888021398412446}
     - targetCorrespondingSourceObject: {fileID: 5643403819804725663, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2892331793235168966}
+      addedObject: {fileID: 1246351826187626640}
   m_SourcePrefab: {fileID: 100100000, guid: b73930f32ab8b91468d9480fa2e61354, type: 3}
 --- !u!1 &7463071685073286850 stripped
 GameObject:
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 0
   maxDamage: 1
---- !u!114 &2892331793235168966
+--- !u!114 &1246351826187626640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

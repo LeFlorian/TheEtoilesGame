@@ -7,7 +7,7 @@ public class hVersus_LifeController : LifeController
 {
 
     private void Start(){
-        base.InflictDamage(3);
+        //base.InflictDamage(3);
     }
     public override int InflictDamage(int damage)
     {

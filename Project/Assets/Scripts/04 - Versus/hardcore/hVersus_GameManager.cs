@@ -15,7 +15,7 @@ public class hVersus_GameManager : MonoBehaviour
     private int currentWave;
 
     [SerializeField]
-    private GameObject enemyPrefab;
+    public GameObject[] ennemyPrefab;
 
     [SerializeField]
     private GameObject enemyBoss;
@@ -45,6 +45,10 @@ public class hVersus_GameManager : MonoBehaviour
     [SerializeField]
     private float timerBoss = 63f;
 
+    private int multiplier_code = 2;
+
+    public int timer_multiplier = 10;
+
 
     private void Start()
     {
@@ -53,6 +57,7 @@ public class hVersus_GameManager : MonoBehaviour
         canSpawnCode = true;
         spawnedCode = false;
         StartCoroutine(BossSpawn(timerBoss));
+        StartCoroutine(Multiplier(timer_multiplier));
         
         
     }
@@ -68,7 +73,7 @@ public class hVersus_GameManager : MonoBehaviour
             {
                 StartCoroutine(CodesSpawn(11f, UnityEngine.Random.Range(0, 2)));
                 
-                if (FindObjectsOfType<EnemyController_Clone>().Length <= 3) spawnedCode = false;
+                if (FindObjectsOfType<EnemyController_Clone>().Length < multiplier_code) spawnedCode = false;
                 else spawnedCode = true;
 
             }
@@ -125,7 +130,10 @@ public class hVersus_GameManager : MonoBehaviour
             {
                 currentWave = 0;
                 Transform chooseSpawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
-                Instantiate(enemyPrefab, chooseSpawnPoint);
+                //GameObject ennemy = ennemyPrefab[UnityEngine.Random.Range(0, ennemyPrefab.Length)];
+                GameObject ennemy = ennemyPrefab[2];
+
+                Instantiate(ennemy, chooseSpawnPoint);
             }
         }
     }
@@ -136,7 +144,8 @@ public class hVersus_GameManager : MonoBehaviour
             for (int i = 0; i < multiplier; i++)
             {
                 Transform chooseSpawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
-                Instantiate(enemyPrefab, chooseSpawnPoint);
+                GameObject ennemy = ennemyPrefab[UnityEngine.Random.Range(0, ennemyPrefab.Length)];
+                Instantiate(ennemy, chooseSpawnPoint);
             }
             spawnedCode = true;
         }
@@ -148,4 +157,11 @@ public class hVersus_GameManager : MonoBehaviour
         canSpawnCode = false;
     }
 
+    public IEnumerator Multiplier(float timer){
+        while(canSpawnCode){
+            yield return new WaitForSeconds(timer);
+            multiplier_code = (int)Math.Round(multiplier_code*1.5);
+            Debug.Log( multiplier_code);
+        }
+    }
 }
